@@ -1,0 +1,241 @@
+<html>
+
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NJ9243B');</script>
+<!-- End Google Tag Manager -->
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+
+<meta NAME="subject" CONTENT="Введение в ТФПКП">
+<meta NAME="doccomm" CONTENT="6 страниц">
+<title>1.3.4. Интегральная формула Коши.</title>
+<style type="text/css"> 
+body 
+{ 
+ margin: 0; 
+ padding: 0; 
+ padding-top: 10px;
+ text-align: center; 
+} 
+#centered
+{ 
+ width: 980px; 
+ text-align: left;
+ border: 0px; 
+ padding: 0;  
+ margin: 0 auto; 
+} 
+</style>
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJ9243B"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><div id="centered">
+
+
+<table border="0" width="100%" style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px" height="80">
+  <tr>
+    <td width="14%" rowspan="2" valign="top" height="76"><img src="images/SmallTitle.gif" border="0" width="126" height="113"></td>
+    <td width="86%" height="93"><font face="Arial" color="#000080"><b>В. И. ЕЛИСЕЕВ</b></font><p><b><font face="Arial" color="#000080">ВВЕДЕНИЕ В МЕТОДЫ ТЕОРИИ
+    ФУНКЦИЙ ПРОСТРАНСТВЕННОГО КОМПЛЕКСНОГО ПЕРЕМЕННОГО<br></font></b><font color="#000080" face="Arial">[</font><a href="index.htm"><font face="Arial">Оглавление</font></a><font color="#000080">]</font> </td>
+  </tr>
+<tr>
+    <td width="86%" height="1"><p ALIGN="left" style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px">
+      <p ALIGN="left" style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px; border-width: 0;"><a href="http://www.amazon.com/Numeric-field-Introduction-functions-variable/dp/146991428X/ref=sr_1_7?ie=UTF8&qid=1328153023&sr=8-7"><img src="images/amazon.PNG" alt="Amazon.com" width="102" height="34" border="0"></a>      
+      <ul>
+        <li><a href="http://www.amazon.com/Numeric-field-Introduction-functions-variable/dp/146991428X/ref=sr_1_7?ie=UTF8&qid=1328153023&sr=8-7">Елисеев В.И. Числовое поле. Введение в ТФКПП.</a></li>
+	<li><a href="http://www.amazon.com/coordinate-axes-physical-reality-Russian/dp/1470005026/ref=sr_1_1?ie=UTF8&qid=1328328469&sr=8-1?ie=UTF8&qid=1328328469&sr=8-1">Елисеев В.И. Оси координат физической реальности.</a></li>
+      </ul>
+      <p ALIGN="left" style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px; border-width: 0;"><img src="images/pdf.PNG" alt="PDF" width="48" height="48" border="0"></p>
+      <ul>
+        <li><a href="pdf/book5.pdf">Елисеев В.И. Введение в ТФКПП. 2003</a></li>
+        <li><a href="pdf/TFKPP-2007.pdf">Елисеев В.И. Числовое поле. Введение в ТФКПП. 2006</a></li>
+        <li><a href="pdf/book6-29JAN2012.pdf">Елисеев В.И. Оси координат физической реальности. 2012</a></li>
+      </ul>
+   </td>
+</tr>
+</table>
+
+<hr color="#000080" style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px">
+<!--webbot bot="Include" endspan i-checksum="17295" -->
+
+<font FACE="Arial">
+
+<p><font color="#000080">1.3.4. Интегральная формула Коши.</font></p>
+</font><font FACE="Times New Roman">
+
+<p>Выведем аналог интегральной теоремы Коши в
+пространстве </font><img SRC="images/1-3-4/image153.gif" WIDTH="21" HEIGHT="20">.</p>
+<font FACE="Times New Roman">
+
+<p>Теорема. Пусть функция </font><img SRC="images/1-3-4/image775.gif" WIDTH="53" HEIGHT="28"><font FACE="Times New Roman">дифференцируема в односвязной
+области </font>G <font FACE="Times New Roman">пространства </font><img SRC="images/1-3-4/image153.gif" WIDTH="21" HEIGHT="20"><font FACE="Times New Roman">и
+пусть кривая </font><img SRC="images/1-3-4/image776.gif" WIDTH="28" HEIGHT="31"><font FACE="Times New Roman">замкнута, лежит в </font>G <font FACE="Times New Roman">и ориентирована против часовой
+стрелки. Тогда для любой точки </font><img SRC="images/1-3-4/image457.gif" WIDTH="16" HEIGHT="18"><font FACE="Times New Roman">, лежащей внутри
+поверхности </font>S, <font FACE="Times New Roman">натянутой без
+точек самопересечения на кривую </font><img SRC="images/1-3-4/image777.gif" WIDTH="28" HEIGHT="31"><font FACE="Times New Roman">, справедлива
+формула</p>
+</font>
+
+<p><img SRC="images/1-3-4/image778.gif" WIDTH="280" HEIGHT="66"></p>
+<font FACE="Times New Roman">
+
+<p>Доказательство. Функция </font><img SRC="images/1-3-4/image779.gif" WIDTH="58" HEIGHT="63"><font FACE="Times New Roman">
+дифференцируема по </font><img SRC="images/1-3-4/image780.gif" WIDTH="18" HEIGHT="28"><font FACE="Times New Roman"> в области G с выколотой точкой</font> <img SRC="images/1-3-4/image457.gif" WIDTH="16" HEIGHT="18">. </p>
+<font FACE="Times New Roman">
+
+<p>Область</font> G <font FACE="Times New Roman">в пространстве </font><img SRC="images/1-3-4/image153.gif" WIDTH="21" HEIGHT="20"><font FACE="Times New Roman">это
+область ограниченная поверхностью </font>S, <font FACE="Times New Roman">натянутой на кривую</p>
+</font>
+
+<p><img SRC="images/1-3-4/image510.gif" WIDTH="16" HEIGHT="21"><font FACE="Times New Roman"> без точек
+самопересечения. В любом пространстве кривая
+должна проходить через </font><img SRC="images/1-3-4/image134.gif" WIDTH="16" HEIGHT="18"><font FACE="Times New Roman">туннель, так как в противном случае
+она при стягивании в </font><img SRC="images/1-3-4/image133.gif" WIDTH="18" HEIGHT="23"><font FACE="Times New Roman"> сферу выродится в точку не
+содержащую область </font>G <font FACE="Times New Roman">пространства</font>.
+<font FACE="Times New Roman">Через точку </font><img SRC="images/1-3-4/image457.gif" WIDTH="16" HEIGHT="18"><font FACE="Times New Roman">проведем </font><img SRC="images/1-3-4/image134.gif" WIDTH="16" HEIGHT="18"><font FACE="Times New Roman">туннель и
+окружим ее кривой </font><img SRC="images/1-3-4/image781.gif" WIDTH="25" HEIGHT="31"><font FACE="Times New Roman">типа кривой</font><img SRC="images/1-3-4/image782.gif" WIDTH="25" HEIGHT="30"><font FACE="Times New Roman">,
+так чтобы она целиком лежала в области </font>G <font FACE="Times New Roman">вместе с поверхностью </font><img SRC="images/1-3-4/image783.gif" WIDTH="25" HEIGHT="31"><font FACE="Times New Roman">,
+натянутой на эту кривую. В этом случае
+изолированная ось будет проходить через точку </font><img SRC="images/1-3-4/image457.gif" WIDTH="16" HEIGHT="18"><font FACE="Times New Roman"> и </font><img SRC="images/1-3-4/image133.gif" WIDTH="18" HEIGHT="23"><font FACE="Times New Roman">сферу, радиус
+которой </font><img SRC="images/1-3-4/image784.gif" WIDTH="53" HEIGHT="33"><font FACE="Times New Roman">.То
+есть зададим </font><img SRC="images/1-3-4/image785.gif" WIDTH="158" HEIGHT="38"><font FACE="Times New Roman"> и границу </font><img SRC="images/1-3-4/image781.gif" WIDTH="25" HEIGHT="31">.<font FACE="Times New Roman">Тогда согласно
+интегральным теоремам будем иметь</p>
+</font>
+
+<p><img SRC="images/1-3-4/image786.gif" WIDTH="458" HEIGHT="70"></p>
+
+<p><img SRC="images/1-3-4/image787.gif" WIDTH="365" HEIGHT="70"></p>
+
+<p><img SRC="images/1-3-4/image788.gif" WIDTH="350" HEIGHT="70"><font FACE="Times New Roman">Где остается доказать, что </p>
+</font>
+
+<p><img SRC="images/1-3-4/image789.gif" WIDTH="336" HEIGHT="70"><font FACE="Times New Roman">. Для
+доказательства воспользуемся оценкой модуля
+этого интеграла.</p>
+
+<p>Функция </font><img SRC="images/1-3-4/image790.gif" WIDTH="46" HEIGHT="26"><font FACE="Times New Roman">непрерывна
+в точке </font><img SRC="images/1-3-4/image457.gif" WIDTH="16" HEIGHT="18"><font FACE="Times New Roman">,
+поэтому найдется соотношение </font><img SRC="images/1-3-4/image251.gif" WIDTH="15" HEIGHT="28"><img SRC="images/1-3-4/image791.gif" WIDTH="168" HEIGHT="35">,<font FACE="Times New Roman"> при </font><img SRC="images/1-3-4/image792.gif" WIDTH="105" HEIGHT="35">,<font FACE="Times New Roman">где </font><img SRC="images/1-3-4/image793.gif" WIDTH="141" HEIGHT="35"><font FACE="Times New Roman">, а </font><img SRC="images/1-3-4/image794.gif" WIDTH="71" HEIGHT="33"><font FACE="Times New Roman">, в том числе и по изолированному
+направлению </font><img SRC="images/1-3-4/image795.gif" WIDTH="233" HEIGHT="35"><font FACE="Times New Roman">, при</font><img SRC="images/1-3-4/image796.gif" WIDTH="168" HEIGHT="35"><font FACE="Times New Roman">,где </font><img SRC="images/1-3-4/image797.gif" WIDTH="143" HEIGHT="35"><font FACE="Times New Roman">, а </p>
+</font>
+
+<p><img SRC="images/1-3-4/image798.gif" WIDTH="71" HEIGHT="33">.<font FACE="Times New Roman">Следовательно
+</p>
+</font>
+
+<p><img SRC="images/1-3-4/image799.gif" WIDTH="465" HEIGHT="73">.</p>
+<font FACE="Times New Roman">
+
+<p>Интеграл</font><img SRC="images/1-3-4/image800.gif" WIDTH="128" HEIGHT="55"><font FACE="Times New Roman">, а для изолированного направления </font><img SRC="images/1-3-4/image801.gif" WIDTH="215" HEIGHT="60">,<font FACE="Times New Roman"> но</p>
+
+<p>В этом случае </font><img SRC="images/1-3-4/image802.gif" WIDTH="170" HEIGHT="35">. <font FACE="Times New Roman">Вследствие этого во всех
+возможных вариантах интеграл имеет одну оценку </font><img SRC="images/1-3-4/image803.gif" WIDTH="76" HEIGHT="35"><font FACE="Times New Roman">.Поэтому при
+стремлении </font><img SRC="images/1-3-4/image804.gif" WIDTH="63" HEIGHT="25"><font FACE="Times New Roman"> и в том случае когда </font><img SRC="images/1-3-4/image805.gif" WIDTH="63" HEIGHT="25">, <font FACE="Times New Roman">как
+коэффициент при делителях нуля, интеграл равен
+нулю. Формула доказана.</p>
+
+<p>Если область </font>G <font FACE="Times New Roman">заключена
+между двумя поверхностями </font><img SRC="images/1-3-4/image806.gif" WIDTH="46" HEIGHT="31"><font FACE="Times New Roman">, натянутыми на
+эквидистантные</p>
+
+<p>Пространственные кривые </font><img SRC="images/1-3-4/image807.gif" WIDTH="45" HEIGHT="31"><font FACE="Times New Roman">, то для точек
+этой области справедлива формула</p>
+</font>
+
+<p><img SRC="images/1-3-4/image808.gif" WIDTH="463" HEIGHT="66"></p>
+<font FACE="Times New Roman">
+
+<p>Интегрирование по кривым </font><img SRC="images/1-3-4/image809.gif" WIDTH="45" HEIGHT="31"><font FACE="Times New Roman">идет в
+противоположных направлениях.</p>
+
+<p>Если точка </font><img SRC="images/1-3-4/image457.gif" WIDTH="16" HEIGHT="18"><font FACE="Times New Roman">лежит вне замкнутой поверхности </font>S,
+<font FACE="Times New Roman">то подынтегральная функция
+аналитична всюду и интеграл равен нулю. Итак</p>
+</font>
+
+<p><img SRC="images/1-3-4/image810.gif" WIDTH="343" HEIGHT="70"></p>
+
+<p><font face="Arial" color="#000080">[<a href="1-3-5.html">Следующий
+параграф</a>]</font></p>
+<!--webbot bot="Include" U-Include="footer.htm" TAG="BODY" startspan -->
+
+<hr color="#000080" style="border: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px">
+
+<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px"><b><font face="Arial" size="1" color="#000080">Мини
+оглавление:</font></b></p>
+
+<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px"><font face="Arial" size="2" color="#000080"><strong>[<a href="0.htm">0</a>], [<a href="1-1-1.html">1.1.1</a>, <a href="1-1-2.html">1.1.2</a>, <a href="1-1-3.html">1.1.3</a>,
+<a href="1-1-4.html">1.1.4</a>, <a href="1-1-5.html">1.1.5</a>, <a href="1-1-6.html">1.1.6</a>,
+<a href="1-1-7.html">1.1.7</a>, <a href="1-1-8.html">1.1.8</a>, <a href="1-2.html">1.2</a>,
+<a href="1-2-1.html">1.2.1</a>, <a href="1-2-2.html">1.2.2</a>, <a href="1-2-2-A.html">1.2.2.a</a>,
+<a href="1-2-2-B.html">1.2.2.b</a>, <a href="1-2-2-C.html">1.2.2.c</a>, <a href="1-2-2-D.html">1.2.2.d</a>, <a href="1-2-2-E.html">1.2.2.e</a>, <a href="1-2-2-F.html">1.2.2.f</a>, <a href="1-2-2-G.html">1.2.2.g</a>, <a href="1-2-2-H.html">1.2.2.h</a>, <a href="1-2-3.html">1.2.3</a>, <a href="1-3-1.html">1.3.1</a>,
+<a href="1-3-2.html">1.3.2</a>, <a href="1-3-3.html">1.3.3</a>, <a href="1-3-4.html">1.3.4</a>,
+<a href="1-3-5.html">1.3.5</a>, <a href="1-3-6.html">1.3.6</a>, <a href="1-4-1.html">1.4.1</a>,
+<a href="1-4-2.html">1.4.2</a>, <a href="1-5.html">1.5</a>, <a href="1-6.html">1.6</a>, <a href="1-7-1.html">1.7.1</a>, <a href="1-7-2.html">1.7.2</a>,
+<a href="1-7-3-p1.html">1.7.3.1</a>, <a href="1-7-3-p2.htm">1.7.3.2</a>, <a href="1-7-3-p3.htm">1.7.3.3</a>,
+<a href="1-7-4-p1.html">1.7.4.1</a>, <a href="1-7-4-p2.html">1.7.4.2</a>, <a href="1-8-1.html">1.8.1</a>], [<a href="2-1.html">2.1</a>, <a href="2-2.html">2.2</a>],[<a href="3-1.html">3.1</a>, <a href="3-2.html">3.2</a>, <a href="3-3.html">3.3</a>,
+<a href="3-4-1.html">3.4.1</a>, <a href="3-4-2.html">3.4.2</a>, <a href="3-4-3.html">3.4.3</a>,
+<a href="3-4-4.html">3.4.4</a>, <a href="3-4-5.html">3.4.5</a>],[<a href="4-1.html">4.1</a>, <a href="4-2.html">4.2</a>, <a href="4-3.html">4.3</a>, <a href="4-4.html">4.4</a>],[<a href="5-1.html">5.1</a>, <a href="5-1-Pic52.htm">5.1.Рис.52</a>, <a href="5-2.html">5.2</a>, <a href="5-3.html">5.3</a>,
+<a href="5-4.html">5.4</a>, <a href="5-4-t1.htm">5.4.Т1</a>, <a href="5-4-t2.htm">5.4.Т2</a>,
+<a href="5-4-t3.htm">5.4.Т3</a>, <a href="5-5-1.html">5.5.1</a>, <a href="5-5-2.html">5.5.2</a>,
+<a href="5-5-3.html">5.5.3</a>, <a href="5-5-4.html">5.5.4</a>],[<a href="6-1-1.html">6.1.1</a>,
+<a href="6-1-2.html">6.1.2</a>, <a href="6-2-1.html">6.2.1</a>, <a href="6-2-2.html">6.2.2</a>,
+<a href="6-2-3.html">6.2.3</a>, <a href="6-2-4.html">6.2.4</a>, <a href="6-2-5.html">6.2.5</a>,
+<a href="6-3.html">6.3</a>, <a href="6-4-1.html">6.4.1</a>, <a href="6-4-2.html">6.4.2</a>,
+<a href="6-5-1.html">6.5.1</a>, <a href="6-5-2.html">6.5.2</a>],[<a href="7-1.html">7.1</a>,
+<a href="7-2.html">7.2</a>, <a href="7-3.html">7.3</a>, <a href="7-4.html">7.4</a>,
+<a href="7-5.html">7.5</a>, <a href="7-6.html">7.6</a>, <a href="7-7-1.htm">7.7.1</a>,
+<a href="7-7-2.htm">7.7.2</a>, <a href="7-8-1.htm">7.8.1</a>, <a href="7-8-2.htm">7.8.2</a>,
+<a href="7-8-3.htm">7.8.3</a>, </strong></font><font face="Arial" size="2" color="#000080"><strong><a href="7-9.htm">7.9</a></strong></font><font face="Arial" size="2" color="#000080"><strong>],[<a href="8-1.html">8.1</a>,
+<a href="8-2-1.html">8.2.1</a>, <a href="8-2-2.html">8.2.2</a>, <a href="8-3.html">8.3</a>,
+<a href="8-4.html">8.4</a>, <a href="8-5.html">8.5</a>, <a href="8-6.html">8.6</a>,
+<a href="8-6-t1.html">8.6.T1</a>, <a href="8-7.html">8.7</a>, <a href="8-8-1.html">8.8.1</a>,
+<a href="8-8-2.html">8.8.2</a>, <a href="8-8-3.html">8.8.3</a>, <a href="8-9-1.html">8.9.1</a>,
+<a href="8-9-2.html">8.9.2</a>, <a href="8-9-3.html">8.9.3</a>, <a href="8-10.htm">8.10</a>,
+<a href="8-10-t2.html">8.10.T2</a>, <a href="8-10-t3.html">8.10.T3</a>],[<a href="9-1.html">9.1</a>,
+<a href="9-2.html">9.2</a>, <a href="9-3.html">9.3</a>, <a href="9-3-Pic88.html">Рис.88</a>,
+<a href="9-3-Pic89.html">89</a>, <a href="9-3-Pic90.html">90</a>, <a href="9-3-Pic91.html">91</a>,
+<a href="9-3-Pic92.html">92</a>, <a href="9-3-Pic93.html">93</a>, <a href="9-3-Pic94.html">94</a>,
+<a href="9-3-Pic95.html">95</a>, <a href="9-3-Pic96.html">96</a>, <a href="9-3-Pic97.html">97</a>,
+<a href="9-3-Pic98.html">98</a>, <a href="9-3-Pic99.html">99</a>, <a href="9-3-Pic99.html">100</a>],[<a href="10-1.html">10.1</a>,
+<a href="10-2.html">10.2</a>, <a href="10-3.html">10.3</a>, <a href="10-4.html">10.4</a>,
+<a href="10-5.html">10.5</a>, <a href="10-6.html">10.6</a>, <a href="10-7.html">10.7</a>,
+<a href="10-8.html">10.8</a>, <a href="10-9.html">10.9</a>, <a href="10-10.html">10.10</a>,
+<a href="10-11.html">10.11</a>, <a href="10-12.html">10.12</a>, <a href="10-13.htm">10.13</a>,
+<a href="10-14.htm">10.14</a>, <a href="10-15-1.html">10.15.1</a>, <a href="10-15-2.html">10.15.2</a>,
+<a href="10-16-1.html">10.16.1</a>, <a href="10-16-2.html">10.16.2</a>, <a href="10-17.html">10.17</a>,
+<a href="10-18.html">10.18</a>],[<a href="11.html">11</a>]&nbsp;</strong></font></p>
+
+
+<p>Размещенный материал является
+электронной версией книги: <strong>©</strong>
+В.И.Елисеев, &quot;Введение в методы теории функций
+пространственного комплексного переменного&quot;,
+изданной Центром научно-технического
+творчества молодежи Алгоритм. - М.:,
+НИАТ. - 1990. Шифр Д7-90/83308. в каталоге
+Государственной публичной научно-технической
+библиотеки.
+ Сайт действует с 10 августа 1998.</p>
+
+<p style="margin-top: 0px; margin-bottom: 0px">E-mail: <a href="mailto:mathsru@gmail.com">mathsru@gmail.com</a>
+ </p>
+
+<p style="margin-top: 0px; margin-bottom: 0px"><a href="http://counter.rambler.ru/top100/"><img src="http://counter.rambler.ru/top100.cnt?36886" alt="Rambler's Top100 Service" border="0"></a>
+</p>
+
+
+
+<!--webbot bot="Include" endspan i-checksum="55970" -->
+
+<p ALIGN="left" style="border-top: 0px; border-bottom: 0px">
+<!--begin of Top100-->
+</div></body>
+</html>

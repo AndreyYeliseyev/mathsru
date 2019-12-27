@@ -1,0 +1,239 @@
+<HTML>
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NJ9243B');</script>
+<!-- End Google Tag Manager -->
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<TITLE>Продолжение 3 из 3. 8.9 Вычисление масс микрочастиц по кварковым композициям и модам распада. Вычисление квантовых чисел микрочастиц, исследование связи спина, изоспина, четности с величиной массы микрочастицы. Реализация квантовой СРТ-теоремы. Исследование закона не сохранения четности. </TITLE>
+<style type="text/css"> 
+body 
+{ 
+ margin: 0; 
+ padding: 0; 
+ padding-top: 10px;
+ text-align: center; 
+} 
+#centered
+{ 
+ width: 980px; 
+ text-align: left;
+ border: 0px; 
+ padding: 0;  
+ margin: 0 auto; 
+} 
+</style>
+<style type="text/css"> 
+body 
+{ 
+ margin: 0; 
+ padding: 0; 
+ padding-top: 10px;
+ text-align: center; 
+} 
+#centered
+{ 
+ width: 980px; 
+ text-align: left;
+ border: 0px; 
+ padding: 0;  
+ margin: 0 auto; 
+} 
+</style>
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJ9243B"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><div id="centered"><div id="centered">
+
+<FONT FACE="Times New Roman">
+
+<table border="0" width="100%" style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px" height="80">
+  <tr>
+    <td width="14%" rowspan="2" valign="top" height="76"><img src="images/SmallTitle.gif" border="0" width="126" height="113"></td>
+    <td width="86%" height="93"><font face="Arial" color="#000080"><b>В. И. ЕЛИСЕЕВ</b></font><p><b><font face="Arial" color="#000080">ВВЕДЕНИЕ В МЕТОДЫ ТЕОРИИ
+    ФУНКЦИЙ ПРОСТРАНСТВЕННОГО КОМПЛЕКСНОГО ПЕРЕМЕННОГО<br></font></b><font color="#000080" face="Arial">[</font><a href="index.htm"><font face="Arial">Оглавление</font></a><font color="#000080">]</font> </td>
+  </tr>
+<tr>
+    <td width="86%" height="1"><p ALIGN="left" style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px">
+      <p ALIGN="left" style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px; border-width: 0;"><a href="http://www.amazon.com/Numeric-field-Introduction-functions-variable/dp/146991428X/ref=sr_1_7?ie=UTF8&qid=1328153023&sr=8-7"><img src="images/amazon.PNG" alt="Amazon.com" width="102" height="34" border="0"></a>      
+      <ul>
+        <li><a href="http://www.amazon.com/Numeric-field-Introduction-functions-variable/dp/146991428X/ref=sr_1_7?ie=UTF8&qid=1328153023&sr=8-7">Елисеев В.И. Числовое поле. Введение в ТФКПП.</a></li>
+	<li><a href="http://www.amazon.com/coordinate-axes-physical-reality-Russian/dp/1470005026/ref=sr_1_1?ie=UTF8&qid=1328328469&sr=8-1?ie=UTF8&qid=1328328469&sr=8-1">Елисеев В.И. Оси координат физической реальности.</a></li>
+      </ul>
+      <p ALIGN="left" style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px; border-width: 0;"><img src="images/pdf.PNG" alt="PDF" width="48" height="48" border="0"></p>
+      <ul>
+        <li><a href="pdf/book5.pdf">Елисеев В.И. Введение в ТФКПП. 2003</a></li>
+        <li><a href="pdf/TFKPP-2007.pdf">Елисеев В.И. Числовое поле. Введение в ТФКПП. 2006</a></li>
+        <li><a href="pdf/book6-29JAN2012.pdf">Елисеев В.И. Оси координат физической реальности. 2012</a></li>
+      </ul>
+   </td>
+</tr>
+</table>
+
+<hr color="#000080" style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px">
+<!--webbot bot="Include" endspan i-checksum="17295" -->
+
+</font>
+<P ALIGN="JUSTIFY"><b><font color="#000080" face="Arial">Продолжение </font> <font color="#000080" face="Arial">3
+из 3. 8.9. Вычисление масс микрочастиц по
+кварковым композициям и модам распада.
+Вычисление квантовых чисел микрочастиц,
+исследование связи спина, изоспина,
+четности с величиной массы микрочастицы.
+Реализация квантовой СРТ-теоремы.
+Исследование закона не сохранения четности.</font></b></P>
+
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">Это выражение дает массу гиперона равную </FONT><IMG SRC="images/8-9-3/Image3565.gif" WIDTH=133 HEIGHT=36><FONT FACE="Times New Roman">Мэв. Расхождение с экспериментальной массой составляет 13,4 %.</P>
+<P ALIGN="JUSTIFY">Если оставить только корректировку кварка </FONT><IMG SRC="images/8-9-3/Image3298.gif" WIDTH=16 HEIGHT=20><FONT FACE="Times New Roman">, то получим </FONT><IMG SRC="images/8-9-3/Image3566.gif" WIDTH=256 HEIGHT=32><FONT FACE="Times New Roman"> и массу микрочастицы </FONT><IMG SRC="images/8-9-3/Image3567.gif" WIDTH=124 HEIGHT=36><FONT FACE="Times New Roman">Мэв.</P>
+<P ALIGN="JUSTIFY">Расхождение составляет 5,5 %.</P>
+<P ALIGN="JUSTIFY">Откорректируем дополнительно глюонное гиреолна по весовому коэффициенту электрической составляющей </FONT><IMG SRC="images/8-9-3/Image3568.gif" WIDTH=254 HEIGHT=32><FONT FACE="Times New Roman">. Это дает массу гиперона </FONT><IMG SRC="images/8-9-3/Image3569.gif" WIDTH=141 HEIGHT=36><FONT FACE="Times New Roman">Мэв. Экспериментальная масса равна 1115,6 Мэв. Расхождение составляет 1,34 %.</P>
+<P ALIGN="JUSTIFY">Кварковая композиция </FONT><IMG SRC="images/8-9-3/Image3334.gif" WIDTH=30 HEIGHT=20><FONT FACE="Times New Roman"> имеет еще две микрочастицы </FONT><IMG SRC="images/8-9-3/Image3570.gif" WIDTH=149 HEIGHT=32></P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">Для первой микрочастицы подходит глюонное поле с кварками </FONT><IMG SRC="images/8-9-3/Image3571.gif" WIDTH=44 HEIGHT=22><FONT FACE="Times New Roman">, которое дает суммарное глюонное поле </FONT><IMG SRC="images/8-9-3/Image3572.gif" WIDTH=304 HEIGHT=32><FONT FACE="Times New Roman">, это дает массу </P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/8-9-3/Image3573.gif" WIDTH=144 HEIGHT=38><FONT FACE="Times New Roman">Мэв. Расхождение составляет 4,82 %.</P>
+<P ALIGN="JUSTIFY">Для вычисления массы второй микрочастицы проведем дополнительно поворот глюонного поля во втором кварке </FONT><IMG SRC="images/8-9-3/Image3298.gif" WIDTH=16 HEIGHT=20><FONT FACE="Times New Roman"> и получим </FONT><IMG SRC="images/8-9-3/Image3574.gif" WIDTH=229 HEIGHT=28><FONT FACE="Times New Roman">, суммарное глюонное поле будеи иметь вид </P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/8-9-3/Image3575.gif" WIDTH=312 HEIGHT=32><FONT FACE="Times New Roman">. Это дает массу </P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/8-9-3/Image3576.gif" WIDTH=149 HEIGHT=36><FONT FACE="Times New Roman"> Мэв. Расхождение составляет 4 %.</P>
+<P ALIGN="JUSTIFY"> На рис 86, 84, 84 представлены диаграммы составляющих суммарное глюонное поле электрического и лептонного поля соответственно </FONT><IMG SRC="images/8-9-3/Image3577.gif" WIDTH=222 HEIGHT=32><FONT FACE="Times New Roman">. Эти диаграммы назовем спин-изотопическими, та как они раскрывают зависимость квантовых чисел микрочастиц от электрического и лептонного поля частицы. Спин частицы определяется наличием лептонной составляющей глюонного поля, причем величина спина для кварковой композиции барионов из трех кварков определяется поворотом этой составляющей в каждом кварке: при одном и двух поворотов </FONT><IMG SRC="images/8-9-3/Image3355.gif" WIDTH=57 HEIGHT=20><FONT FACE="Times New Roman">. Если поворот происходит в каждом из трех кварков, спин равен </FONT><IMG SRC="images/8-9-3/Image3578.gif" WIDTH=60 HEIGHT=20><FONT FACE="Times New Roman">. Таким образом, </P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/8-9-3/Image3579.gif" WIDTH=72 HEIGHT=25><FONT FACE="Times New Roman">имеет </FONT><IMG SRC="images/8-9-3/Image3580.gif" WIDTH=57 HEIGHT=20>, <IMG SRC="images/8-9-3/Image3581.gif" WIDTH=73 HEIGHT=32><FONT FACE="Times New Roman">имеет спин </FONT><IMG SRC="images/8-9-3/Image3582.gif" WIDTH=57 HEIGHT=20>, <IMG SRC="images/8-9-3/Image3583.gif" WIDTH=73 HEIGHT=32><FONT FACE="Times New Roman">имет </FONT><IMG SRC="images/8-9-3/Image3584.gif" WIDTH=60 HEIGHT=20><FONT FACE="Times New Roman">. Становится очевидным отсутствие </FONT><IMG SRC="images/8-9-3/Image3585.gif" WIDTH=38 HEIGHT=20>. </P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">Изоспин микрочастиц определяется взаимным расположением электрического и глюонного поля. Согласно диаграмме для </FONT><IMG SRC="images/8-9-3/Image3586.gif" WIDTH=72 HEIGHT=25><FONT FACE="Times New Roman"> изоспин равен </FONT><IMG SRC="images/8-9-3/Image3587.gif" WIDTH=45 HEIGHT=20><FONT FACE="Times New Roman">, для этой диаграммы проекции электрического и лептонного глюонного поля вычитаются. Для микрочастиц </P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/8-9-3/Image3588.gif" WIDTH=149 HEIGHT=32><FONT FACE="Times New Roman"> диаграммы дают </FONT><IMG SRC="images/8-9-3/Image3372.gif" WIDTH=41 HEIGHT=20><FONT FACE="Times New Roman">. Положительная четность для барионов определяется наличием в суммарном глюонном поле обоих составляющих.</P>
+<P ALIGN="JUSTIFY">Кварковая композиция </FONT><IMG SRC="images/8-9-3/Image3589.gif" WIDTH=30 HEIGHT=16><FONT FACE="Times New Roman"> отвечает двум микрочастицам с разными массами и квантовыми числами: </FONT><IMG SRC="images/8-9-3/Image3590.gif" WIDTH=153 HEIGHT=32><FONT FACE="Times New Roman">, для первой имеем спин четность и изоспин</P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/8-9-3/Image3374.gif" WIDTH=61 HEIGHT=32><FONT FACE="Times New Roman"> и второй </FONT><IMG SRC="images/8-9-3/Image3039.gif" WIDTH=62 HEIGHT=32>.</P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">Согласно кварковой композиции и введенному значению кварка </P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/8-9-3/Image3591.gif" WIDTH=122 HEIGHT=32><FONT FACE="Times New Roman">, композиция дает </P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/8-9-3/Image3592.gif" WIDTH=321 HEIGHT=32></P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">В соответствии с модой распада. Квантовые числа определяют поворот лептонного и глюонного поля в кварке </FONT><IMG SRC="images/8-9-3/Image3288.gif" WIDTH=14 HEIGHT=16><FONT FACE="Times New Roman"> и заменой его на кварк </FONT><IMG SRC="images/8-9-3/Image3593.gif" WIDTH=224 HEIGHT=28><FONT FACE="Times New Roman">а также поворот глюонного лептонного поля во втором кварке </FONT><IMG SRC="images/8-9-3/Image3288.gif" WIDTH=14 HEIGHT=16><FONT FACE="Times New Roman"> с заменой его на кварк </FONT><IMG SRC="images/8-9-3/Image3594.gif" WIDTH=218 HEIGHT=28><FONT FACE="Times New Roman">. Подставляя кварки в композицию получим суммарное глюонное поле </FONT><IMG SRC="images/8-9-3/Image3595.gif" WIDTH=306 HEIGHT=32><FONT FACE="Times New Roman">, которое дает массу </P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/8-9-3/Image3596.gif" WIDTH=166 HEIGHT=42><FONT FACE="Times New Roman">Мэв. Расхождение составляет 5,3 %.</P>
+<P ALIGN="JUSTIFY">Замена кварка </FONT><IMG SRC="images/8-9-3/Image3298.gif" WIDTH=16 HEIGHT=20><FONT FACE="Times New Roman"> на кварк </FONT><IMG SRC="images/8-9-3/Image3597.gif" WIDTH=226 HEIGHT=28><FONT FACE="Times New Roman"> дает сумму глюонного поля для </P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/8-9-3/Image3598.gif" WIDTH=242 HEIGHT=164></P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">Это глюонное поле отвечает массе микрочастицы </FONT><IMG SRC="images/8-9-3/Image3599.gif" WIDTH=177 HEIGHT=42><FONT FACE="Times New Roman">Мэв. Расхождение составляет 4,2 %. </P>
+<P ALIGN="JUSTIFY">Изоспиновые диаграммы соответствуют квантовым числам и рис 84 и 87</P>
+<P ALIGN="JUSTIFY">Далее рассмотрим композицию </FONT><IMG SRC="images/8-9-3/Image3343.gif" WIDTH=32 HEIGHT=20><FONT FACE="Times New Roman">, которая представлена двумя микрочастицами</P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/8-9-3/Image3600.gif" WIDTH=153 HEIGHT=32><FONT FACE="Times New Roman"> с квантовыми числами </FONT><IMG SRC="images/8-9-3/Image3601.gif" WIDTH=124 HEIGHT=32></P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">Рассмотрим соответствие моде распада </P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/8-9-3/Image3602.gif" WIDTH=373 HEIGHT=32></P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">Квантовые числа требуют одного поворота лептонного поля и одного поворота электрического поля в кварке </FONT><IMG SRC="images/8-9-3/Image3298.gif" WIDTH=16 HEIGHT=20><FONT FACE="Times New Roman"> для микрочастицы </FONT><IMG SRC="images/8-9-3/Image3603.gif" WIDTH=76 HEIGHT=32><FONT FACE="Times New Roman">. Для микрочастицы </FONT><IMG SRC="images/8-9-3/Image3604.gif" WIDTH=76 HEIGHT=32><FONT FACE="Times New Roman"> имеем один поворот электрического поля и три поворота глюонного поля.</P>
+<P ALIGN="JUSTIFY">Глюонные поля для частиц соответствен</FONT><IMG SRC="images/8-9-3/Image1782.gif" WIDTH=13 HEIGHT=25><FONT FACE="Times New Roman">но выразятся </P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/8-9-3/Image3605.gif" WIDTH=306 HEIGHT=32><FONT FACE="Times New Roman">, которое определяет массу </P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/8-9-3/Image3606.gif" WIDTH=177 HEIGHT=42><FONT FACE="Times New Roman"> Мэв, расхождение составляет</FONT> 5,4 %.</P>
+<P ALIGN="JUSTIFY"><IMG SRC="images/8-9-3/Image3607.gif" WIDTH=313 HEIGHT=32><FONT FACE="Times New Roman">, которое в свою очередь определяет массу микрочастицы </P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/8-9-3/Image3608.gif" WIDTH=168 HEIGHT=42><FONT FACE="Times New Roman">Мэв. Расхождение составляет 8.6 %.</P>
+<P ALIGN="JUSTIFY">Изоспинорные диаграммы совпадают с предыдущими и соответствуют квантовым числам микрочастиц.</P>
+<P ALIGN="JUSTIFY">Кварковая композиция </FONT><IMG SRC="images/8-9-3/Image3609.gif" WIDTH=29 HEIGHT=16><FONT FACE="Times New Roman"> представлена двумя микрочастицами </P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/8-9-3/Image3610.gif" WIDTH=152 HEIGHT=32><FONT FACE="Times New Roman"> с квантовыми числами </FONT><IMG SRC="images/8-9-3/Image3611.gif" WIDTH=162 HEIGHT=32></P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">Моды распада совпадают с экспериментальными модами</P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/8-9-3/Image3612.gif" WIDTH=332 HEIGHT=65><FONT FACE="Times New Roman">Замена кварка </FONT><IMG SRC="images/8-9-3/Image3288.gif" WIDTH=14 HEIGHT=16><FONT FACE="Times New Roman"> на кварк </FONT><IMG SRC="images/8-9-3/Image3613.gif" WIDTH=224 HEIGHT=28><FONT FACE="Times New Roman">, а также кварка </P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/8-9-3/Image3298.gif" WIDTH=16 HEIGHT=20><FONT FACE="Times New Roman"> на кварк </FONT><IMG SRC="images/8-9-3/Image3614.gif" WIDTH=229 HEIGHT=28><FONT FACE="Times New Roman">дает суммарное поле </P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/8-9-3/Image3615.gif" WIDTH=308 HEIGHT=32><FONT FACE="Times New Roman"> и массу микрочастицы </P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/8-9-3/Image3616.gif" WIDTH=177 HEIGHT=42><FONT FACE="Times New Roman"> Мэв. Расхождение составляет 2,1 %.</P>
+<P ALIGN="JUSTIFY">Глюонное поле второй микрочастицы имеет поворот лептонного поля и в третьем кварке. </P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/8-9-3/Image3617.gif" WIDTH=313 HEIGHT=32><FONT FACE="Times New Roman">, которое определяет массу частицы </P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/8-9-3/Image3618.gif" WIDTH=177 HEIGHT=42><FONT FACE="Times New Roman">Мэв. Расхождение составляет 1,13 %. </P>
+<P ALIGN="JUSTIFY">Изоспиновая диаграмма для этих частиц представлена на рис 85. Глюонное лептонное поле вычитается из электрического глюонного поля, что приводит к уменьшению величины изоспина. Аналогичная диаграмма и для второй микрочастицы, с увеличенными проекциями лептонного поля. В соответствии с диаграммой имеем полное совпадение в квантовых числах с экспериментальными. Для микрочастиц </FONT><IMG SRC="images/8-9-3/Image3619.gif" WIDTH=153 HEIGHT=32><FONT FACE="Times New Roman"> с квантовыми числами </P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/8-9-3/Image3620.gif" WIDTH=162 HEIGHT=32></P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">имеем </P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/8-9-3/Image3621.gif" WIDTH=377 HEIGHT=62></P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">Таким образом имеем четкое соответствие между последовательными модами распада.</P><DIR>
+<DIR>
+
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/8-9-3/Image3622.gif" WIDTH=306 HEIGHT=32>, <IMG SRC="images/8-9-3/Image3623.gif" WIDTH=177 HEIGHT=42><FONT FACE="Times New Roman">Мэв.</P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/8-9-3/Image3624.gif" WIDTH=317 HEIGHT=32>, <IMG SRC="images/8-9-3/Image3625.gif" WIDTH=178 HEIGHT=42><FONT FACE="Times New Roman">Мэв.</P></DIR>
+</DIR>
+
+<P ALIGN="JUSTIFY">В первом случае расхождение составляет 1,5 %, во втором 0,2 %.</P>
+<P ALIGN="JUSTIFY">Изоспиновая диаграмма соответствует предыдущему случаю. Квантовые числа совпадают.</P>
+<P ALIGN="JUSTIFY">Глава 8 представляет конкретные вычисления масс микрочастиц. Достоверность оценивается расхождением результатов вычислений с экспериментальными данными во всем диапазоне масс микрочастиц в пределах 0,2-8 %. Вычисления основаны на современной кварковой классификации моделей микрочастиц и их глюонных полей. Считается, что в природе существует шесть сортов кварков т.е. субэлемнтарных частиц </FONT><IMG SRC="images/8-9-3/Image3626.gif" WIDTH=89 HEIGHT=22><FONT FACE="Times New Roman">, комбинируя которые в разных сочетаниях можно построить любой андрон. Вычисления показали, что кварковый уровень материи повторяет ее структуризацию в общем виде любого другого уровня. Кварки </FONT><IMG SRC="images/8-9-3/Image3386.gif" WIDTH=56 HEIGHT=22><FONT FACE="Times New Roman"> не являются субэлементарными и представляют каждый композицию из кварков </FONT><IMG SRC="images/8-9-3/Image3627.gif" WIDTH=85 HEIGHT=30><FONT FACE="Times New Roman">. В этом случае кварковые композиции элементарных частиц дают моды распада соответствующие экспериментальным. Таким образом, современная кварковая классификация сведена к двум кваркам </FONT><IMG SRC="images/8-9-3/Image3291.gif" WIDTH=32 HEIGHT=22><FONT FACE="Times New Roman"> и антикваркам </FONT><IMG SRC="images/8-9-3/Image3628.gif" WIDTH=52 HEIGHT=30><FONT FACE="Times New Roman">. Экзотические кварковые заряды есть ничто иное как количество скомпенсированных электронно-лептонных полей в суммарном глюонном поле кварка. Сопоставление квантовых чисел со структурой глюонного поля микрочапстицы, вычисленного на основе ее кварковой композиции, и массой частицы обосновали существование синглетов, дуплетов, триплетов и унитарных симметрий. (Последовательный ввод этих понятий в физику элементарных частиц есть вскрытие структуризации материи в гравитационно электромагитном комплексном пространстве. Это было отслежено при построении моделей в главах 7 и 8.).</P>
+<P ALIGN="JUSTIFY">Вычисления дают достоверный результат и следовательно подтверждают достоверность принятых симметрий, которые отвечают за фундаментальные свойства заряда быть положительным и отрицательным, за понятие спина, изоспина, четности и т.д.</P>
+<P ALIGN="JUSTIFY">Основные экспериментальные факты физики микрочастиц подтверждают связность гравитационно -комплексного пространства, установленную ТФКПП.</P>
+<P ALIGN="JUSTIFY">Моды распада микрочастиц, в кварковую композицию которых входят кварки </FONT><IMG SRC="images/8-9-3/Image3386.gif" WIDTH=56 HEIGHT=22><FONT FACE="Times New Roman">, подтверждают введенную структуру их кваркового состава.</P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/8-9-3/Image3629.gif" WIDTH=438 HEIGHT=134></P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">Система может быть продолжена до бесконечности.</P>
+<P ALIGN="JUSTIFY">Кодировка зарядов по наименованию: странность, очарование, прелесть и т.д. соответствуют наличию в структуре микрочастицы количеству скомпенсированных электрических и лептонных полей: 1-заряд странности, 2-шарм,3-прелесть и т.д.</P>
+<P ALIGN="JUSTIFY">Результаты вычислений масс микрочастиц, в кварковую композицию которых входят кварки</P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/8-9-3/Image3386.gif" WIDTH=56 HEIGHT=22><FONT FACE="Times New Roman"> дали высокую сходимость с экспериментальными данными. Глюонное поле микрочастицы имеет коэффициенты электрического и лептонного поля, представляющие комбинации весовых коэффициентов элетрической и лептонной составляющей исходных кварков </FONT><IMG SRC="images/8-9-3/Image3291.gif" WIDTH=32 HEIGHT=22><FONT FACE="Times New Roman">. Для трех кварковых композиций барионов весовые коэффициенты микрочастицы при деление на соответствующие весовые коэффициенты исходных кварков </FONT><IMG SRC="images/8-9-3/Image3291.gif" WIDTH=32 HEIGHT=22><FONT FACE="Times New Roman"> дают целые кратные числа. (Отступление может корректироваться до целых кратных в обе стороны, ориентируясь на сходимость вычисления по массе).</P>
+<P ALIGN="JUSTIFY">В связи с этим спин вычисляется по формуле </FONT><IMG SRC="images/8-9-3/Image3630.gif" WIDTH=76 HEIGHT=48></P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">Изоспин по формуле </FONT><IMG SRC="images/8-9-3/Image3631.gif" WIDTH=140 HEIGHT=58><FONT FACE="Times New Roman">, где </FONT><IMG SRC="images/8-9-3/Image3632.gif" WIDTH=17 HEIGHT=25><FONT FACE="Times New Roman">-весовой коэффициент электрической составляющей поля микрочастицы, </FONT><IMG SRC="images/8-9-3/Image3633.gif" WIDTH=17 HEIGHT=25><FONT FACE="Times New Roman">- весовой коэффициент лептонной составляющей поля микрочастицы, </FONT><IMG SRC="images/8-9-3/Image3634.gif" WIDTH=28 HEIGHT=22><FONT FACE="Times New Roman">- весовые коэффициенты электрической и лептонной составляющей исходных кварков </FONT><IMG SRC="images/8-9-3/Image3291.gif" WIDTH=32 HEIGHT=22>, <IMG SRC="images/8-9-3/Image3635.gif" WIDTH=46 HEIGHT=58><FONT FACE="Times New Roman"> -сумма численных значений зарядов </FONT><IMG SRC="images/8-9-3/Image3636.gif" WIDTH=56 HEIGHT=22>.</P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">Результаты вычислений масс микрочастиц дали высокую сходимость с экспериментальными данными при совпадении квантовых чисел, расчитываемых по этим формулам с экспериментальными значениями.</P>
+<P ALIGN="JUSTIFY">Таким образом, кварки </FONT><IMG SRC="images/8-9-3/Image3386.gif" WIDTH=56 HEIGHT=22><FONT FACE="Times New Roman"> не являются субъэлементарными частицами, а являются композициями из двух кварков </FONT><IMG SRC="images/8-9-3/Image3291.gif" WIDTH=32 HEIGHT=22>.</P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">Вычисления показали жесткую зависимость квантовых чисел частиц с ее массой. Таким образом, если заданы квантовые числа то можно вычислить массу частицы, если задана масса микрочастицы, то можно вычислить варианты квантовых чисел. </P><P ALIGN="JUSTIFY"><font face="Arial" color="#000080"><a href="8-10.htm">[Следующий
+параграф]</a></font> </P></FONT><!--webbot
+bot="Include" U-Include="footer.htm" TAG="BODY" startspan -->
+
+<hr color="#000080" style="border: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px">
+
+<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px"><b><font face="Arial" size="1" color="#000080">Мини
+оглавление:</font></b></p>
+
+<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px"><font face="Arial" size="2" color="#000080"><strong>[<a href="0.htm">0</a>], [<a href="1-1-1.html">1.1.1</a>, <a href="1-1-2.html">1.1.2</a>, <a href="1-1-3.html">1.1.3</a>,
+<a href="1-1-4.html">1.1.4</a>, <a href="1-1-5.html">1.1.5</a>, <a href="1-1-6.html">1.1.6</a>,
+<a href="1-1-7.html">1.1.7</a>, <a href="1-1-8.html">1.1.8</a>, <a href="1-2.html">1.2</a>,
+<a href="1-2-1.html">1.2.1</a>, <a href="1-2-2.html">1.2.2</a>, <a href="1-2-2-A.html">1.2.2.a</a>,
+<a href="1-2-2-B.html">1.2.2.b</a>, <a href="1-2-2-C.html">1.2.2.c</a>, <a href="1-2-2-D.html">1.2.2.d</a>, <a href="1-2-2-E.html">1.2.2.e</a>, <a href="1-2-2-F.html">1.2.2.f</a>, <a href="1-2-2-G.html">1.2.2.g</a>, <a href="1-2-2-H.html">1.2.2.h</a>, <a href="1-2-3.html">1.2.3</a>, <a href="1-3-1.html">1.3.1</a>,
+<a href="1-3-2.html">1.3.2</a>, <a href="1-3-3.html">1.3.3</a>, <a href="1-3-4.html">1.3.4</a>,
+<a href="1-3-5.html">1.3.5</a>, <a href="1-3-6.html">1.3.6</a>, <a href="1-4-1.html">1.4.1</a>,
+<a href="1-4-2.html">1.4.2</a>, <a href="1-5.html">1.5</a>, <a href="1-6.html">1.6</a>, <a href="1-7-1.html">1.7.1</a>, <a href="1-7-2.html">1.7.2</a>,
+<a href="1-7-3-p1.html">1.7.3.1</a>, <a href="1-7-3-p2.htm">1.7.3.2</a>, <a href="1-7-3-p3.htm">1.7.3.3</a>,
+<a href="1-7-4-p1.html">1.7.4.1</a>, <a href="1-7-4-p2.html">1.7.4.2</a>, <a href="1-8-1.html">1.8.1</a>], [<a href="2-1.html">2.1</a>, <a href="2-2.html">2.2</a>],[<a href="3-1.html">3.1</a>, <a href="3-2.html">3.2</a>, <a href="3-3.html">3.3</a>,
+<a href="3-4-1.html">3.4.1</a>, <a href="3-4-2.html">3.4.2</a>, <a href="3-4-3.html">3.4.3</a>,
+<a href="3-4-4.html">3.4.4</a>, <a href="3-4-5.html">3.4.5</a>],[<a href="4-1.html">4.1</a>, <a href="4-2.html">4.2</a>, <a href="4-3.html">4.3</a>, <a href="4-4.html">4.4</a>],[<a href="5-1.html">5.1</a>, <a href="5-1-Pic52.htm">5.1.Рис.52</a>, <a href="5-2.html">5.2</a>, <a href="5-3.html">5.3</a>,
+<a href="5-4.html">5.4</a>, <a href="5-4-t1.htm">5.4.Т1</a>, <a href="5-4-t2.htm">5.4.Т2</a>,
+<a href="5-4-t3.htm">5.4.Т3</a>, <a href="5-5-1.html">5.5.1</a>, <a href="5-5-2.html">5.5.2</a>,
+<a href="5-5-3.html">5.5.3</a>, <a href="5-5-4.html">5.5.4</a>],[<a href="6-1-1.html">6.1.1</a>,
+<a href="6-1-2.html">6.1.2</a>, <a href="6-2-1.html">6.2.1</a>, <a href="6-2-2.html">6.2.2</a>,
+<a href="6-2-3.html">6.2.3</a>, <a href="6-2-4.html">6.2.4</a>, <a href="6-2-5.html">6.2.5</a>,
+<a href="6-3.html">6.3</a>, <a href="6-4-1.html">6.4.1</a>, <a href="6-4-2.html">6.4.2</a>,
+<a href="6-5-1.html">6.5.1</a>, <a href="6-5-2.html">6.5.2</a>],[<a href="7-1.html">7.1</a>,
+<a href="7-2.html">7.2</a>, <a href="7-3.html">7.3</a>, <a href="7-4.html">7.4</a>,
+<a href="7-5.html">7.5</a>, <a href="7-6.html">7.6</a>, <a href="7-7-1.htm">7.7.1</a>,
+<a href="7-7-2.htm">7.7.2</a>, <a href="7-8-1.htm">7.8.1</a>, <a href="7-8-2.htm">7.8.2</a>,
+<a href="7-8-3.htm">7.8.3</a>, </strong></font><font face="Arial" size="2" color="#000080"><strong><a href="7-9.htm">7.9</a></strong></font><font face="Arial" size="2" color="#000080"><strong>],[<a href="8-1.html">8.1</a>,
+<a href="8-2-1.html">8.2.1</a>, <a href="8-2-2.html">8.2.2</a>, <a href="8-3.html">8.3</a>,
+<a href="8-4.html">8.4</a>, <a href="8-5.html">8.5</a>, <a href="8-6.html">8.6</a>,
+<a href="8-6-t1.html">8.6.T1</a>, <a href="8-7.html">8.7</a>, <a href="8-8-1.html">8.8.1</a>,
+<a href="8-8-2.html">8.8.2</a>, <a href="8-8-3.html">8.8.3</a>, <a href="8-9-1.html">8.9.1</a>,
+<a href="8-9-2.html">8.9.2</a>, <a href="8-9-3.html">8.9.3</a>, <a href="8-10.htm">8.10</a>,
+<a href="8-10-t2.html">8.10.T2</a>, <a href="8-10-t3.html">8.10.T3</a>],[<a href="9-1.html">9.1</a>,
+<a href="9-2.html">9.2</a>, <a href="9-3.html">9.3</a>, <a href="9-3-Pic88.html">Рис.88</a>,
+<a href="9-3-Pic89.html">89</a>, <a href="9-3-Pic90.html">90</a>, <a href="9-3-Pic91.html">91</a>,
+<a href="9-3-Pic92.html">92</a>, <a href="9-3-Pic93.html">93</a>, <a href="9-3-Pic94.html">94</a>,
+<a href="9-3-Pic95.html">95</a>, <a href="9-3-Pic96.html">96</a>, <a href="9-3-Pic97.html">97</a>,
+<a href="9-3-Pic98.html">98</a>, <a href="9-3-Pic99.html">99</a>, <a href="9-3-Pic99.html">100</a>],[<a href="10-1.html">10.1</a>,
+<a href="10-2.html">10.2</a>, <a href="10-3.html">10.3</a>, <a href="10-4.html">10.4</a>,
+<a href="10-5.html">10.5</a>, <a href="10-6.html">10.6</a>, <a href="10-7.html">10.7</a>,
+<a href="10-8.html">10.8</a>, <a href="10-9.html">10.9</a>, <a href="10-10.html">10.10</a>,
+<a href="10-11.html">10.11</a>, <a href="10-12.html">10.12</a>, <a href="10-13.htm">10.13</a>,
+<a href="10-14.htm">10.14</a>, <a href="10-15-1.html">10.15.1</a>, <a href="10-15-2.html">10.15.2</a>,
+<a href="10-16-1.html">10.16.1</a>, <a href="10-16-2.html">10.16.2</a>, <a href="10-17.html">10.17</a>,
+<a href="10-18.html">10.18</a>],[<a href="11.html">11</a>]&nbsp;</strong></font></p>
+
+
+<p>Размещенный материал является
+электронной версией книги: <strong>©</strong>
+В.И.Елисеев, &quot;Введение в методы теории функций
+пространственного комплексного переменного&quot;,
+изданной Центром научно-технического
+творчества молодежи Алгоритм. - М.:,
+НИАТ. - 1990. Шифр Д7-90/83308. в каталоге
+Государственной публичной научно-технической
+библиотеки.
+ Сайт действует с 10 августа 1998.</p>
+
+<p style="margin-top: 0px; margin-bottom: 0px">E-mail: <a href="mailto:mathsru@gmail.com">mathsru@gmail.com</a>
+ </p>
+
+<p style="margin-top: 0px; margin-bottom: 0px"><a href="http://counter.rambler.ru/top100/"><img src="http://counter.rambler.ru/top100.cnt?36886" alt="Rambler's Top100 Service" border="0"></a>
+</p>
+
+
+
+<!--webbot
+bot="Include" endspan i-checksum="55970" -->
+
+</div></body>
+</HTML>

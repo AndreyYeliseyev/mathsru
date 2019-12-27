@@ -1,0 +1,439 @@
+<html>
+
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NJ9243B');</script>
+<!-- End Google Tag Manager -->
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+
+<title>1.3.6. Поверхностные интегралы</title>
+<style type="text/css"> 
+body 
+{ 
+ margin: 0; 
+ padding: 0; 
+ padding-top: 10px;
+ text-align: center; 
+} 
+#centered
+{ 
+ width: 980px; 
+ text-align: left;
+ border: 0px; 
+ padding: 0;  
+ margin: 0 auto; 
+} 
+</style>
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJ9243B"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><div id="centered">
+
+
+<table border="0" width="100%" style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px" height="80">
+  <tr>
+    <td width="14%" rowspan="2" valign="top" height="76"><img src="images/SmallTitle.gif" border="0" width="126" height="113"></td>
+    <td width="86%" height="93"><font face="Arial" color="#000080"><b>В. И. ЕЛИСЕЕВ</b></font><p><b><font face="Arial" color="#000080">ВВЕДЕНИЕ В МЕТОДЫ ТЕОРИИ
+    ФУНКЦИЙ ПРОСТРАНСТВЕННОГО КОМПЛЕКСНОГО ПЕРЕМЕННОГО<br></font></b><font color="#000080" face="Arial">[</font><a href="index.htm"><font face="Arial">Оглавление</font></a><font color="#000080">]</font> </td>
+  </tr>
+<tr>
+    <td width="86%" height="1"><p ALIGN="left" style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px">
+      <p ALIGN="left" style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px; border-width: 0;"><a href="http://www.amazon.com/Numeric-field-Introduction-functions-variable/dp/146991428X/ref=sr_1_7?ie=UTF8&qid=1328153023&sr=8-7"><img src="images/amazon.PNG" alt="Amazon.com" width="102" height="34" border="0"></a>      
+      <ul>
+        <li><a href="http://www.amazon.com/Numeric-field-Introduction-functions-variable/dp/146991428X/ref=sr_1_7?ie=UTF8&qid=1328153023&sr=8-7">Елисеев В.И. Числовое поле. Введение в ТФКПП.</a></li>
+	<li><a href="http://www.amazon.com/coordinate-axes-physical-reality-Russian/dp/1470005026/ref=sr_1_1?ie=UTF8&qid=1328328469&sr=8-1?ie=UTF8&qid=1328328469&sr=8-1">Елисеев В.И. Оси координат физической реальности.</a></li>
+      </ul>
+      <p ALIGN="left" style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px; border-width: 0;"><img src="images/pdf.PNG" alt="PDF" width="48" height="48" border="0"></p>
+      <ul>
+        <li><a href="pdf/book5.pdf">Елисеев В.И. Введение в ТФКПП. 2003</a></li>
+        <li><a href="pdf/TFKPP-2007.pdf">Елисеев В.И. Числовое поле. Введение в ТФКПП. 2006</a></li>
+        <li><a href="pdf/book6-29JAN2012.pdf">Елисеев В.И. Оси координат физической реальности. 2012</a></li>
+      </ul>
+   </td>
+</tr>
+</table>
+
+<hr color="#000080" style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px">
+<!--webbot bot="Include" endspan i-checksum="17295" -->
+
+<font FACE="Arial">
+
+<p><font color="#000080">1.3.6. Поверхностные интегралы</font></p>
+</font><font FACE="Times New Roman">
+
+<p>Рассмотрим в пространстве поверхность, которая
+охватывает объем, и сформулируем условия
+существования поверхностного интеграла.</p>
+
+<p>Разобьем произвольную поверхность в
+пространстве на элементарные площадки</font> d<font FACE="Symbol">s</font> ,<font FACE="Times New Roman"> образованные
+пересечением кривых </font>C<sub>*</sub>, C<sup>*</sup><font FACE="Times New Roman">. Сетку из кривых определим,
+анализируя дифференциалы.</p>
+
+<p>Рассмотрим</p>
+</font>
+
+<p><img SRC="images/1-3-6/image919.gif" WIDTH="266" HEIGHT="48"></p>
+<font FACE="Times New Roman">
+
+<p>и</p>
+</font>
+
+<p><img SRC="images/1-3-6/image920.gif" WIDTH="316" HEIGHT="58"></p>
+<font FACE="Times New Roman"><i><b>
+
+<p ALIGN="CENTER"><img src="images/pic28.gif" alt="pic28.gif (22748 bytes) Рис. 28. Различные варианты однозначных ветвей логарифмической функции" WIDTH="555" HEIGHT="444"></p>
+</b></i>
+
+<p ALIGN="CENTER"><i><b>Рис. 28. Различные варианты
+однозначных ветвей логарифмической функции</b></i></p>
+
+<p>Элемент площадки </font>d<font FACE="Symbol">s</font> <font FACE="Times New Roman">* образуется пересечением</p>
+</font>
+
+<p><img SRC="images/1-3-6/image921.gif" WIDTH="168" HEIGHT="41"></p>
+<font FACE="Times New Roman">
+
+<p>Имеем</p>
+</font>
+
+<p><img SRC="images/1-3-6/image922.gif" WIDTH="596" HEIGHT="38"></p>
+<font FACE="Times New Roman">
+
+<p>Поверхность</font> d<font FACE="Symbol">s</font> <font FACE="Times New Roman">состоит из четырех поверхностей</p>
+</font>
+
+<p><img SRC="images/1-3-6/image923.gif" WIDTH="310" HEIGHT="31"></p>
+<font FACE="Times New Roman">
+
+<p>На рис. 28 дана геометрическая взаимосвязь
+площадок.</p>
+<i><b>
+
+<p ALIGN="CENTER"><img src="images/pic29.gif" alt="pic29.gif (14496 bytes) Рис. 29. Расположение элементарных площадок в комплексном пространстве." WIDTH="482" HEIGHT="407"></p>
+</b></i>
+
+<p ALIGN="CENTER"><i><b>Рис. 29. Расположение элементарных
+площадок в комплексном пространстве.</b></i></p>
+
+<p>Элемент</font> d<font FACE="Symbol">s</font> *<font FACE="Times New Roman">
+состоит из суммы проекционных площадок, одна из
+которых</font> d<font FACE="Symbol">s</font> <sub>2</sub><font FACE="Times New Roman"> взята с отрицательным знаком, так
+как согласно геометрической интерпретации (рис.
+29) эта площадка дважды входит в элемент: один раз
+в площадку.</font> d<font FACE="Symbol">s</font> <sub>4</sub><font FACE="Times New Roman"> и один раз в площадку</font> d<font FACE="Symbol">s</font>
+<sub>3</sub>.</p>
+<font FACE="Times New Roman">
+
+<p>Определим поверхностный интеграл</p>
+</font>
+
+<p><img SRC="images/1-3-6/image924.gif" WIDTH="130" HEIGHT="58"></p>
+
+<p><img SRC="images/1-3-6/image925.gif" WIDTH="663" HEIGHT="63"></p>
+
+<p><img SRC="images/1-3-6/image926.gif" WIDTH="623" HEIGHT="63"></p>
+
+<p><img SRC="images/1-3-6/image927.gif" WIDTH="623" HEIGHT="63"></p>
+
+<p><img SRC="images/1-3-6/image928.gif" WIDTH="158" HEIGHT="31"></p>
+<font FACE="Times New Roman">
+
+<p>рассмотрим последовательно интегралы </font><i>JJ</i><sub>1</sub>
+<font FACE="Times New Roman">и </font><i>JJ</i><sub>2</sub>:</p>
+
+<p><img SRC="images/1-3-6/image929.gif" WIDTH="438" HEIGHT="51"></p>
+
+<p><img SRC="images/1-3-6/image930.gif" WIDTH="441" HEIGHT="51"></p>
+<font FACE="Times New Roman">
+
+<p>Преобразуем интегралы</font> <i>ll</i><sub>1</sub><font FACE="Times New Roman"> и </font><i>ll</i><sub>2</sub><font FACE="Times New Roman"> в
+повторные интегралы по сеткам C</font><sup>*</sup>, C<sub>*</sub>:</p>
+
+<p><img SRC="images/1-3-6/image931.gif" WIDTH="428" HEIGHT="55"></p>
+
+<p><img SRC="images/1-3-6/image932.gif" WIDTH="428" HEIGHT="55"></p>
+<font FACE="Times New Roman">
+
+<p>Криволинейные интегралы по C</font><sub>*</sub><font FACE="Times New Roman"> сведем к поверхностным, применив
+формулу Грина:</p>
+</font>
+
+<p><img SRC="images/1-3-6/image933.gif" WIDTH="355" HEIGHT="55"></p>
+
+<p><img SRC="images/1-3-6/image934.gif" WIDTH="391" HEIGHT="78"></p>
+
+<p><img SRC="images/1-3-6/image935.gif" WIDTH="476" HEIGHT="78"></p>
+
+<p><img SRC="images/1-3-6/image936.gif" WIDTH="366" HEIGHT="71"></p>
+
+<p><img SRC="images/1-3-6/image937.gif" WIDTH="415" HEIGHT="70"></p>
+
+<p><img SRC="images/1-3-6/image938.gif" WIDTH="466" HEIGHT="70"></p>
+
+<p><img SRC="images/1-3-6/image939.gif" WIDTH="386" HEIGHT="80"></p>
+<font FACE="Times New Roman">
+
+<p>В результате преобразований имеем</p>
+</font>
+
+<p><img SRC="images/1-3-6/image940.gif" WIDTH="628" HEIGHT="73"></p>
+
+<p><img SRC="images/1-3-6/image941.gif" WIDTH="493" HEIGHT="80"></p>
+
+<p><img SRC="images/1-3-6/image942.gif" WIDTH="528" HEIGHT="75"></p>
+
+<p><img SRC="images/1-3-6/image943.gif" WIDTH="526" HEIGHT="75"></p>
+<font FACE="Times New Roman">
+
+<p>Подынтегральное выражение преобразуется к
+следующему виду объемного интеграла</p>
+</font>
+
+<p><img SRC="images/1-3-6/image944.gif" WIDTH="591" HEIGHT="71"></p>
+<font FACE="Times New Roman">
+
+<p>Подынтегральное выражение этого интеграла
+было получено на контуре <font FACE="Symbol">f</font> </font>= const<font FACE="Times New Roman"> при исследовании криволинейного
+интеграла, когда по формуле Грина делался
+переход к поверхностному интегралу, поэтому</p>
+</font>
+
+<p><img SRC="images/1-3-6/image945.gif" WIDTH="648" HEIGHT="78"></p>
+
+<table CELLSPACING="0" BORDER="0" CELLPADDING="9" WIDTH="710">
+  <tr>
+    <td WIDTH="50%" VALIGN="TOP"><img SRC="images/1-3-6/image946.gif" WIDTH="205" HEIGHT="88"></td>
+    <td WIDTH="50%" VALIGN="TOP"><p ALIGN="RIGHT">(1.55.)</td>
+  </tr>
+</table>
+<font FACE="Times New Roman">
+
+<p>В итоге поверхностный интеграл по элементарной
+площадке </font><img SRC="images/1-3-6/image947.gif" WIDTH="50" HEIGHT="25"><font FACE="Times New Roman"> свели к двукратному интегрированию
+сначала по кривой С*, а затем по кривой С</font><sub>*</sub>.</p>
+<font FACE="Times New Roman">
+
+<p>Вследствие этого, если кривая является
+замкнутой кривой С</font><sub>3</sub><font FACE="Times New Roman">, то
+поверхностный интеграл не зависит от формы
+поверхности, которая натянута в пространстве на
+эту кривую.</p>
+
+<p>От поверхности натянутой на кривую С</font><sub>3</sub><font FACE="Times New Roman"> (рис. 26), можно непрерывным образом
+перейти к поверхности </font><img SRC="images/1-3-6/image877.gif" WIDTH="21" HEIGHT="28">,<font FACE="Times New Roman"> натянутой на кривую </font><img SRC="images/1-3-6/image877.gif" WIDTH="21" HEIGHT="28"><font FACE="Times New Roman">, окружающую
+изолированную точку <font FACE="Symbol">n</font> </font><sub>0</sub>.</p>
+<font FACE="Times New Roman"><u>
+
+<p>Теорема 4.</u> Пусть функция</font> <i>f</i>(<font FACE="Symbol">n</font>
+)<font FACE="Times New Roman"> дифференцируема в односвязной
+области </font>G<font FACE="Times New Roman"> пространства (<font FACE="Symbol">n</font> ) и пусть имеется гладкая
+поверхность <font FACE="Symbol">s</font> . Тогда для любой
+точки <font FACE="Symbol">n</font> </font><sub>0</sub><font FACE="Times New Roman">,
+лежащей внутри объема </font>G<font FACE="Times New Roman">,
+заключенного внутри замкнутой (геометрически)
+поверхности, имеет место формула</p>
+</font>
+
+<table CELLSPACING="0" BORDER="0" CELLPADDING="9" WIDTH="710">
+  <tr>
+    <td WIDTH="68%" VALIGN="TOP"><img SRC="images/1-3-6/image948.gif" WIDTH="243" HEIGHT="66"></td>
+    <td WIDTH="32%" VALIGN="TOP"><p ALIGN="RIGHT">(1.56.)</td>
+  </tr>
+</table>
+<font FACE="Times New Roman">
+
+<p>где</font> <i>d<font FACE="Symbol">s</font> </i><font FACE="Times New Roman">-
+дифференциал упомянутой поверхности.</p>
+
+<p>Доказательство начнем со следующего замечания.
+Если около точки</font> <font FACE="Symbol">n</font> <sub>0</sub><font FACE="Times New Roman"> построена шаровая поверхность (в
+нашем случае сфера с проколотыми вершинами)</p>
+</font>
+
+<p><img SRC="images/1-3-6/image949.gif" WIDTH="120" HEIGHT="35"></p>
+<font FACE="Times New Roman">
+
+<p>то в этом случае</p>
+</font>
+
+<p><img SRC="images/1-3-6/image950.gif" WIDTH="353" HEIGHT="45">,</p>
+<font FACE="Times New Roman">
+
+<p>а</p>
+</font>
+
+<p><img SRC="images/1-3-6/image951.gif" WIDTH="198" HEIGHT="40"></p>
+<font FACE="Times New Roman">
+
+<p>Поэтому</p>
+</font>
+
+<table CELLSPACING="0" BORDER="0" CELLPADDING="9" WIDTH="710">
+  <tr>
+    <td WIDTH="68%" VALIGN="TOP"><img SRC="images/1-3-6/image952.gif" WIDTH="311" HEIGHT="98"></td>
+    <td WIDTH="32%" VALIGN="TOP">&nbsp;<p ALIGN="RIGHT">(1.57.)</td>
+  </tr>
+</table>
+<font FACE="Times New Roman">
+
+<p>Далее. Функция </font><img SRC="images/1-3-6/image953.gif" WIDTH="98" HEIGHT="70"><font FACE="Times New Roman"> дифференцируема по <font FACE="Symbol">x</font>
+в области пространства</font> (<font FACE="Symbol">n</font> )<font FACE="Times New Roman"> с выколотым туннелем, проходящим
+через точку</font> <font FACE="Symbol">n</font> <sub>0</sub>.<font FACE="Times New Roman"> Выберем величину</font> <img SRC="images/1-3-6/image954.gif" WIDTH="75" HEIGHT="31"><font FACE="Times New Roman"> так, чтобы шар </font><img SRC="images/1-3-6/image955.gif" WIDTH="113" HEIGHT="35"><font FACE="Times New Roman"> вместе со своей
+поверхностью </font><img SRC="images/1-3-6/image956.gif" WIDTH="165" HEIGHT="35"><font FACE="Times New Roman"> лежал внутри поверхности <font FACE="Symbol">s</font>
+. Тогда интеграл преобразуется к следующему виду:</p>
+</font>
+
+<p><img SRC="images/1-3-6/image957.gif" WIDTH="523" HEIGHT="70"></p>
+
+<p><img SRC="images/1-3-6/image958.gif" WIDTH="536" HEIGHT="68"></p>
+<font FACE="Times New Roman">
+
+<p>Рассмотрим обозначенные интегралы </font><i>J</i><sub>1</sub><font FACE="Times New Roman"> и</font> <i>J</i><sub>2</sub>. <font FACE="Times New Roman">Вычислим
+их.</p>
+</font>
+
+<p><img SRC="images/1-3-6/image959.gif" WIDTH="280" HEIGHT="98"></p>
+<font FACE="Times New Roman">
+
+<p>Докажем, что </font>J<sub>1</sub>=0.<font FACE="Times New Roman">
+Радиус</font> R<font FACE="Times New Roman"> можно взять сколь
+угодно малым. Поэтому в силу независимости
+интеграла от формы поверхности на основании
+формулы (</font>1.55<font FACE="Times New Roman">) и непрерывности
+функции </font><i>f</i>(<font FACE="Symbol">n</font> )<font FACE="Times New Roman">
+в точке</font> <font FACE="Symbol">n</font> <sub>0</sub><font FACE="Times New Roman">
+для любого <font FACE="Symbol">e</font> &gt;0 найдется такое </font><img SRC="images/1-3-6/image960.gif" WIDTH="123" HEIGHT="30"><font FACE="Times New Roman">, что
+неравенство</font> <img SRC="images/1-3-6/image961.gif" WIDTH="171" HEIGHT="35"><font FACE="Times New Roman"> будет выполнятся для всех <font FACE="Symbol">x</font> , для которых</p>
+</font>
+
+<p><img SRC="images/1-3-6/image962.gif" WIDTH="156" HEIGHT="35"></p>
+<font FACE="Times New Roman">
+
+<p>Отсюда</p>
+</font>
+
+<p><img SRC="images/1-3-6/image963.gif" WIDTH="500" HEIGHT="63"></p>
+<font FACE="Times New Roman">
+
+<p>и, следовательно </font><i>J</i><sub>1</sub>=0<font FACE="Times New Roman">, так как </font><i>J</i><sub>1</sub><font FACE="Times New Roman"> не зависит от R.</p>
+
+<p>Окончательно можно записать, что</p>
+</font>
+
+<p><img SRC="images/1-3-6/image964.gif" WIDTH="211" HEIGHT="71"></p>
+<font FACE="Times New Roman"><u>
+
+<p>Теорема 5.</u> (о среднем). Пусть функция
+дифференцируема внутри шара </font><img SRC="images/1-3-6/image965.gif" WIDTH="113" HEIGHT="35"><font FACE="Times New Roman"> и непрерывна
+вплоть до его границы. Тогда значение этой
+функции в центре шара равно
+среднеарифметическому ее значению по
+поверхности, то есть</p>
+</font>
+
+<p><img SRC="images/1-3-6/image966.gif" WIDTH="383" HEIGHT="98"></p>
+<font FACE="Times New Roman"><u>
+
+<p>Доказательство.</u> Положим </font><img SRC="images/1-3-6/image967.gif" WIDTH="188" HEIGHT="40"><font FACE="Times New Roman"> и подставим в
+интеграл (</font>1.56)</p>
+
+<p><img SRC="images/1-3-6/image968.gif" WIDTH="563" HEIGHT="98"></p>
+<font FACE="Times New Roman">
+
+<p>что требовалось доказать.</p>
+
+<p>Формулы (</font>1.52.), (1.56<font FACE="Times New Roman">) допускают
+дифференцирование слева и справа (под знаком
+интеграла) по переменной. При этом равенство
+сохраняется и таким образом получается формула </font>n<font FACE="Times New Roman"> -производной рассматриваемой
+функции </font><img SRC="images/1-3-6/image969.gif" WIDTH="76" HEIGHT="40"><font FACE="Times New Roman">
+как через одномерный, так и двойной интегралы.
+Заодно доказывается и существование
+производной.</p>
+</font>
+
+<p><font face="Arial" color="#000080">[<a href="1-4-1.html">Следующий
+параграф</a>]</font></p>
+<!--webbot bot="Include" U-Include="footer.htm" TAG="BODY" startspan -->
+
+<hr color="#000080" style="border: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px">
+
+<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px"><b><font face="Arial" size="1" color="#000080">Мини
+оглавление:</font></b></p>
+
+<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px"><font face="Arial" size="2" color="#000080"><strong>[<a href="0.htm">0</a>], [<a href="1-1-1.html">1.1.1</a>, <a href="1-1-2.html">1.1.2</a>, <a href="1-1-3.html">1.1.3</a>,
+<a href="1-1-4.html">1.1.4</a>, <a href="1-1-5.html">1.1.5</a>, <a href="1-1-6.html">1.1.6</a>,
+<a href="1-1-7.html">1.1.7</a>, <a href="1-1-8.html">1.1.8</a>, <a href="1-2.html">1.2</a>,
+<a href="1-2-1.html">1.2.1</a>, <a href="1-2-2.html">1.2.2</a>, <a href="1-2-2-A.html">1.2.2.a</a>,
+<a href="1-2-2-B.html">1.2.2.b</a>, <a href="1-2-2-C.html">1.2.2.c</a>, <a href="1-2-2-D.html">1.2.2.d</a>, <a href="1-2-2-E.html">1.2.2.e</a>, <a href="1-2-2-F.html">1.2.2.f</a>, <a href="1-2-2-G.html">1.2.2.g</a>, <a href="1-2-2-H.html">1.2.2.h</a>, <a href="1-2-3.html">1.2.3</a>, <a href="1-3-1.html">1.3.1</a>,
+<a href="1-3-2.html">1.3.2</a>, <a href="1-3-3.html">1.3.3</a>, <a href="1-3-4.html">1.3.4</a>,
+<a href="1-3-5.html">1.3.5</a>, <a href="1-3-6.html">1.3.6</a>, <a href="1-4-1.html">1.4.1</a>,
+<a href="1-4-2.html">1.4.2</a>, <a href="1-5.html">1.5</a>, <a href="1-6.html">1.6</a>, <a href="1-7-1.html">1.7.1</a>, <a href="1-7-2.html">1.7.2</a>,
+<a href="1-7-3-p1.html">1.7.3.1</a>, <a href="1-7-3-p2.htm">1.7.3.2</a>, <a href="1-7-3-p3.htm">1.7.3.3</a>,
+<a href="1-7-4-p1.html">1.7.4.1</a>, <a href="1-7-4-p2.html">1.7.4.2</a>, <a href="1-8-1.html">1.8.1</a>], [<a href="2-1.html">2.1</a>, <a href="2-2.html">2.2</a>],[<a href="3-1.html">3.1</a>, <a href="3-2.html">3.2</a>, <a href="3-3.html">3.3</a>,
+<a href="3-4-1.html">3.4.1</a>, <a href="3-4-2.html">3.4.2</a>, <a href="3-4-3.html">3.4.3</a>,
+<a href="3-4-4.html">3.4.4</a>, <a href="3-4-5.html">3.4.5</a>],[<a href="4-1.html">4.1</a>, <a href="4-2.html">4.2</a>, <a href="4-3.html">4.3</a>, <a href="4-4.html">4.4</a>],[<a href="5-1.html">5.1</a>, <a href="5-1-Pic52.htm">5.1.Рис.52</a>, <a href="5-2.html">5.2</a>, <a href="5-3.html">5.3</a>,
+<a href="5-4.html">5.4</a>, <a href="5-4-t1.htm">5.4.Т1</a>, <a href="5-4-t2.htm">5.4.Т2</a>,
+<a href="5-4-t3.htm">5.4.Т3</a>, <a href="5-5-1.html">5.5.1</a>, <a href="5-5-2.html">5.5.2</a>,
+<a href="5-5-3.html">5.5.3</a>, <a href="5-5-4.html">5.5.4</a>],[<a href="6-1-1.html">6.1.1</a>,
+<a href="6-1-2.html">6.1.2</a>, <a href="6-2-1.html">6.2.1</a>, <a href="6-2-2.html">6.2.2</a>,
+<a href="6-2-3.html">6.2.3</a>, <a href="6-2-4.html">6.2.4</a>, <a href="6-2-5.html">6.2.5</a>,
+<a href="6-3.html">6.3</a>, <a href="6-4-1.html">6.4.1</a>, <a href="6-4-2.html">6.4.2</a>,
+<a href="6-5-1.html">6.5.1</a>, <a href="6-5-2.html">6.5.2</a>],[<a href="7-1.html">7.1</a>,
+<a href="7-2.html">7.2</a>, <a href="7-3.html">7.3</a>, <a href="7-4.html">7.4</a>,
+<a href="7-5.html">7.5</a>, <a href="7-6.html">7.6</a>, <a href="7-7-1.htm">7.7.1</a>,
+<a href="7-7-2.htm">7.7.2</a>, <a href="7-8-1.htm">7.8.1</a>, <a href="7-8-2.htm">7.8.2</a>,
+<a href="7-8-3.htm">7.8.3</a>, </strong></font><font face="Arial" size="2" color="#000080"><strong><a href="7-9.htm">7.9</a></strong></font><font face="Arial" size="2" color="#000080"><strong>],[<a href="8-1.html">8.1</a>,
+<a href="8-2-1.html">8.2.1</a>, <a href="8-2-2.html">8.2.2</a>, <a href="8-3.html">8.3</a>,
+<a href="8-4.html">8.4</a>, <a href="8-5.html">8.5</a>, <a href="8-6.html">8.6</a>,
+<a href="8-6-t1.html">8.6.T1</a>, <a href="8-7.html">8.7</a>, <a href="8-8-1.html">8.8.1</a>,
+<a href="8-8-2.html">8.8.2</a>, <a href="8-8-3.html">8.8.3</a>, <a href="8-9-1.html">8.9.1</a>,
+<a href="8-9-2.html">8.9.2</a>, <a href="8-9-3.html">8.9.3</a>, <a href="8-10.htm">8.10</a>,
+<a href="8-10-t2.html">8.10.T2</a>, <a href="8-10-t3.html">8.10.T3</a>],[<a href="9-1.html">9.1</a>,
+<a href="9-2.html">9.2</a>, <a href="9-3.html">9.3</a>, <a href="9-3-Pic88.html">Рис.88</a>,
+<a href="9-3-Pic89.html">89</a>, <a href="9-3-Pic90.html">90</a>, <a href="9-3-Pic91.html">91</a>,
+<a href="9-3-Pic92.html">92</a>, <a href="9-3-Pic93.html">93</a>, <a href="9-3-Pic94.html">94</a>,
+<a href="9-3-Pic95.html">95</a>, <a href="9-3-Pic96.html">96</a>, <a href="9-3-Pic97.html">97</a>,
+<a href="9-3-Pic98.html">98</a>, <a href="9-3-Pic99.html">99</a>, <a href="9-3-Pic99.html">100</a>],[<a href="10-1.html">10.1</a>,
+<a href="10-2.html">10.2</a>, <a href="10-3.html">10.3</a>, <a href="10-4.html">10.4</a>,
+<a href="10-5.html">10.5</a>, <a href="10-6.html">10.6</a>, <a href="10-7.html">10.7</a>,
+<a href="10-8.html">10.8</a>, <a href="10-9.html">10.9</a>, <a href="10-10.html">10.10</a>,
+<a href="10-11.html">10.11</a>, <a href="10-12.html">10.12</a>, <a href="10-13.htm">10.13</a>,
+<a href="10-14.htm">10.14</a>, <a href="10-15-1.html">10.15.1</a>, <a href="10-15-2.html">10.15.2</a>,
+<a href="10-16-1.html">10.16.1</a>, <a href="10-16-2.html">10.16.2</a>, <a href="10-17.html">10.17</a>,
+<a href="10-18.html">10.18</a>],[<a href="11.html">11</a>]&nbsp;</strong></font></p>
+
+
+<p>Размещенный материал является
+электронной версией книги: <strong>©</strong>
+В.И.Елисеев, &quot;Введение в методы теории функций
+пространственного комплексного переменного&quot;,
+изданной Центром научно-технического
+творчества молодежи Алгоритм. - М.:,
+НИАТ. - 1990. Шифр Д7-90/83308. в каталоге
+Государственной публичной научно-технической
+библиотеки.
+ Сайт действует с 10 августа 1998.</p>
+
+<p style="margin-top: 0px; margin-bottom: 0px">E-mail: <a href="mailto:mathsru@gmail.com">mathsru@gmail.com</a>
+ </p>
+
+<p style="margin-top: 0px; margin-bottom: 0px"><a href="http://counter.rambler.ru/top100/"><img src="http://counter.rambler.ru/top100.cnt?36886" alt="Rambler's Top100 Service" border="0"></a>
+</p>
+
+
+
+<!--webbot bot="Include" endspan i-checksum="55970" -->
+
+<p ALIGN="left" style="border-top: 0px; border-bottom: 0px">
+<!--begin of Top100-->
+</div></body>
+</html>

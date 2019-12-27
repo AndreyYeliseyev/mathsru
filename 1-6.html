@@ -1,0 +1,591 @@
+<html>
+
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NJ9243B');</script>
+<!-- End Google Tag Manager -->
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+
+<title>1.6. Вычеты в пространстве. Вычисление
+интегралов с помощью вычетов.</title>
+<meta NAME="subject" CONTENT="Введение в ТФПКП">
+<meta NAME="doccomm" CONTENT="8 страницы">
+<style type="text/css"> 
+body 
+{ 
+ margin: 0; 
+ padding: 0; 
+ padding-top: 10px;
+ text-align: center; 
+} 
+#centered
+{ 
+ width: 980px; 
+ text-align: left;
+ border: 0px; 
+ padding: 0;  
+ margin: 0 auto; 
+} 
+</style>
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJ9243B"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><div id="centered">
+
+
+<table border="0" width="100%" style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px" height="80">
+  <tr>
+    <td width="14%" rowspan="2" valign="top" height="76"><img src="images/SmallTitle.gif" border="0" width="126" height="113"></td>
+    <td width="86%" height="93"><font face="Arial" color="#000080"><b>В. И. ЕЛИСЕЕВ</b></font><p><b><font face="Arial" color="#000080">ВВЕДЕНИЕ В МЕТОДЫ ТЕОРИИ
+    ФУНКЦИЙ ПРОСТРАНСТВЕННОГО КОМПЛЕКСНОГО ПЕРЕМЕННОГО<br></font></b><font color="#000080" face="Arial">[</font><a href="index.htm"><font face="Arial">Оглавление</font></a><font color="#000080">]</font> </td>
+  </tr>
+<tr>
+    <td width="86%" height="1"><p ALIGN="left" style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px">
+      <p ALIGN="left" style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px; border-width: 0;"><a href="http://www.amazon.com/Numeric-field-Introduction-functions-variable/dp/146991428X/ref=sr_1_7?ie=UTF8&qid=1328153023&sr=8-7"><img src="images/amazon.PNG" alt="Amazon.com" width="102" height="34" border="0"></a>      
+      <ul>
+        <li><a href="http://www.amazon.com/Numeric-field-Introduction-functions-variable/dp/146991428X/ref=sr_1_7?ie=UTF8&qid=1328153023&sr=8-7">Елисеев В.И. Числовое поле. Введение в ТФКПП.</a></li>
+	<li><a href="http://www.amazon.com/coordinate-axes-physical-reality-Russian/dp/1470005026/ref=sr_1_1?ie=UTF8&qid=1328328469&sr=8-1?ie=UTF8&qid=1328328469&sr=8-1">Елисеев В.И. Оси координат физической реальности.</a></li>
+      </ul>
+      <p ALIGN="left" style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px; border-width: 0;"><img src="images/pdf.PNG" alt="PDF" width="48" height="48" border="0"></p>
+      <ul>
+        <li><a href="pdf/book5.pdf">Елисеев В.И. Введение в ТФКПП. 2003</a></li>
+        <li><a href="pdf/TFKPP-2007.pdf">Елисеев В.И. Числовое поле. Введение в ТФКПП. 2006</a></li>
+        <li><a href="pdf/book6-29JAN2012.pdf">Елисеев В.И. Оси координат физической реальности. 2012</a></li>
+      </ul>
+   </td>
+</tr>
+</table>
+
+<hr color="#000080" style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px">
+<!--webbot bot="Include" endspan i-checksum="17295" -->
+
+<font FACE="Arial"><i><b>
+
+<p><font color="#000080">1.6. Вычеты в пространстве.
+Вычисление интегралов с помощью вычетов.</font></p>
+</b></i></font><font FACE="Times New Roman">
+
+<p>В пространстве имеет место две формулы
+вычетов:криволинейный и поверхностный. Введем
+определение вычетов.</p>
+
+<p>Пространственным криволинейным вычетом
+функции <img SRC="images/1-6/image1.gif" WIDTH="53" HEIGHT="28">в точке <img SRC="images/1-6/image2.gif" WIDTH="16" HEIGHT="18">называется коэффициент <img SRC="images/1-6/image3.gif" WIDTH="35" HEIGHT="31">ряда Лорана для функции в
+окрестности точки <img SRC="images/1-6/image2.gif" WIDTH="16" HEIGHT="18">, то есть
+число, которое обозначается символом <img SRC="images/1-6/image4.gif" WIDTH="113" HEIGHT="31"></font>.</p>
+
+<table CELLSPACING="0" BORDER="0" CELLPADDING="9" WIDTH="710">
+  <tr>
+    <td WIDTH="73%" VALIGN="TOP"><img SRC="images/1-6/image5.gif" WIDTH="380" HEIGHT="66"></td>
+    <td WIDTH="27%" VALIGN="TOP"><p ALIGN="RIGHT">&nbsp;</p>
+    <p ALIGN="RIGHT">(1.61.)</td>
+  </tr>
+</table>
+<font FACE="Times New Roman">
+
+<p>Формула следует из формулы для определения
+коэффициентов ряда Лорана. Под кривой <img SRC="images/1-6/image6.gif" WIDTH="21" HEIGHT="28">понимаем кривую типа <img SRC="images/1-6/image7.gif" WIDTH="25" HEIGHT="30">, которая натянута на
+сферу радиуса </font><i>r</i><font FACE="Times New Roman"> с
+проколотым изолированным направлением радиуса <img SRC="images/1-6/image8.gif" WIDTH="18" HEIGHT="23">, так что <img SRC="images/1-6/image9.gif" WIDTH="158" HEIGHT="35">.
+Формула приводит к вычислению интегралов </p>
+</font>
+
+<table CELLSPACING="0" BORDER="0" CELLPADDING="9" WIDTH="710">
+  <tr>
+    <td WIDTH="73%" VALIGN="TOP"><img SRC="images/1-6/image10.gif" WIDTH="325" HEIGHT="55"></td>
+    <td WIDTH="27%" VALIGN="TOP"><p ALIGN="RIGHT">(1.62.)</td>
+  </tr>
+</table>
+<font FACE="Times New Roman">
+
+<p>Очевидно, что если точка </font><i>a</i><font FACE="Times New Roman"> точка регулярности функции, либо
+устранимая особая точка, то вычет равен нулю.
+Если в разложении функции в ряд Лорана
+отсутствует с первой отрицательной степенью n=-1,
+то вычет равен 0. </p>
+
+<p>Поверхностным вычетом функции <img SRC="images/1-6/image11.gif" WIDTH="53" HEIGHT="28">в точке </font><i>a</i><font FACE="Times New Roman">
+обозначим и назовем число</p>
+</font>
+
+<table CELLSPACING="0" BORDER="0" CELLPADDING="9" WIDTH="710">
+  <tr>
+    <td WIDTH="74%" VALIGN="TOP"><img SRC="images/1-6/image12.gif" WIDTH="296" HEIGHT="63">,</td>
+    <td WIDTH="26%" VALIGN="TOP"><p ALIGN="RIGHT">(1.63.)</td>
+  </tr>
+</table>
+<font FACE="Times New Roman">
+
+<p>где <img SRC="images/1-6/image13.gif" WIDTH="21" HEIGHT="20">-
+поверхность, натянутая на кривую <img SRC="images/1-6/image14.gif" WIDTH="61" HEIGHT="30">без точек самопересечения,
+радиус которой равен <img SRC="images/1-6/image15.gif" WIDTH="100" HEIGHT="35">. Из
+формул для коэффициентов ряда</p>
+
+<p>Лорана получим <img SRC="images/1-6/image16.gif" WIDTH="173" HEIGHT="31">.
+Следовательно двойной интеграл равен</p>
+</font>
+
+<table CELLSPACING="0" BORDER="0" CELLPADDING="9" WIDTH="710">
+  <tr>
+    <td WIDTH="76%" VALIGN="TOP"><img SRC="images/1-6/image17.gif" WIDTH="295" HEIGHT="63"></td>
+    <td WIDTH="24%" VALIGN="TOP"><p ALIGN="RIGHT">(1.64.)</td>
+  </tr>
+</table>
+<font FACE="Times New Roman">
+
+<p>Вычисление вычета в полюсе простого или
+кратного определяется видом ряда Лорана для
+функции. Если имеем <img SRC="images/1-6/image18.gif" WIDTH="463" HEIGHT="61">, откуда
+находим</p>
+</font>
+
+<p><img SRC="images/1-6/image19.gif" WIDTH="248" HEIGHT="31"><font FACE="Times New Roman">, так что <img SRC="images/1-6/image20.gif" WIDTH="321" HEIGHT="31">, а также <img SRC="images/1-6/image21.gif" WIDTH="263" HEIGHT="35">, так
+что <img SRC="images/1-6/image22.gif" WIDTH="340" HEIGHT="35"></font>.</p>
+<font FACE="Times New Roman">
+
+<p>Если ряд Лорана имеет вид</p>
+</font>
+
+<p><img SRC="images/1-6/image23.gif" WIDTH="480" HEIGHT="63"><font FACE="Times New Roman">то функция в
+окрестности точки <img SRC="images/1-6/image24.gif" WIDTH="16" HEIGHT="18">имеет полюс
+кратности n. Умножая это разложение на <img SRC="images/1-6/image25.gif" WIDTH="78" HEIGHT="33">, дифференцируя n-1 раз и затем
+переходя к пределу при <img SRC="images/1-6/image26.gif" WIDTH="65" HEIGHT="21">получим
+выражение</p>
+</font>
+
+<table CELLSPACING="0" BORDER="0" CELLPADDING="9" WIDTH="710">
+  <tr>
+    <td WIDTH="71%" VALIGN="TOP"><img SRC="images/1-6/image27.gif" WIDTH="430" HEIGHT="65"></td>
+    <td WIDTH="29%" VALIGN="TOP"><p ALIGN="RIGHT">(1.65.)</td>
+  </tr>
+</table>
+<font FACE="Times New Roman">
+
+<p>По той же схеме получим</p>
+</font>
+
+<table CELLSPACING="0" BORDER="0" CELLPADDING="9" WIDTH="710">
+  <tr>
+    <td WIDTH="74%" VALIGN="TOP"><img SRC="images/1-6/image28.gif" WIDTH="445" HEIGHT="65"></td>
+    <td WIDTH="26%" VALIGN="TOP"><p ALIGN="RIGHT">(1.66.)</td>
+  </tr>
+</table>
+<font FACE="Times New Roman">
+
+<p>Пример. Определить вычет функции <img SRC="images/1-6/image29.gif" WIDTH="26" HEIGHT="45">в точке <img SRC="images/1-6/image30.gif" WIDTH="53" HEIGHT="25">. Функция разлагается в ряд Лорана в
+окрестности точки <img SRC="images/1-6/image31.gif" WIDTH="46" HEIGHT="23">в виде<img SRC="images/1-6/image32.gif" WIDTH="198" HEIGHT="63"> , где <img SRC="images/1-6/image33.gif" WIDTH="148" HEIGHT="58"></p>
+
+<p>Следовательно <img SRC="images/1-6/image34.gif" WIDTH="250" HEIGHT="61">. Откуда имеем<img SRC="images/1-6/image36.gif" WIDTH="390" HEIGHT="71"></font>,</p>
+
+<p><img SRC="images/1-6/image37.gif" WIDTH="313" HEIGHT="66">.</p>
+<font FACE="Times New Roman">
+
+<p>Пример. Пусть <img SRC="images/1-6/image38.gif" WIDTH="123" HEIGHT="58">. Разложение
+функции <img SRC="images/1-6/image39.gif" WIDTH="43" HEIGHT="23">в ряд Тейлора дает
+представление функции <img SRC="images/1-6/image40.gif" WIDTH="46" HEIGHT="26">в виде <img SRC="images/1-6/image41.gif" WIDTH="265" HEIGHT="60"></p>
+
+<p>Откуда <img SRC="images/1-6/image42.gif" WIDTH="450" HEIGHT="58">. Двойной интеграл </p>
+</font>
+
+<p><img SRC="images/1-6/image43.gif" WIDTH="305" HEIGHT="65"></p>
+<font FACE="Times New Roman">
+
+<p>Пример. Пусть <img SRC="images/1-6/image44.gif" WIDTH="200" HEIGHT="63">.
+Функция имеет полюс первого порядка в точке<img SRC="images/1-6/image45.gif" WIDTH="43" HEIGHT="23"> и полюс первого порядка в точке <img SRC="images/1-6/image46.gif" WIDTH="66" HEIGHT="25">.Поэтому по формуле
+имеем<img SRC="images/1-6/image47.gif" WIDTH="220" HEIGHT="65"></font>. <img SRC="images/1-6/image48.gif" WIDTH="173" HEIGHT="65"><font FACE="Times New Roman">. Данная функция в пространстве
+имеет еще две особые точки, которые
+соответствуют корням алгебраического уравнения
+стоящего в знаменателе. Последовательно получим <img SRC="images/1-6/image49.gif" WIDTH="333" HEIGHT="33">.Откуда <img SRC="images/1-6/image50.gif" WIDTH="256" HEIGHT="31">.
+Следовательно функция представима в следующем
+виде <img SRC="images/1-6/image51.gif" WIDTH="363" HEIGHT="63">Особые изолированные
+пространственные точки позволят вычислить еще
+два вычета<img SRC="images/1-6/image52.gif" WIDTH="615" HEIGHT="68"></p>
+</font>
+
+<p><img SRC="images/1-6/image53.gif" WIDTH="598" HEIGHT="68">.</p>
+<font FACE="Times New Roman">
+
+<p>Пример. Рассмотрим функцию <img SRC="images/1-6/image54.gif" WIDTH="223" HEIGHT="63">.
+Функция имеет особые точки <img SRC="images/1-6/image55.gif" WIDTH="58" HEIGHT="31">полюс
+второго порядка, <img SRC="images/1-6/image56.gif" WIDTH="75" HEIGHT="31">, полюс
+второго порядка. Используя формулу для расчета
+вычетов кратных полюсов будем последовательно
+иметь.</p>
+</font>
+
+<p><img SRC="images/1-6/image57.gif" WIDTH="248" HEIGHT="73"></p>
+
+<p><img SRC="images/1-6/image58.gif" WIDTH="391" HEIGHT="60"></p>
+
+<p><img SRC="images/1-6/image59.gif" WIDTH="286" HEIGHT="73"></p>
+
+<p><img SRC="images/1-6/image60.gif" WIDTH="430" HEIGHT="60"></p>
+<font FACE="Times New Roman">
+
+<p>Функция имеет также два пространственных
+полюса второго порядка (см. пример )</p>
+</font>
+
+<p><img SRC="images/1-6/image61.gif" WIDTH="256" HEIGHT="31"></p>
+
+<p><img SRC="images/1-6/image62.gif" WIDTH="393" HEIGHT="73"></p>
+
+<p><img SRC="images/1-6/image63.gif" WIDTH="418" HEIGHT="38"></p>
+
+<p><img SRC="images/1-6/image64.gif" WIDTH="560" HEIGHT="33"></p>
+
+<p><img SRC="images/1-6/image65.gif" WIDTH="388" HEIGHT="63"></p>
+
+<p><img SRC="images/1-6/image66.gif" WIDTH="401" HEIGHT="43"></p>
+
+<p><img SRC="images/1-6/image67.gif" WIDTH="416" HEIGHT="38"></p>
+
+<p><img SRC="images/1-6/image68.gif" WIDTH="540" HEIGHT="33"></p>
+
+<p><img SRC="images/1-6/image69.gif" WIDTH="368" HEIGHT="63">.</p>
+<font FACE="Times New Roman">
+
+<p>По формуле вычислим пространственные вычеты</p>
+</font>
+
+<p><img SRC="images/1-6/image70.gif" WIDTH="396" HEIGHT="73"></p>
+
+<p><img SRC="images/1-6/image71.gif" WIDTH="315" HEIGHT="63"></p>
+
+<p><img SRC="images/1-6/image72.gif" WIDTH="395" HEIGHT="73"></p>
+
+<p><img SRC="images/1-6/image73.gif" WIDTH="315" HEIGHT="63"></p>
+
+<p><img SRC="images/1-6/image74.gif" WIDTH="310" HEIGHT="70"></p>
+
+<p><img SRC="images/1-6/image75.gif" WIDTH="331" HEIGHT="70"></p>
+<font FACE="Times New Roman">
+
+<p>Пример. Пусть дана функция <img SRC="images/1-6/image76.gif" WIDTH="223" HEIGHT="65">.
+Используя результаты предыдущего примера,
+вычислим пространственные вычеты.</p>
+</font>
+
+<p><img SRC="images/1-6/image77.gif" WIDTH="265" HEIGHT="70"></p>
+
+<p><img SRC="images/1-6/image78.gif" WIDTH="286" HEIGHT="70"></p>
+
+<p><img SRC="images/1-6/image79.gif" WIDTH="420" HEIGHT="73"></p>
+
+<p><img SRC="images/1-6/image80.gif" WIDTH="418" HEIGHT="73"></p>
+<font FACE="Times New Roman">
+
+<p>Пример . Пусть дана функция <img SRC="images/1-6/image81.gif" WIDTH="218" HEIGHT="65">Определить
+пространственные вычеты. Представим функцию в
+следующем виде <img SRC="images/1-6/image82.gif" WIDTH="230" HEIGHT="65">Используя
+результаты предыдущего примера будем иметь</p>
+</font>
+
+<p><img SRC="images/1-6/image83.gif" WIDTH="108" HEIGHT="58"></p>
+<font FACE="Times New Roman">
+
+<p>В пространстве <img SRC="images/1-6/image84.gif" WIDTH="21" HEIGHT="20">функция
+представима также в виде <img SRC="images/1-6/image85.gif" WIDTH="331" HEIGHT="65"></p>
+
+<p>Откуда будем иметь <img SRC="images/1-6/image86.gif" WIDTH="251" HEIGHT="68"></p>
+</font>
+
+<p><img SRC="images/1-6/image87.gif" WIDTH="441" HEIGHT="65"><font FACE="Times New Roman">. Эти
+выкладки показывают, что пространственный
+корень <img SRC="images/1-6/image88.gif" WIDTH="118" HEIGHT="28">является особой точкой
+первого порядка.</p>
+
+<p>Вычет в бесконечно удаленной точке.</p>
+
+<p>В соответствии с комплексной пространственной
+алгебре элемент <img SRC="images/1-6/image89.gif" WIDTH="16" HEIGHT="18">изображается
+в сферических координатах в виде <img SRC="images/1-6/image90.gif" WIDTH="111" HEIGHT="30">, так что бесконечная точка
+характеризуется бесконечным радиусом модулем <img SRC="images/1-6/image91.gif" WIDTH="115" HEIGHT="35">Точка ноль
+определяется в пространстве как это
+неоднократно утверждалось в виде <img SRC="images/1-6/image92.gif" WIDTH="65" HEIGHT="35">и произведением <img SRC="images/1-6/image93.gif" WIDTH="243" HEIGHT="33">, где параметры <img SRC="images/1-6/image94.gif" WIDTH="60" HEIGHT="25">действительные, а <img SRC="images/1-6/image95.gif" WIDTH="135" HEIGHT="33"></font>.</p>
+<font FACE="Times New Roman">
+
+<p>Если положить <img SRC="images/1-6/image96.gif" WIDTH="60" HEIGHT="63">и
+рассматривать функции <img SRC="images/1-6/image97.gif" WIDTH="196" HEIGHT="63">, тогда
+функция <img SRC="images/1-6/image98.gif" WIDTH="51" HEIGHT="28">будет аналитической в
+некоторой окрестности точки ноль, которая будет
+особой точкой того же типа, что и точка <img SRC="images/1-6/image99.gif" WIDTH="51" HEIGHT="18">для функции <img SRC="images/1-6/image100.gif" WIDTH="53" HEIGHT="28"></font>.<img SRC="images/1-6/image101.gif" WIDTH="273" HEIGHT="35"><font FACE="Times New Roman">Так что
+бесконечная точка есть <img SRC="images/1-6/image102.gif" WIDTH="166" HEIGHT="63">или на
+изолированной оси <img SRC="images/1-6/image103.gif" WIDTH="376" HEIGHT="61"></p>
+
+<p>Теорема. Пусть функция <img SRC="images/1-6/image104.gif" WIDTH="46" HEIGHT="26">непрерывна
+на границе области G поверхности <img SRC="images/1-6/image105.gif" WIDTH="20" HEIGHT="18">, натянутой без
+точек самопересечения на пространственную
+кривую типа <img SRC="images/1-6/image106.gif" WIDTH="25" HEIGHT="30">и
+аналитична внутри этой области всюду, кроме
+конечного числа особых точек <img SRC="images/1-6/image107.gif" WIDTH="103" HEIGHT="30">,
+тогда имеем в пространстве Y следующие
+соотношения</p>
+</font>
+
+<p><img SRC="images/1-6/image108.gif" WIDTH="328" HEIGHT="66"></p>
+
+<p><img SRC="images/1-6/image109.gif" WIDTH="298" HEIGHT="63"></p>
+<font FACE="Times New Roman">
+
+<p>Если точка <img SRC="images/1-6/image110.gif" WIDTH="28" HEIGHT="31">лежит внутри
+области G и если точка <img SRC="images/1-6/image99.gif" WIDTH="51" HEIGHT="18">также
+принадлежит этой области, то</font> <img SRC="images/1-6/image111.gif" WIDTH="526" HEIGHT="61"></p>
+<font FACE="Times New Roman">
+
+<p>Если внутри области G имеется контур Г или
+поверхность <img SRC="images/1-6/image105.gif" WIDTH="20" HEIGHT="18">содержащими
+внутри себя особые точки <img SRC="images/1-6/image112.gif" WIDTH="93" HEIGHT="31">, то
+справедливы следующие интегральные соотношения</p>
+</font>
+
+<p><img SRC="images/1-6/image113.gif" WIDTH="440" HEIGHT="68"></p>
+
+<p><img SRC="images/1-6/image114.gif" WIDTH="426" HEIGHT="65"></p>
+<font FACE="Times New Roman">
+
+<p>Вычетом функции в бесконечной точке будет
+число <img SRC="images/1-6/image115.gif" WIDTH="290" HEIGHT="71">, а также</p>
+</font>
+
+<p><img SRC="images/1-6/image116.gif" WIDTH="273" HEIGHT="63"><font FACE="Times New Roman">, где
+поверхность <img SRC="images/1-6/image105.gif" WIDTH="20" HEIGHT="18">натянута
+на кривую <img SRC="images/1-6/image117.gif" WIDTH="33" HEIGHT="26">достаточно большой
+сферы <img SRC="images/1-6/image118.gif" WIDTH="70" HEIGHT="35">, которая проходится в
+обратном направлении. Поэтому вычеты равны</p>
+</font>
+
+<p><img SRC="images/1-6/image119.gif" WIDTH="313" HEIGHT="31"><font FACE="Times New Roman">, где <img SRC="images/1-6/image120.gif" WIDTH="76" HEIGHT="31">есть коэффициенты перед <img SRC="images/1-6/image121.gif" WIDTH="73" HEIGHT="33">соответственно в лорановском
+разложении функции в окрестности бесконечно
+удаленной точке.</p>
+<i><b>
+
+<p ALIGN="CENTER"><img src="images/pic30.gif" alt="pic30.gif (7042 bytes) Рис. 30. Связность области в комплексной плоскости." WIDTH="247" HEIGHT="251"></p>
+
+<p ALIGN="CENTER">Рис. 30. Связность области в комплексной
+плоскости.</p>
+
+<p ALIGN="CENTER"><img src="images/pic31.gif" alt="pic31.gif (17826 bytes) Рис. 31. Связность области в комплексном пространстве." WIDTH="334" HEIGHT="372"></p>
+
+<p ALIGN="CENTER">Рис. 31. Связность области в комплексном
+пространстве.</p>
+</b></i>
+
+<p>В комплексной плоскости Z теорема о вычетах
+соответствовала Рис. 30, где область G находится
+между границей<img SRC="images/1-6/image122.gif" WIDTH="25" HEIGHT="28">,
+где <img SRC="images/1-6/image123.gif" WIDTH="73" HEIGHT="25">и Г, состоящей
+из конечного числа ограниченных кусочно гладких
+кривых <img SRC="images/1-6/image124.gif" WIDTH="25" HEIGHT="31">, где <img SRC="images/1-6/image125.gif" WIDTH="66" HEIGHT="25"></p>
+
+<p>В комплексном пространстве Y рассматривается
+сфера с поверхностью, натянутой на бесконечно
+большой радиус <img SRC="images/1-6/image123.gif" WIDTH="73" HEIGHT="25">.
+Особые точки окружены сферами бесконечно малого
+радиуса <img SRC="images/1-6/image126.gif" WIDTH="78" HEIGHT="33">. Так как через особую
+точку проходит изолированное направление, то на
+границе области фиксируются проколы поверхности
+бесконечно малого радиуса. (Рис. 31.)</p>
+
+<p>Пример. Вычислить интеграл <img SRC="images/1-6/image127.gif" WIDTH="200" HEIGHT="65">, где поверхность <img SRC="images/1-6/image105.gif" WIDTH="20" HEIGHT="18">натянута на сферу <img SRC="images/1-6/image128.gif" WIDTH="56" HEIGHT="23">.
+В области <img SRC="images/1-6/image129.gif" WIDTH="56" HEIGHT="23">функция имеет
+четыре особые пространственные точки</p>
+</font>
+
+<p><img SRC="images/1-6/image130.gif" WIDTH="396" HEIGHT="31"><font FACE="Times New Roman">. Вычеты во
+всех особых точках рассчитаны в примере , поэтому
+в соответствии с теоремой о вычетах имеем</p>
+</font>
+
+<p><img SRC="images/1-6/image131.gif" WIDTH="208" HEIGHT="70"></p>
+
+<p><img SRC="images/1-6/image132.gif" WIDTH="626" HEIGHT="33"></p>
+
+<p><img SRC="images/1-6/image133.gif" WIDTH="350" HEIGHT="63"></p>
+
+<p><img SRC="images/1-6/image134.gif" WIDTH="336" HEIGHT="63"></p>
+
+<p><img SRC="images/1-6/image135.gif" WIDTH="286" HEIGHT="60"></p>
+<font FACE="Times New Roman">
+
+<p>Пример . Вычислить интеграл по поверхности
+натянутой на <img SRC="images/1-6/image136.gif" WIDTH="56" HEIGHT="23"></p>
+</font>
+
+<p><img SRC="images/1-6/image137.gif" WIDTH="180" HEIGHT="68"><font FACE="Times New Roman">.
+Пространственные вычеты согласно примера для
+данной функции равны <img SRC="images/1-6/image138.gif" WIDTH="356" HEIGHT="65">. В
+соответствии с теоремой о вычетах будем иметь <img SRC="images/1-6/image139.gif" WIDTH="395" HEIGHT="70"></p>
+
+<p>В дальнейшем можно произвести выделение первой
+и второй комплексной части</p>
+</font>
+
+<p><img SRC="images/1-6/image140.gif" WIDTH="346" HEIGHT="68"></p>
+
+<p><img SRC="images/1-6/image141.gif" WIDTH="321" HEIGHT="61"></p>
+
+<p><img SRC="images/1-6/image142.gif" WIDTH="410" HEIGHT="68"></p>
+<font FACE="Times New Roman">
+
+<p>Интегралы вида <img SRC="images/1-6/image143.gif" WIDTH="531" HEIGHT="51">, где
+поверхность <img SRC="images/1-6/image105.gif" WIDTH="20" HEIGHT="18">натянута
+на сферу радиуса <img SRC="images/1-6/image144.gif" WIDTH="61" HEIGHT="35">, так что
+переменные <img SRC="images/1-6/image145.gif" WIDTH="45" HEIGHT="23">изменяются
+соответственно в пределах <img SRC="images/1-6/image146.gif" WIDTH="231" HEIGHT="58">.
+Для сокращения записей введем обозначения <img SRC="images/1-6/image147.gif" WIDTH="580" HEIGHT="30">. Так, что интеграл перейдет в
+интеграл <img SRC="images/1-6/image148.gif" WIDTH="200" HEIGHT="51"></font>.</p>
+<font FACE="Times New Roman">
+
+<p>На поверхности сферы имеем <img SRC="images/1-6/image149.gif" WIDTH="203" HEIGHT="33">и
+введенные переменные могут быть записаны через
+одну переменную <img SRC="images/1-6/image89.gif" WIDTH="16" HEIGHT="18">в комплексном
+виде<img SRC="images/1-6/image150.gif" WIDTH="191" HEIGHT="65"></font>, <img SRC="images/1-6/image151.gif" WIDTH="191" HEIGHT="65"><font FACE="Times New Roman">. Элемент площади <img SRC="images/1-6/image152.gif" WIDTH="35" HEIGHT="25">выразится как произведение <img SRC="images/1-6/image153.gif" WIDTH="80" HEIGHT="35"></p>
+</font>
+
+<p><img SRC="images/1-6/image154.gif" WIDTH="300" HEIGHT="38"><font FACE="Times New Roman">, откуда
+получаем <img SRC="images/1-6/image155.gif" WIDTH="206" HEIGHT="33">и в силу <img SRC="images/1-6/image156.gif" WIDTH="61" HEIGHT="35">будем иметь <img SRC="images/1-6/image157.gif" WIDTH="141" HEIGHT="58">.
+Исходный интеграл сводится к вычислению
+двойного интеграла по поверхности <img SRC="images/1-6/image158.gif" WIDTH="171" HEIGHT="56">, где <img SRC="images/1-6/image159.gif" WIDTH="300" HEIGHT="65">-есть
+рациональная функция от <img SRC="images/1-6/image89.gif" WIDTH="16" HEIGHT="18">.
+Тогда по теореме о вычетах </p>
+</font>
+
+<p><img SRC="images/1-6/image160.gif" WIDTH="261" HEIGHT="61"><font FACE="Times New Roman">, где</font> <img SRC="images/1-6/image161.gif" WIDTH="116" HEIGHT="31"><font FACE="Times New Roman">- все полюсы
+рациональной функции <img SRC="images/1-6/image162.gif" WIDTH="58" HEIGHT="31">,
+лежащие в сфере <img SRC="images/1-6/image163.gif" WIDTH="61" HEIGHT="35"></font>.</p>
+<font FACE="Times New Roman">
+
+<p>Пример . Вычислить интеграл <img SRC="images/1-6/image164.gif" WIDTH="415" HEIGHT="68"></p>
+
+<p>Преобразуем знаменатель. <img SRC="images/1-6/image165.gif" WIDTH="513" HEIGHT="58"><img SRC="images/1-6/image166.gif" WIDTH="141" HEIGHT="58">. Подставляя полученные
+выражения в исходный интеграл, будем иметь</p>
+</font>
+
+<p><img SRC="images/1-6/image167.gif" WIDTH="251" HEIGHT="98"></p>
+
+<p><img SRC="images/1-6/image168.gif" WIDTH="375" HEIGHT="66"></p>
+<font FACE="Times New Roman">
+
+<p>Знаменатель имеет корни<img SRC="images/1-6/image169.gif" WIDTH="366" HEIGHT="65">.
+Первый корень при <img SRC="images/1-6/image170.gif" WIDTH="55" HEIGHT="25">является
+особой точкой подынтегральной функции –полюсом
+второго порядка.</p>
+
+<p>Знаменатель имеет два пространственных корня <img SRC="images/1-6/image171.gif" WIDTH="211" HEIGHT="65">. Пространственные корни при <img SRC="images/1-6/image172.gif" WIDTH="55" HEIGHT="25">имеют модуль <img SRC="images/1-6/image173.gif" WIDTH="83" HEIGHT="38">и не являются особыми точками
+подъинтегральной функцией. Если принять <img SRC="images/1-6/image174.gif" WIDTH="146" HEIGHT="28">, то <img SRC="images/1-6/image175.gif" WIDTH="325" HEIGHT="65"></p>
+</font>
+
+<p><img SRC="images/1-6/image176.gif" WIDTH="480" HEIGHT="65"><font FACE="Times New Roman">где <img SRC="images/1-6/image177.gif" WIDTH="88" HEIGHT="25">. При тех же условиях</p>
+</font>
+
+<p><img SRC="images/1-6/image178.gif" WIDTH="675" HEIGHT="58">.</p>
+<font FACE="Times New Roman">
+
+<p>Поэтому согласно теореме о вычетах имеем <img SRC="images/1-6/image179.gif" WIDTH="373" HEIGHT="75">. Окончательно интеграл равен</p>
+</font>
+
+<p><img SRC="images/1-6/image180.gif" WIDTH="173" HEIGHT="58"></p>
+<font FACE="Times New Roman">
+
+<p>Подынтегральную функцию преобразуем на сумму
+первых комплексных функций. Для этого обозначим <img SRC="images/1-6/image181.gif" WIDTH="291" HEIGHT="28">и подставим в подынтегральную
+функцию</p>
+</font>
+
+<p><img SRC="images/1-6/image182.gif" WIDTH="453" HEIGHT="71"><font FACE="Times New Roman">Следовательно
+первая комплексная часть равна <img SRC="images/1-6/image183.gif" WIDTH="293" HEIGHT="70">, вторая комплексная часть равна</p>
+</font>
+
+<p><img SRC="images/1-6/image184.gif" WIDTH="275" HEIGHT="68"><font FACE="Times New Roman">, В
+результате имеем расчет двух двойных интегралов</p>
+</font>
+
+<p><img SRC="images/1-6/image185.gif" WIDTH="546" HEIGHT="70"></p>
+
+<p><img SRC="images/1-6/image186.gif" WIDTH="613" HEIGHT="70"></p>
+
+<p><font face="Arial" color="#000080">[<a href="1-7-1.html">Следующий
+параграф</a>]</font></p>
+<!--webbot bot="Include" U-Include="footer.htm" TAG="BODY" startspan -->
+
+<hr color="#000080" style="border: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px">
+
+<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px"><b><font face="Arial" size="1" color="#000080">Мини
+оглавление:</font></b></p>
+
+<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px"><font face="Arial" size="2" color="#000080"><strong>[<a href="0.htm">0</a>], [<a href="1-1-1.html">1.1.1</a>, <a href="1-1-2.html">1.1.2</a>, <a href="1-1-3.html">1.1.3</a>,
+<a href="1-1-4.html">1.1.4</a>, <a href="1-1-5.html">1.1.5</a>, <a href="1-1-6.html">1.1.6</a>,
+<a href="1-1-7.html">1.1.7</a>, <a href="1-1-8.html">1.1.8</a>, <a href="1-2.html">1.2</a>,
+<a href="1-2-1.html">1.2.1</a>, <a href="1-2-2.html">1.2.2</a>, <a href="1-2-2-A.html">1.2.2.a</a>,
+<a href="1-2-2-B.html">1.2.2.b</a>, <a href="1-2-2-C.html">1.2.2.c</a>, <a href="1-2-2-D.html">1.2.2.d</a>, <a href="1-2-2-E.html">1.2.2.e</a>, <a href="1-2-2-F.html">1.2.2.f</a>, <a href="1-2-2-G.html">1.2.2.g</a>, <a href="1-2-2-H.html">1.2.2.h</a>, <a href="1-2-3.html">1.2.3</a>, <a href="1-3-1.html">1.3.1</a>,
+<a href="1-3-2.html">1.3.2</a>, <a href="1-3-3.html">1.3.3</a>, <a href="1-3-4.html">1.3.4</a>,
+<a href="1-3-5.html">1.3.5</a>, <a href="1-3-6.html">1.3.6</a>, <a href="1-4-1.html">1.4.1</a>,
+<a href="1-4-2.html">1.4.2</a>, <a href="1-5.html">1.5</a>, <a href="1-6.html">1.6</a>, <a href="1-7-1.html">1.7.1</a>, <a href="1-7-2.html">1.7.2</a>,
+<a href="1-7-3-p1.html">1.7.3.1</a>, <a href="1-7-3-p2.htm">1.7.3.2</a>, <a href="1-7-3-p3.htm">1.7.3.3</a>,
+<a href="1-7-4-p1.html">1.7.4.1</a>, <a href="1-7-4-p2.html">1.7.4.2</a>, <a href="1-8-1.html">1.8.1</a>], [<a href="2-1.html">2.1</a>, <a href="2-2.html">2.2</a>],[<a href="3-1.html">3.1</a>, <a href="3-2.html">3.2</a>, <a href="3-3.html">3.3</a>,
+<a href="3-4-1.html">3.4.1</a>, <a href="3-4-2.html">3.4.2</a>, <a href="3-4-3.html">3.4.3</a>,
+<a href="3-4-4.html">3.4.4</a>, <a href="3-4-5.html">3.4.5</a>],[<a href="4-1.html">4.1</a>, <a href="4-2.html">4.2</a>, <a href="4-3.html">4.3</a>, <a href="4-4.html">4.4</a>],[<a href="5-1.html">5.1</a>, <a href="5-1-Pic52.htm">5.1.Рис.52</a>, <a href="5-2.html">5.2</a>, <a href="5-3.html">5.3</a>,
+<a href="5-4.html">5.4</a>, <a href="5-4-t1.htm">5.4.Т1</a>, <a href="5-4-t2.htm">5.4.Т2</a>,
+<a href="5-4-t3.htm">5.4.Т3</a>, <a href="5-5-1.html">5.5.1</a>, <a href="5-5-2.html">5.5.2</a>,
+<a href="5-5-3.html">5.5.3</a>, <a href="5-5-4.html">5.5.4</a>],[<a href="6-1-1.html">6.1.1</a>,
+<a href="6-1-2.html">6.1.2</a>, <a href="6-2-1.html">6.2.1</a>, <a href="6-2-2.html">6.2.2</a>,
+<a href="6-2-3.html">6.2.3</a>, <a href="6-2-4.html">6.2.4</a>, <a href="6-2-5.html">6.2.5</a>,
+<a href="6-3.html">6.3</a>, <a href="6-4-1.html">6.4.1</a>, <a href="6-4-2.html">6.4.2</a>,
+<a href="6-5-1.html">6.5.1</a>, <a href="6-5-2.html">6.5.2</a>],[<a href="7-1.html">7.1</a>,
+<a href="7-2.html">7.2</a>, <a href="7-3.html">7.3</a>, <a href="7-4.html">7.4</a>,
+<a href="7-5.html">7.5</a>, <a href="7-6.html">7.6</a>, <a href="7-7-1.htm">7.7.1</a>,
+<a href="7-7-2.htm">7.7.2</a>, <a href="7-8-1.htm">7.8.1</a>, <a href="7-8-2.htm">7.8.2</a>,
+<a href="7-8-3.htm">7.8.3</a>, </strong></font><font face="Arial" size="2" color="#000080"><strong><a href="7-9.htm">7.9</a></strong></font><font face="Arial" size="2" color="#000080"><strong>],[<a href="8-1.html">8.1</a>,
+<a href="8-2-1.html">8.2.1</a>, <a href="8-2-2.html">8.2.2</a>, <a href="8-3.html">8.3</a>,
+<a href="8-4.html">8.4</a>, <a href="8-5.html">8.5</a>, <a href="8-6.html">8.6</a>,
+<a href="8-6-t1.html">8.6.T1</a>, <a href="8-7.html">8.7</a>, <a href="8-8-1.html">8.8.1</a>,
+<a href="8-8-2.html">8.8.2</a>, <a href="8-8-3.html">8.8.3</a>, <a href="8-9-1.html">8.9.1</a>,
+<a href="8-9-2.html">8.9.2</a>, <a href="8-9-3.html">8.9.3</a>, <a href="8-10.htm">8.10</a>,
+<a href="8-10-t2.html">8.10.T2</a>, <a href="8-10-t3.html">8.10.T3</a>],[<a href="9-1.html">9.1</a>,
+<a href="9-2.html">9.2</a>, <a href="9-3.html">9.3</a>, <a href="9-3-Pic88.html">Рис.88</a>,
+<a href="9-3-Pic89.html">89</a>, <a href="9-3-Pic90.html">90</a>, <a href="9-3-Pic91.html">91</a>,
+<a href="9-3-Pic92.html">92</a>, <a href="9-3-Pic93.html">93</a>, <a href="9-3-Pic94.html">94</a>,
+<a href="9-3-Pic95.html">95</a>, <a href="9-3-Pic96.html">96</a>, <a href="9-3-Pic97.html">97</a>,
+<a href="9-3-Pic98.html">98</a>, <a href="9-3-Pic99.html">99</a>, <a href="9-3-Pic99.html">100</a>],[<a href="10-1.html">10.1</a>,
+<a href="10-2.html">10.2</a>, <a href="10-3.html">10.3</a>, <a href="10-4.html">10.4</a>,
+<a href="10-5.html">10.5</a>, <a href="10-6.html">10.6</a>, <a href="10-7.html">10.7</a>,
+<a href="10-8.html">10.8</a>, <a href="10-9.html">10.9</a>, <a href="10-10.html">10.10</a>,
+<a href="10-11.html">10.11</a>, <a href="10-12.html">10.12</a>, <a href="10-13.htm">10.13</a>,
+<a href="10-14.htm">10.14</a>, <a href="10-15-1.html">10.15.1</a>, <a href="10-15-2.html">10.15.2</a>,
+<a href="10-16-1.html">10.16.1</a>, <a href="10-16-2.html">10.16.2</a>, <a href="10-17.html">10.17</a>,
+<a href="10-18.html">10.18</a>],[<a href="11.html">11</a>]&nbsp;</strong></font></p>
+
+
+<p>Размещенный материал является
+электронной версией книги: <strong>©</strong>
+В.И.Елисеев, &quot;Введение в методы теории функций
+пространственного комплексного переменного&quot;,
+изданной Центром научно-технического
+творчества молодежи Алгоритм. - М.:,
+НИАТ. - 1990. Шифр Д7-90/83308. в каталоге
+Государственной публичной научно-технической
+библиотеки.
+ Сайт действует с 10 августа 1998.</p>
+
+<p style="margin-top: 0px; margin-bottom: 0px">E-mail: <a href="mailto:mathsru@gmail.com">mathsru@gmail.com</a>
+ </p>
+
+<p style="margin-top: 0px; margin-bottom: 0px"><a href="http://counter.rambler.ru/top100/"><img src="http://counter.rambler.ru/top100.cnt?36886" alt="Rambler's Top100 Service" border="0"></a>
+</p>
+
+
+
+<!--webbot bot="Include" endspan i-checksum="55970" -->
+
+<p ALIGN="left" style="border-top: 0px; border-bottom: 0px">
+<!--begin of Top100-->
+</div></body>
+</html>

@@ -1,0 +1,687 @@
+<html>
+
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NJ9243B');</script>
+<!-- End Google Tag Manager -->
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+
+<title>ГЛАВА 2. ПОДСЧЕТ ПОДЪЕМНОЙ СИЛЫ,
+ДЕЙСТВУЮЩЕЙ НА ТЕЛО КОНЕЧНЫХ РАЗМЕРОВ В
+ПОТОКЕ СПЛОШНОЙ СРЕДЫ 2.2. Методика
+классического решения в пространстве</title>
+<META content="подъемная сила, аэродинамика, обтекание тела, поток, сплошная среда, 
+задача жуковского, критические точки, критические линии, конформные отображения,
+скорость потока, профиль жуковского, идеальная жидкость, жидкое крыло, крыло,
+ламенарное течение, дозвуковые скорости, уравнение бернулли-эйлера, формула чаплыгина,
+бесциркуляционный поток, циркуляция,теорема Гельмгольца, линии Прандтля" name=keywords>
+<META content="Классическая задача Н.Е. Жуковского о подсчете вектора подъемной
+сипы, действующей на тело конечных размеров в потоке сплошной среды, с применением
+методов теории функций пространственного комплексного переменного имеет
+принципиально новое решение" name=description>
+<style type="text/css"> 
+body 
+{ 
+ margin: 0; 
+ padding: 0; 
+ padding-top: 10px;
+ text-align: center; 
+} 
+#centered
+{ 
+ width: 980px; 
+ text-align: left;
+ border: 0px; 
+ padding: 0;  
+ margin: 0 auto; 
+} 
+</style>
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJ9243B"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><div id="centered">
+
+
+<table border="0" width="100%" style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px" height="80">
+  <tr>
+    <td width="14%" rowspan="2" valign="top" height="76"><img src="images/SmallTitle.gif" border="0" width="126" height="113"></td>
+    <td width="86%" height="93"><font face="Arial" color="#000080"><b>В. И. ЕЛИСЕЕВ</b></font><p><b><font face="Arial" color="#000080">ВВЕДЕНИЕ В МЕТОДЫ ТЕОРИИ
+    ФУНКЦИЙ ПРОСТРАНСТВЕННОГО КОМПЛЕКСНОГО ПЕРЕМЕННОГО<br></font></b><font color="#000080" face="Arial">[</font><a href="index.htm"><font face="Arial">Оглавление</font></a><font color="#000080">]</font> </td>
+  </tr>
+<tr>
+    <td width="86%" height="1"><p ALIGN="left" style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px">
+      <p ALIGN="left" style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px; border-width: 0;"><a href="http://www.amazon.com/Numeric-field-Introduction-functions-variable/dp/146991428X/ref=sr_1_7?ie=UTF8&qid=1328153023&sr=8-7"><img src="images/amazon.PNG" alt="Amazon.com" width="102" height="34" border="0"></a>      
+      <ul>
+        <li><a href="http://www.amazon.com/Numeric-field-Introduction-functions-variable/dp/146991428X/ref=sr_1_7?ie=UTF8&qid=1328153023&sr=8-7">Елисеев В.И. Числовое поле. Введение в ТФКПП.</a></li>
+	<li><a href="http://www.amazon.com/coordinate-axes-physical-reality-Russian/dp/1470005026/ref=sr_1_1?ie=UTF8&qid=1328328469&sr=8-1?ie=UTF8&qid=1328328469&sr=8-1">Елисеев В.И. Оси координат физической реальности.</a></li>
+      </ul>
+      <p ALIGN="left" style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px; border-width: 0;"><img src="images/pdf.PNG" alt="PDF" width="48" height="48" border="0"></p>
+      <ul>
+        <li><a href="pdf/book5.pdf">Елисеев В.И. Введение в ТФКПП. 2003</a></li>
+        <li><a href="pdf/TFKPP-2007.pdf">Елисеев В.И. Числовое поле. Введение в ТФКПП. 2006</a></li>
+        <li><a href="pdf/book6-29JAN2012.pdf">Елисеев В.И. Оси координат физической реальности. 2012</a></li>
+      </ul>
+   </td>
+</tr>
+</table>
+
+<hr color="#000080" style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px">
+<!--webbot bot="Include" endspan i-checksum="17295" -->
+
+<font FACE="Arial"><i><b>
+
+<p><font color="#000080">2.2. Методика классического решения
+в пространстве</font></p>
+</b></i></font><font FACE="Times New Roman">
+
+<p>Математическая модель пространства</font> (Y)<font FACE="Times New Roman"> стыкуется с идеальной схемой
+несущей линии Прандтля. Несущая линия может быть
+интерпретирована как выколотая ось в
+пространстве (</font>Y<font FACE="Times New Roman">), содержащая
+делители нуля, которые по своей математической
+природе являются причинами вихреисточника.</p>
+
+<p>Кроме того, выколотая ось заключает в себе
+изолированное направление и тем самым
+удовлетворяет двум теоремам Гельмгольца.</p>
+
+<p>Пелена от свободных вихрей может быть
+поверхностью вихрей с пространственной
+циркуляцией.</p>
+
+<p>В комплексном пространстве тело конечных
+размеров заключим внутри поверхности <font FACE="Symbol">s</font>
+, заданной сеткой интегральных кривых</font> <img SRC="images/2-2/image362.gif" WIDTH="90" HEIGHT="23">, <img SRC="images/2-2/image363.gif" WIDTH="93" HEIGHT="28">.</p>
+<font FACE="Times New Roman">
+
+<p>На элемент поверхности </font>d<font FACE="Symbol">s</font> <font FACE="Times New Roman">действует векторная сила,
+направленная внутрь поверхности, поэтому
+согласно, формуле (</font>2.1.<font FACE="Times New Roman">) получим</p>
+</font>
+
+<p><img SRC="images/2-2/image364.gif" WIDTH="260" HEIGHT="58"></p>
+<font FACE="Times New Roman">
+
+<p>Скорость потока в точках <font FACE="Symbol">x</font>
+поверхности <font FACE="Symbol">s</font> будет направлена по
+касательной к поверхности <font FACE="Symbol">s</font> </p>
+</font>
+
+<p><img SRC="images/2-2/image365.gif" WIDTH="180" HEIGHT="33">,</p>
+<font FACE="Times New Roman">
+
+<p>где <font FACE="Symbol">f</font> </font><i>, <font FACE="Symbol">y</font> </i><font FACE="Times New Roman">- аргументы точки <font FACE="Symbol">x</font> </font>.</p>
+<font FACE="Times New Roman">
+
+<p>Отсюда величина скорости равна (рис. 29)</p>
+</font>
+
+<p><img SRC="images/2-2/image366.gif" WIDTH="156" HEIGHT="33"></p>
+<font FACE="Times New Roman">
+
+<p>и двойной интеграл по поверхности будет
+определять давление на всю конечную область
+пространства, ограниченную этой поверхностью,</p>
+</font>
+
+<p><img SRC="images/2-2/image367.gif" WIDTH="498" HEIGHT="63"></p>
+<font FACE="Times New Roman">
+
+<p>где</font> <img SRC="images/2-2/image368.gif" WIDTH="276" HEIGHT="36">.</p>
+<font FACE="Times New Roman">
+
+<p>Сопряженность комплексных величин в
+пространстве рассматриваем относительно обоих
+направлений </font><i>i </i><font FACE="Times New Roman">и </font><i>j</i>.</p>
+<font FACE="Times New Roman">
+
+<p>На основании интеграла формула справедлива для
+любого вида поверхности, охватывающей тело
+конечных</font> <font FACE="Times New Roman">размеров. Поэтому
+рассматриваем элементарную сетку</p>
+</font>
+
+<p>r = const, <font FACE="Symbol">f</font> = const.</p>
+<font FACE="Times New Roman">
+
+<p>с периодами </font>2<font FACE="Symbol">p</font> <font FACE="Times New Roman">по
+обоим аргументам <font FACE="Symbol">f</font> </font>, <font FACE="Symbol">y</font>
+.</p>
+<font FACE="Times New Roman">
+
+<p>Вектор, комплексно-сопряженный вектору
+подъемной силы, выразится</p>
+</font>
+
+<table CELLSPACING="0" BORDER="0" CELLPADDING="9" WIDTH="710">
+  <tr>
+    <td WIDTH="49%" VALIGN="TOP"><img SRC="images/2-2/image369.gif" WIDTH="213" HEIGHT="63"></td>
+    <td WIDTH="51%" VALIGN="TOP"><p ALIGN="RIGHT">(2.2.)</td>
+  </tr>
+</table>
+<font FACE="Times New Roman">
+
+<p>Это и будет классическая формула А.С. Чаплыгина
+в пространстве для подъемной силы, действующей
+на тело, охватываемое произвольно замкнутой
+поверхностью.</p>
+
+<p>В пространстве</font> (Y)<font FACE="Times New Roman">
+воспользуемся функцией Жуковского, реализующей
+однолистное отображение сферы на внутренность
+круга с двойной границей (рис. 38</font>).</p>
+<font FACE="Times New Roman"><i><b>
+
+<p ALIGN="center"><img src="images/pic38.gif" alt="pic38.gif (23928 bytes) Рис. 38. Обтекание сферы пространственным потоком, вызывающее на ее поверхности циклонный вихрь. Траектории частиц циклонного вихря отвечают простейшей пространственной кривой" WIDTH="486" HEIGHT="510"></p>
+</b></i>
+
+<p ALIGN="center"><i><b>Рис. 38. Обтекание сферы
+пространственным потоком, вызывающее на ее
+поверхности циклонный вихрь. Траектории частиц
+циклонного вихря отвечают простейшей
+пространственной кривой</b></i></p>
+
+<p>Таким образом, используется модель конечных
+размеров, интегрирование проводится по
+замкнутой поверхности, а не по контуру, как это
+делается в </font><i>z</i><font FACE="Times New Roman">-плоскости.</p>
+
+<p>Комплексный потенциал можно построить,
+используя и особо простые профиля Жуковского
+(рис. 38</font>).</p>
+<font FACE="Times New Roman">
+
+<p>В (</font><i>z</i><font FACE="Times New Roman">) -плоскости
+использовались контурный интеграл</p>
+</font>
+
+<p><img SRC="images/2-2/image370.gif" WIDTH="195" HEIGHT="63">,</p>
+<font FACE="Times New Roman">
+
+<p>и основанная на нем теорема о вычетах</p>
+</font>
+
+<p><img SRC="images/2-2/image371.gif" WIDTH="270" HEIGHT="66">,</p>
+<font FACE="Times New Roman">
+
+<p>поэтому из лорановского разложения скорости в
+окрестности изолированной бесконечно удаленной
+точки</p>
+</font>
+
+<p><img SRC="images/2-2/image372.gif" WIDTH="330" HEIGHT="65">.</p>
+<font FACE="Times New Roman">
+
+<p>вклад в решение вносят только два первых члена
+(взятые в фигурные скобки).</p>
+
+<p>Для плоских контуров в пространстве (</font>Y<font FACE="Times New Roman">) справедлив интеграл Коши в форме (</font>1.52)<font FACE="Times New Roman">, применение которой не изменяет
+вида формулы Жуковского</p>
+</font>
+
+<p><img SRC="images/2-2/image373.gif" WIDTH="128" HEIGHT="31">.</p>
+<font FACE="Times New Roman">
+
+<p>Однако следует иметь ввиду, что циркуляция
+здесь пространственная по контуру С</font><sub>3</sub><font FACE="Times New Roman">, охватывающему тело конечных
+размеров. Скорость </font><img SRC="images/2-2/image374.gif" WIDTH="33" HEIGHT="31"><font FACE="Times New Roman"> пространственно-комплексная</p>
+</font>
+
+<p><img SRC="images/2-2/image375.gif" WIDTH="133" HEIGHT="35"></p>
+<font FACE="Times New Roman">
+
+<p>В зависимости от выбора исходных углов атаки <font FACE="Symbol">y</font> и <font FACE="Symbol">q</font> сферы
+пространственным потоком и их знаков получим
+различные выражения комплексного потенциала.
+Однако остановимся на варианте исследований,
+которые содержат в себе частный случай плоского
+варианта.</p>
+
+<p>Считаем поток, идущий из бесконечности, </font><img SRC="images/2-2/image376.gif" WIDTH="136" HEIGHT="35">.</p>
+<font FACE="Times New Roman">
+
+<p>Тогда из формулы Жуковского получим потенциал,
+описывающий бесциркуляционное обтекание сферы</p>
+</font>
+
+<p><img SRC="images/2-2/image377.gif" WIDTH="191" HEIGHT="63"></p>
+<font FACE="Times New Roman">
+
+<p>Накладывая на него чисто циркуляционный поток</font>,<font FACE="Times New Roman"> равный в пространстве</p>
+</font>
+
+<p><img SRC="images/2-2/image378.gif" WIDTH="133" HEIGHT="63"></p>
+<font FACE="Times New Roman">
+
+<p>получим окончательное решение задачи по
+определению потенциала потока в пространстве</p>
+</font>
+
+<table CELLSPACING="0" BORDER="0" CELLPADDING="9" WIDTH="710">
+  <tr>
+    <td WIDTH="76%" VALIGN="TOP"><img SRC="images/2-2/image379.gif" WIDTH="396" HEIGHT="66"></td>
+    <td WIDTH="24%" VALIGN="TOP"><p ALIGN="RIGHT">(2.3.)</td>
+  </tr>
+</table>
+<font FACE="Times New Roman">
+
+<p>Скорость потока для этого потенциала
+выражается сопряженной скоростью</p>
+</font>
+
+<p><img SRC="images/2-2/image380.gif" WIDTH="143" HEIGHT="35"></p>
+<font FACE="Times New Roman">
+
+<p>в которой углы атаки,</font> <font FACE="Symbol">q</font> <font FACE="Times New Roman">- действительные величины.</p>
+
+<p>Случай, когда скорость будет выражаться суммой
+двух потоков, пока не рассматривается</p>
+</font>
+
+<p><img SRC="images/2-2/image381.gif" WIDTH="206" HEIGHT="35">, <img SRC="images/2-2/image382.gif" WIDTH="88" HEIGHT="31">, <img SRC="images/2-2/image383.gif" WIDTH="86" HEIGHT="31">.</p>
+<font FACE="Times New Roman">
+
+<p>Исследуем решение по двум вариантам
+определения критических точек в
+пространственном обтекании сферы сплошным
+потоком.</p>
+
+<p>Первый вариант соответствует классическому
+решению — критические точки потока там, где
+скорость потока равна нулю</p>
+</font>
+
+<p><img SRC="images/2-2/image384.gif" WIDTH="103" HEIGHT="35">.</p>
+<font FACE="Times New Roman">
+
+<p>Для этого варианта получаем уравнение.</p>
+</font>
+
+<p><img SRC="images/2-2/image385.gif" WIDTH="340" HEIGHT="65">,</p>
+<font FACE="Times New Roman">
+
+<p>решая которое, получаем выражение для
+отыскания критических точек потока</p>
+</font>
+
+<p><img SRC="images/2-2/image386.gif" WIDTH="341" HEIGHT="75">,</p>
+<font FACE="Times New Roman">
+
+<p>Видно, что расположение критических точек
+зависит от величины циркуляции Г. Рассмотрим
+случай, когда величина циркуляции равна</p>
+</font>
+
+<p><img SRC="images/2-2/image387.gif" WIDTH="188" HEIGHT="31"></p>
+<font FACE="Times New Roman">
+
+<p>(корень в числителе обращается в нуль).</p>
+
+<p>В этом случае величина циркуляции находится в
+плоскости, в которую отображается сфера (рис. 36).
+Главный вектор циркуляции будет равен Г и
+наклонен под углом </font><img SRC="images/2-2/image388.gif" WIDTH="76" HEIGHT="60"><font FACE="Times New Roman">к действительной оси.</p>
+
+<p>Критические скорости располагаются на сфере.
+Рассмотрим этот случай более подробно.</p>
+
+<p>Полагая на сфере</font> <img SRC="images/2-2/image389.gif" WIDTH="111" HEIGHT="30">,<font FACE="Times New Roman"> определим модуль производной
+комплексного потенциала</p>
+</font>
+
+<p><img SRC="images/2-2/image390.gif" WIDTH="593" HEIGHT="71"></p>
+<font FACE="Times New Roman">
+
+<p>Произведем преобразование фигурных скобках</p>
+</font>
+
+<p><img SRC="images/2-2/image391.gif" WIDTH="488" HEIGHT="68"></p>
+<font FACE="Times New Roman">
+
+<p>Для сокращения записи введем обозначения:</p>
+</font>
+
+<p><img SRC="images/2-2/image392.gif" WIDTH="273" HEIGHT="30">;</p>
+
+<p><img SRC="images/2-2/image393.gif" WIDTH="268" HEIGHT="30">.</p>
+<font FACE="Times New Roman">
+
+<p>Преобразуем величину, содержащую циркуляцию</p>
+</font>
+
+<p><img SRC="images/2-2/image394.gif" WIDTH="381" HEIGHT="66">,</p>
+<font FACE="Times New Roman">
+
+<p>где</p>
+</font>
+
+<p><img SRC="images/2-2/image395.gif" WIDTH="125" HEIGHT="65">.</p>
+<font FACE="Times New Roman">
+
+<p>С учетом введенных обозначений, производная
+примет вид</p>
+</font>
+
+<p><img SRC="images/2-2/image396.gif" WIDTH="426" HEIGHT="68">.</p>
+<font FACE="Times New Roman">
+
+<p>Определим модуль выражения</p>
+</font>
+
+<p><img SRC="images/2-2/image397.gif" WIDTH="405" HEIGHT="78">.</p>
+<font FACE="Times New Roman">
+
+<p>Приравняем величину, стоящую под корнем нулю и
+получим циркуляцию</p>
+</font>
+
+<p><img SRC="images/2-2/image398.gif" WIDTH="316" HEIGHT="38"></p>
+<font FACE="Times New Roman">
+
+<p>В результате величина циркуляции выразится</p>
+</font>
+
+<p><img SRC="images/2-2/image399.gif" WIDTH="391" HEIGHT="58">.</p>
+<font FACE="Times New Roman">
+
+<p>Формула инвариантна относительно осей
+координат. При переходе к плоскости z получим в
+обоих случаях решение Н.Е. Жуковского:</p>
+
+<p>при </font><img SRC="images/2-2/image400.gif" WIDTH="90" HEIGHT="28">, <img SRC="images/2-2/image401.gif" WIDTH="230" HEIGHT="30"></p>
+
+<p><img SRC="images/2-2/image402.gif" WIDTH="213" HEIGHT="31">;</p>
+<font FACE="Times New Roman">
+
+<p>при </font><img SRC="images/2-2/image403.gif" WIDTH="93" HEIGHT="28">, <img SRC="images/2-2/image404.gif" WIDTH="225" HEIGHT="30"></p>
+
+<p><img SRC="images/2-2/image405.gif" WIDTH="210" HEIGHT="31"></p>
+<font FACE="Times New Roman">
+
+<p>(в обоих случаях взят знак минус квадратного
+корня).</p>
+
+<p>При положительном знаке квадратного корня
+имеем величину, которая превышает классический
+плоский вариант:</p>
+</font>
+
+<p><img SRC="images/2-2/image406.gif" WIDTH="221" HEIGHT="31">;</p>
+
+<p><img SRC="images/2-2/image407.gif" WIDTH="223" HEIGHT="31">.</p>
+<font FACE="Times New Roman">
+
+<p>Второй вариант связан с наличием в
+пространстве изолированной оси, которая может
+трактоваться как вихревой шнур естественной
+циркуляции. Дискретные точки делителей нуля по
+своей природе имитируют в пространстве наличие
+крутящего момента, что и определяет третье
+условие для определения критических точек
+потока. Первые два условия:</p>
+</font>
+
+<p><img SRC="images/2-2/image408.gif" WIDTH="96" HEIGHT="35">,</p>
+
+<p><img SRC="images/2-2/image409.gif" WIDTH="186" HEIGHT="30"></p>
+<font FACE="Times New Roman">
+
+<p>реализованы как в плоскости комплексного
+переменного, так и в пространстве</p>
+</font>
+
+<p><img SRC="images/2-2/image410.gif" WIDTH="200" HEIGHT="38">.</p>
+<font FACE="Times New Roman">
+
+<p>В этом случае делители нуля можно трактовать
+как причины вихреисточника. Согласно свойствам
+этих элементов и их геометрической иллюстрации
+при обтекании пространственного тела сплошной
+средой возникают на некоторых линиях такие
+условия обтекания, когда скорость разлагается на
+два взаимно перпендикулярных вектора, не имевших
+векторной суммы и приложенных к разным точкам,
+расположенным в окрестности точек той линии, на
+которой эти условия возникают. Образовавшееся
+плечо приводит к образованию крутящего момента в
+точке. Каждая среда имеет свою критическую
+скорость и свой радиус вы колотой оси.</p>
+
+<p>Равенство производной от комплексного
+потенциала делителям нуля отвечает нахождению в
+решении критических линий потока. В этом
+коренное отличие решения в пространстве.</p>
+
+<p>Таким образом, комплексный потенциал с учетом
+принятых обозначений</p>
+</font>
+
+<p><img SRC="images/2-2/image411.gif" WIDTH="451" HEIGHT="68"></p>
+<font FACE="Times New Roman">
+
+<p>равен делителям нуля при выполнении условия</p>
+</font>
+
+<p><img SRC="images/2-2/image412.gif" WIDTH="255" HEIGHT="73">,</p>
+<font FACE="Times New Roman">
+
+<p>так как, если комплекс </font><img SRC="images/2-2/image413.gif" WIDTH="73" HEIGHT="28"><font FACE="Times New Roman"> имеет </font><img SRC="images/2-2/image414.gif" WIDTH="85" HEIGHT="38"><font FACE="Times New Roman">, то его модуль равен корню
+из нуля, а аргумент соответственно </font><img SRC="images/2-2/image415.gif" WIDTH="55" HEIGHT="25"></p>
+
+<p><img SRC="images/2-2/image416.gif" WIDTH="283" HEIGHT="41">;</p>
+
+<p><img SRC="images/2-2/image417.gif" WIDTH="113" HEIGHT="25">.</p>
+<font FACE="Times New Roman">
+
+<p>Раскроем выражение </font><img SRC="images/2-2/image418.gif" WIDTH="56" HEIGHT="30"><font FACE="Times New Roman"> и получим</p>
+</font>
+
+<p><img SRC="images/2-2/image419.gif" WIDTH="365" HEIGHT="65">.</p>
+<font FACE="Times New Roman">
+
+<p>Подставим обозначения А,</font> <font FACE="Times New Roman">В</p>
+</font>
+
+<p><img SRC="images/2-2/image420.gif" WIDTH="465" HEIGHT="30"></p>
+
+<p><img SRC="images/2-2/image421.gif" WIDTH="516" HEIGHT="65"></p>
+<font FACE="Times New Roman">
+
+<p>Выражение для циркуляции принимает вид</p>
+</font>
+
+<p><img SRC="images/2-2/image422.gif" WIDTH="530" HEIGHT="31">.</p>
+<font FACE="Times New Roman">
+
+<p>Выражение содержит частные случаи
+плоскопараллельного обтекания:</p>
+
+<p>при</font> <img SRC="images/2-2/image423.gif" WIDTH="90" HEIGHT="28">, <img SRC="images/2-2/image424.gif" WIDTH="95" HEIGHT="28"></p>
+
+<p><img SRC="images/2-2/image425.gif" WIDTH="238" HEIGHT="31">;</p>
+<font FACE="Times New Roman">
+
+<p>при </font><img SRC="images/2-2/image426.gif" WIDTH="93" HEIGHT="28">, <img SRC="images/2-2/image427.gif" WIDTH="98" HEIGHT="28"></p>
+
+<p><img SRC="images/2-2/image428.gif" WIDTH="241" HEIGHT="31"></p>
+<font FACE="Times New Roman">
+
+<p>Решение содержит классические решения как
+частный случай.</p>
+
+<p>Потенциал потока в пространстве (2.4.) в виде (2.3.)
+дает скорость</p>
+</font>
+
+<p><img SRC="images/2-2/image429.gif" WIDTH="303" HEIGHT="66">,</p>
+<font FACE="Times New Roman">
+
+<p>где </font><img SRC="images/2-2/image430.gif" WIDTH="140" HEIGHT="36"></p>
+<font FACE="Times New Roman">
+
+<p>Квадрат</font> <font FACE="Times New Roman">скорости дает</p>
+</font>
+
+<p><img SRC="images/2-2/image431.gif" WIDTH="626" HEIGHT="71"></p>
+
+<p><img SRC="images/2-2/image432.gif" WIDTH="160" HEIGHT="66"></p>
+<font FACE="Times New Roman">
+
+<p>В соответствии с формулой (2.2.) и теорией о
+вычетах в этом выражении используется два </p>
+</font>
+
+<p><img SRC="images/2-2/image433.gif" WIDTH="365" HEIGHT="73"></p>
+<font FACE="Times New Roman">
+
+<p>И величина подъемной силы будет выражена как</p>
+</font>
+
+<p><img SRC="images/2-2/image434.gif" WIDTH="391" HEIGHT="71"></p>
+
+<p><img SRC="images/2-2/image435.gif" WIDTH="305" HEIGHT="71"></p>
+<font FACE="Times New Roman">
+
+<p>Формула значительно отличается от формулы
+Жуковского </p>
+</font>
+
+<p><img SRC="images/2-2/image436.gif" WIDTH="120" HEIGHT="35"></p>
+<font FACE="Times New Roman">
+
+<p>Однако ни формула Н.Е. Жуковского,</font> <font FACE="Times New Roman">ни выведенные формулы не претендуют
+на окончательное решение, а демонстрируют
+рабочий аппарат для введения многообразных
+факторов, участвующих в процессе обтекания.</p>
+
+<p>Представленное решение показало, что
+математические объекты - делители нуля, получили
+свое гидродинамическое толкование как источники
+вихря. Кроме того, выражение циклической
+постоянной, выбранное в главе 1, равное</p>
+</font>
+
+<p><img SRC="images/2-2/image437.gif" WIDTH="130" HEIGHT="28">.</p>
+<font FACE="Times New Roman">
+
+<p>соответствует физическому смыслу, ибо в
+противном случае при переходе к частным случаям
+из пространства к плоскости выражения не имели
+бы прежнего вида. Определение простейшей кривой
+С в пространстве также оправдано.</p>
+
+<p>Проведенные решения показывают, что методика
+Н.Е. Жуковского реализуется в пространстве
+любого числа измерений. Введение новой
+размерности пространства уточняет решение и
+является методом введения структурных
+взаимодействий в этом сложном процессе, таким,
+например, как взаимодействие поверхностного
+слоя с потоком и с поверхностью тела.</p>
+
+<p>В этом случае надо также учитывать, что
+контурные интегралы дают круг решений в
+дозвуковой области, а если применять объемный
+интеграл Коши</p>
+</font>
+
+<p><img SRC="images/2-2/image438.gif" WIDTH="281" HEIGHT="78"></p>
+<font FACE="Times New Roman">
+
+<p>и теорему о вычетах в форме</p>
+</font>
+
+<p><img SRC="images/2-2/image439.gif" WIDTH="356" HEIGHT="70">,</p>
+<font FACE="Times New Roman">
+
+<p>то происходит переход в область газовой
+динамики</font> <img SRC="images/2-2/image440.gif" WIDTH="71" HEIGHT="36">. <font FACE="Times New Roman">Зависимость
+скорости потока и плотности вводится интегралом
+Бернулли. Все это путь к исследованию
+структурных взаимодействий.</p>
+</font>
+
+<p><font face="Arial" color="#000080">[<a href="3-1.html">Следующий
+параграф</a>]</font></p>
+<!--webbot bot="Include" U-Include="footer.htm" TAG="BODY" startspan -->
+
+<hr color="#000080" style="border: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px">
+
+<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px"><b><font face="Arial" size="1" color="#000080">Мини
+оглавление:</font></b></p>
+
+<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px"><font face="Arial" size="2" color="#000080"><strong>[<a href="0.htm">0</a>], [<a href="1-1-1.html">1.1.1</a>, <a href="1-1-2.html">1.1.2</a>, <a href="1-1-3.html">1.1.3</a>,
+<a href="1-1-4.html">1.1.4</a>, <a href="1-1-5.html">1.1.5</a>, <a href="1-1-6.html">1.1.6</a>,
+<a href="1-1-7.html">1.1.7</a>, <a href="1-1-8.html">1.1.8</a>, <a href="1-2.html">1.2</a>,
+<a href="1-2-1.html">1.2.1</a>, <a href="1-2-2.html">1.2.2</a>, <a href="1-2-2-A.html">1.2.2.a</a>,
+<a href="1-2-2-B.html">1.2.2.b</a>, <a href="1-2-2-C.html">1.2.2.c</a>, <a href="1-2-2-D.html">1.2.2.d</a>, <a href="1-2-2-E.html">1.2.2.e</a>, <a href="1-2-2-F.html">1.2.2.f</a>, <a href="1-2-2-G.html">1.2.2.g</a>, <a href="1-2-2-H.html">1.2.2.h</a>, <a href="1-2-3.html">1.2.3</a>, <a href="1-3-1.html">1.3.1</a>,
+<a href="1-3-2.html">1.3.2</a>, <a href="1-3-3.html">1.3.3</a>, <a href="1-3-4.html">1.3.4</a>,
+<a href="1-3-5.html">1.3.5</a>, <a href="1-3-6.html">1.3.6</a>, <a href="1-4-1.html">1.4.1</a>,
+<a href="1-4-2.html">1.4.2</a>, <a href="1-5.html">1.5</a>, <a href="1-6.html">1.6</a>, <a href="1-7-1.html">1.7.1</a>, <a href="1-7-2.html">1.7.2</a>,
+<a href="1-7-3-p1.html">1.7.3.1</a>, <a href="1-7-3-p2.htm">1.7.3.2</a>, <a href="1-7-3-p3.htm">1.7.3.3</a>,
+<a href="1-7-4-p1.html">1.7.4.1</a>, <a href="1-7-4-p2.html">1.7.4.2</a>, <a href="1-8-1.html">1.8.1</a>], [<a href="2-1.html">2.1</a>, <a href="2-2.html">2.2</a>],[<a href="3-1.html">3.1</a>, <a href="3-2.html">3.2</a>, <a href="3-3.html">3.3</a>,
+<a href="3-4-1.html">3.4.1</a>, <a href="3-4-2.html">3.4.2</a>, <a href="3-4-3.html">3.4.3</a>,
+<a href="3-4-4.html">3.4.4</a>, <a href="3-4-5.html">3.4.5</a>],[<a href="4-1.html">4.1</a>, <a href="4-2.html">4.2</a>, <a href="4-3.html">4.3</a>, <a href="4-4.html">4.4</a>],[<a href="5-1.html">5.1</a>, <a href="5-1-Pic52.htm">5.1.Рис.52</a>, <a href="5-2.html">5.2</a>, <a href="5-3.html">5.3</a>,
+<a href="5-4.html">5.4</a>, <a href="5-4-t1.htm">5.4.Т1</a>, <a href="5-4-t2.htm">5.4.Т2</a>,
+<a href="5-4-t3.htm">5.4.Т3</a>, <a href="5-5-1.html">5.5.1</a>, <a href="5-5-2.html">5.5.2</a>,
+<a href="5-5-3.html">5.5.3</a>, <a href="5-5-4.html">5.5.4</a>],[<a href="6-1-1.html">6.1.1</a>,
+<a href="6-1-2.html">6.1.2</a>, <a href="6-2-1.html">6.2.1</a>, <a href="6-2-2.html">6.2.2</a>,
+<a href="6-2-3.html">6.2.3</a>, <a href="6-2-4.html">6.2.4</a>, <a href="6-2-5.html">6.2.5</a>,
+<a href="6-3.html">6.3</a>, <a href="6-4-1.html">6.4.1</a>, <a href="6-4-2.html">6.4.2</a>,
+<a href="6-5-1.html">6.5.1</a>, <a href="6-5-2.html">6.5.2</a>],[<a href="7-1.html">7.1</a>,
+<a href="7-2.html">7.2</a>, <a href="7-3.html">7.3</a>, <a href="7-4.html">7.4</a>,
+<a href="7-5.html">7.5</a>, <a href="7-6.html">7.6</a>, <a href="7-7-1.htm">7.7.1</a>,
+<a href="7-7-2.htm">7.7.2</a>, <a href="7-8-1.htm">7.8.1</a>, <a href="7-8-2.htm">7.8.2</a>,
+<a href="7-8-3.htm">7.8.3</a>, </strong></font><font face="Arial" size="2" color="#000080"><strong><a href="7-9.htm">7.9</a></strong></font><font face="Arial" size="2" color="#000080"><strong>],[<a href="8-1.html">8.1</a>,
+<a href="8-2-1.html">8.2.1</a>, <a href="8-2-2.html">8.2.2</a>, <a href="8-3.html">8.3</a>,
+<a href="8-4.html">8.4</a>, <a href="8-5.html">8.5</a>, <a href="8-6.html">8.6</a>,
+<a href="8-6-t1.html">8.6.T1</a>, <a href="8-7.html">8.7</a>, <a href="8-8-1.html">8.8.1</a>,
+<a href="8-8-2.html">8.8.2</a>, <a href="8-8-3.html">8.8.3</a>, <a href="8-9-1.html">8.9.1</a>,
+<a href="8-9-2.html">8.9.2</a>, <a href="8-9-3.html">8.9.3</a>, <a href="8-10.htm">8.10</a>,
+<a href="8-10-t2.html">8.10.T2</a>, <a href="8-10-t3.html">8.10.T3</a>],[<a href="9-1.html">9.1</a>,
+<a href="9-2.html">9.2</a>, <a href="9-3.html">9.3</a>, <a href="9-3-Pic88.html">Рис.88</a>,
+<a href="9-3-Pic89.html">89</a>, <a href="9-3-Pic90.html">90</a>, <a href="9-3-Pic91.html">91</a>,
+<a href="9-3-Pic92.html">92</a>, <a href="9-3-Pic93.html">93</a>, <a href="9-3-Pic94.html">94</a>,
+<a href="9-3-Pic95.html">95</a>, <a href="9-3-Pic96.html">96</a>, <a href="9-3-Pic97.html">97</a>,
+<a href="9-3-Pic98.html">98</a>, <a href="9-3-Pic99.html">99</a>, <a href="9-3-Pic99.html">100</a>],[<a href="10-1.html">10.1</a>,
+<a href="10-2.html">10.2</a>, <a href="10-3.html">10.3</a>, <a href="10-4.html">10.4</a>,
+<a href="10-5.html">10.5</a>, <a href="10-6.html">10.6</a>, <a href="10-7.html">10.7</a>,
+<a href="10-8.html">10.8</a>, <a href="10-9.html">10.9</a>, <a href="10-10.html">10.10</a>,
+<a href="10-11.html">10.11</a>, <a href="10-12.html">10.12</a>, <a href="10-13.htm">10.13</a>,
+<a href="10-14.htm">10.14</a>, <a href="10-15-1.html">10.15.1</a>, <a href="10-15-2.html">10.15.2</a>,
+<a href="10-16-1.html">10.16.1</a>, <a href="10-16-2.html">10.16.2</a>, <a href="10-17.html">10.17</a>,
+<a href="10-18.html">10.18</a>],[<a href="11.html">11</a>]&nbsp;</strong></font></p>
+
+
+<p>Размещенный материал является
+электронной версией книги: <strong>©</strong>
+В.И.Елисеев, &quot;Введение в методы теории функций
+пространственного комплексного переменного&quot;,
+изданной Центром научно-технического
+творчества молодежи Алгоритм. - М.:,
+НИАТ. - 1990. Шифр Д7-90/83308. в каталоге
+Государственной публичной научно-технической
+библиотеки.
+ Сайт действует с 10 августа 1998.</p>
+
+<p style="margin-top: 0px; margin-bottom: 0px">E-mail: <a href="mailto:mathsru@gmail.com">mathsru@gmail.com</a>
+ </p>
+
+<p style="margin-top: 0px; margin-bottom: 0px"><a href="http://counter.rambler.ru/top100/"><img src="http://counter.rambler.ru/top100.cnt?36886" alt="Rambler's Top100 Service" border="0"></a>
+</p>
+
+
+
+<!--webbot bot="Include" endspan i-checksum="55970" -->
+
+<p ALIGN="left" style="border-top: 0px; border-bottom: 0px">
+<!--begin of Top100-->
+</div></body>
+</html>

@@ -1,0 +1,744 @@
+<html>
+
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NJ9243B');</script>
+<!-- End Google Tag Manager -->
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+
+<title>1.3.5. Интегральные теоремы Коши</title>
+<style type="text/css"> 
+body 
+{ 
+ margin: 0; 
+ padding: 0; 
+ padding-top: 10px;
+ text-align: center; 
+} 
+#centered
+{ 
+ width: 980px; 
+ text-align: left;
+ border: 0px; 
+ padding: 0;  
+ margin: 0 auto; 
+} 
+</style>
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJ9243B"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><div id="centered">
+
+
+<table border="0" width="100%" style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px" height="80">
+  <tr>
+    <td width="14%" rowspan="2" valign="top" height="76"><img src="images/SmallTitle.gif" border="0" width="126" height="113"></td>
+    <td width="86%" height="93"><font face="Arial" color="#000080"><b>В. И. ЕЛИСЕЕВ</b></font><p><b><font face="Arial" color="#000080">ВВЕДЕНИЕ В МЕТОДЫ ТЕОРИИ
+    ФУНКЦИЙ ПРОСТРАНСТВЕННОГО КОМПЛЕКСНОГО ПЕРЕМЕННОГО<br></font></b><font color="#000080" face="Arial">[</font><a href="index.htm"><font face="Arial">Оглавление</font></a><font color="#000080">]</font> </td>
+  </tr>
+  <tr>
+    <td width="86%" height="1"><p ALIGN="left" style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px">
+      <p ALIGN="left" style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px; border-width: 0;"><a href="http://www.amazon.com/Numeric-field-Introduction-functions-variable/dp/146991428X/ref=sr_1_7?ie=UTF8&qid=1328153023&sr=8-7"><img src="images/amazon.PNG" alt="Amazon.com" width="102" height="34" border="0"></a>      
+      <p ALIGN="left" style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px">
+        - <a href="http://www.amazon.com/Numeric-field-Introduction-functions-variable/dp/146991428X/ref=sr_1_7?ie=UTF8&qid=1328153023&sr=8-7">Елисеев В.И. Числовое поле. Введение в ТФКПП. </a>    
+    <p ALIGN="left" style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px">- <a href="http://www.amazon.com/coordinate-axes-physical-reality-Russian/dp/1470005026/ref=sr_1_1?ie=UTF8&qid=1328328469&sr=8-1?ie=UTF8&qid=1328328469&sr=8-1">Елисеев В.И. Оси координат физической реальности.</a>
+
+<p ALIGN="left" style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px; border-width: 0;"><img src="images/pdf.PNG" alt="PDF" width="48" height="48" border="0"></p>
+<p ALIGN="left" style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px"> - <a href="pdf/book5.pdf">Елисеев В.И. Введение в ТФКПП. 2003</a></p>
+<p ALIGN="left" style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px"> - <a href="pdf/TFKPP-2007.pdf">Елисеев В.И. Числовое поле. Введение в ТФКПП. 2006</a></p>
+<p ALIGN="left" style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px"> - <a href="pdf/book6-29JAN2012.pdf">Елисеев В.И. Оси координат физической реальности. 2012</a></p>
+</td>
+</td>
+  </tr>
+</table>
+
+<hr color="#000080" style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px">
+<!--webbot bot="Include" endspan i-checksum="17295" -->
+
+<font FACE="Arial">
+
+<p><font color="#000080">1.3.5. Интегральные теоремы Коши</font></p>
+</font><font FACE="Times New Roman"><u>
+
+<p>Теорема 1</u> Если функция</font> <i>f</i>(<font FACE="Symbol">n</font>
+<font FACE="Times New Roman">) имеет производную в односвязной
+области</font> G<font FACE="Times New Roman"> комплексного
+пространства</font> (<font FACE="Symbol">n</font> ), <font FACE="Times New Roman">то для всех кривых, лежащих в этой
+области и имеющих общие концы, интеграл </font><img SRC="images/1-3-5/image811.gif" WIDTH="85" HEIGHT="58"><font FACE="Times New Roman">
+имеет одно и то же значение. </p>
+<u>
+
+<p>Доказательство</u>. Определение интеграла
+переносятся без изменений из z-плоскости.</p>
+
+<p>Рассмотрим интегральную теорему 1 в
+пространстве по кривой С</font><sub>3</sub><font FACE="Times New Roman"> и ее модификациям, как главной
+пространственной кривой, которая лежит в
+односвязной области </font>G<font FACE="Times New Roman">
+пространства </font>(<font FACE="Symbol">n</font> <font FACE="Times New Roman">),
+так как поверхность сферы и поверхность
+выколотой оси принадлежат одной области G с одним
+пространственным измерением.</p>
+
+<p>Рассмотрим комплексное пространство в
+цилиндрических координатах</p>
+</font>
+
+<p><img SRC="images/1-3-5/image812.gif" WIDTH="161" HEIGHT="38"></p>
+<font FACE="Times New Roman">
+
+<p>Дифференциал элемента <font FACE="Symbol">n</font> равен</p>
+</font>
+
+<p><img SRC="images/1-3-5/image813.gif" WIDTH="410" HEIGHT="38"></p>
+<font FACE="Times New Roman">
+
+<p>Функция </font><i>f</i>(<font FACE="Symbol">n</font> <font FACE="Times New Roman">) распадается на сумму двух
+комплексных частей</p>
+</font>
+
+<p><img SRC="images/1-3-5/image814.gif" WIDTH="356" HEIGHT="38"></p>
+<font FACE="Times New Roman">
+
+<p>Составим интеграл</font> <img SRC="images/1-3-5/image815.gif" WIDTH="118" HEIGHT="58">.</p>
+<font FACE="Times New Roman">
+
+<p>Разобьем его на два комплексных интеграла</p>
+</font>
+
+<p><img SRC="images/1-3-5/image816.gif" WIDTH="101" HEIGHT="31"></p>
+<font FACE="Times New Roman">
+
+<p>где</p>
+</font>
+
+<table CELLSPACING="0" BORDER="0" CELLPADDING="9" WIDTH="710">
+  <tr>
+    <td WIDTH="86%" VALIGN="TOP"><img SRC="images/1-3-5/image817.gif" WIDTH="471" HEIGHT="63"></td>
+    <td WIDTH="14%" VALIGN="TOP"><p ALIGN="RIGHT">(1.44.)</td>
+  </tr>
+  <tr>
+    <td WIDTH="86%" VALIGN="TOP"><img SRC="images/1-3-5/image818.gif" WIDTH="473" HEIGHT="63"></td>
+    <td WIDTH="14%" VALIGN="TOP"><p ALIGN="RIGHT">(1.45.)</td>
+  </tr>
+</table>
+<font FACE="Times New Roman">
+
+<p>В интегралах </font><i>l</i><sub>1</sub><font FACE="Times New Roman"> и </font><i>l</i><sub>2</sub><font FACE="Times New Roman"> сделаем переход по формуле</font> <font FACE="Times New Roman">Стокса к поверхностным интегралам.
+Условий, которые ограничивали бы применение
+формулы Стокса к составленному интегралу, в
+пространстве нет. Четырехмерное пространство
+имеет шесть проекционных площадок, которые до
+настоящего времени не удалось установить. В
+комплексном пространстве эти площадки удалось
+выявить.</p>
+
+<p>Итак, имеем:</p>
+</font>
+
+<p><img SRC="images/1-3-5/image819.gif" WIDTH="368" HEIGHT="73"></p>
+
+<p><img SRC="images/1-3-5/image820.gif" WIDTH="310" HEIGHT="68"></p>
+
+<p><img SRC="images/1-3-5/image821.gif" WIDTH="341" HEIGHT="68"></p>
+
+<p><img SRC="images/1-3-5/image822.gif" WIDTH="331" HEIGHT="68"></p>
+
+<p><img SRC="images/1-3-5/image823.gif" WIDTH="356" HEIGHT="68"></p>
+
+<table CELLSPACING="0" BORDER="0" CELLPADDING="9" WIDTH="710">
+  <tr>
+    <td WIDTH="83%" VALIGN="TOP"><img SRC="images/1-3-5/image824.gif" WIDTH="356" HEIGHT="68"></td>
+    <td WIDTH="17%" VALIGN="TOP"><p ALIGN="RIGHT">(1.46.)</td>
+  </tr>
+</table>
+
+<p><img SRC="images/1-3-5/image825.gif" WIDTH="335" HEIGHT="73"></p>
+
+<p><img SRC="images/1-3-5/image826.gif" WIDTH="305" HEIGHT="68"></p>
+
+<p><img SRC="images/1-3-5/image827.gif" WIDTH="313" HEIGHT="68"></p>
+
+<p><img SRC="images/1-3-5/image828.gif" WIDTH="333" HEIGHT="68"></p>
+
+<p><img SRC="images/1-3-5/image829.gif" WIDTH="346" HEIGHT="68"></p>
+
+<table CELLSPACING="0" BORDER="0" CELLPADDING="9" WIDTH="710">
+  <tr>
+    <td WIDTH="86%" VALIGN="TOP"><img SRC="images/1-3-5/image830.gif" WIDTH="325" HEIGHT="68"></td>
+    <td WIDTH="14%" VALIGN="TOP"><p ALIGN="RIGHT">(1.47.)</td>
+  </tr>
+</table>
+<font FACE="Times New Roman">
+
+<p>В подынтегральных выражениях (1.44.), (1.45.)
+содержатся необходимые условия
+дифференцирования функции в формах (1.28.), (1.29.).
+Таким образом, если входящая под знак интеграла
+функция имеет производную в каждой точке
+поверхности <font FACE="Symbol">s</font> четырехмерного
+пространства (<font FACE="Symbol">n</font> ), то оба интеграла
+равны нулю.</p>
+
+<p>Рассмотрим вариант цилиндрических координат в
+трехмерном пространстве.</p>
+
+<p>Если</p>
+</font>
+
+<p><img SRC="images/1-3-5/image831.gif" WIDTH="170" HEIGHT="38"></p>
+<font FACE="Times New Roman">
+
+<p>то</p>
+</font>
+
+<p><img SRC="images/1-3-5/image832.gif" WIDTH="361" HEIGHT="38"></p>
+<font FACE="Times New Roman">
+
+<p>Составим интеграл </font><img SRC="images/1-3-5/image833.gif" WIDTH="123" HEIGHT="63"><font FACE="Times New Roman"> и рассмотрим его</font> <font FACE="Times New Roman">реализацию
+на различных кривых С</font><sub><i>i</i></sub><font FACE="Times New Roman"> в пространстве.</p>
+
+<p>А. На кривых </font>C<sub>0</sub>, C<sub>1</sub>, C<sub>2</sub> <font FACE="Times New Roman">(рис. 19) контур лежит в плоскости,
+параллельной z-плоскости, поэтому у него</p>
+</font>
+
+<p><img SRC="images/1-3-5/image834.gif" WIDTH="258" HEIGHT="28"></p>
+<font FACE="Times New Roman">
+
+<p>Определим дифференциал</p>
+</font>
+
+<p><img SRC="images/1-3-5/image835.gif" WIDTH="321" HEIGHT="38"></p>
+<font FACE="Times New Roman">
+
+<p>Составим интеграл •</p>
+</font>
+
+<p><img SRC="images/1-3-5/image836.gif" WIDTH="513" HEIGHT="68"></p>
+
+<p><img SRC="images/1-3-5/image837.gif" WIDTH="356" HEIGHT="68"></p>
+
+<p><img SRC="images/1-3-5/image838.gif" WIDTH="366" HEIGHT="68"></p>
+<font FACE="Times New Roman">
+
+<p>Последовательно рассматриваем оба интеграла </font><i>l</i><sub>1</sub>,
+<i>l</i><sub>2</sub>:</p>
+
+<p><img SRC="images/1-3-5/image839.gif" WIDTH="378" HEIGHT="68"></p>
+
+<p><img SRC="images/1-3-5/image840.gif" WIDTH="413" HEIGHT="78"></p>
+
+<p><img SRC="images/1-3-5/image841.gif" WIDTH="590" HEIGHT="73"></p>
+
+<p><img SRC="images/1-3-5/image842.gif" WIDTH="416" HEIGHT="73"></p>
+
+<p><img SRC="images/1-3-5/image843.gif" WIDTH="391" HEIGHT="68"></p>
+
+<p><img SRC="images/1-3-5/image844.gif" WIDTH="591" HEIGHT="73"></p>
+
+<p><img SRC="images/1-3-5/image845.gif" WIDTH="410" HEIGHT="73"></p>
+<font FACE="Times New Roman">
+
+<p>Криволинейный интеграл сведен к
+поверхностному по области <font FACE="Symbol">s</font> </font>.</p>
+<font FACE="Times New Roman">
+
+<p>Если подынтегральные функции</p>
+</font>
+
+<table CELLSPACING="0" BORDER="0" CELLPADDING="9" WIDTH="710">
+  <tr>
+    <td WIDTH="63%" VALIGN="TOP"><img SRC="images/1-3-5/image846.gif" WIDTH="251" HEIGHT="63"></td>
+    <td WIDTH="37%" VALIGN="TOP"><p ALIGN="RIGHT">(1.48.)</td>
+  </tr>
+  <tr>
+    <td WIDTH="63%" VALIGN="TOP"><img SRC="images/1-3-5/image847.gif" WIDTH="248" HEIGHT="63"></td>
+    <td WIDTH="37%" VALIGN="TOP"><p ALIGN="RIGHT">(1.49.)</td>
+  </tr>
+</table>
+<font FACE="Times New Roman">
+
+<p>оказываются равными нулю, то контур С</font><sub>0</sub><font FACE="Times New Roman"> можно последовательно стянуть в
+контур С, охватывающий цилиндрическую ось.</p>
+
+<p>Для аналитических функций в пространстве
+операторы (1.46.), (1.47.) равны нулю, так как они легко
+получаются из условий (1.27.), необходимых для
+дифференцирования функций.</p>
+
+<p>В. Рассмотрим интеграл по контуру</font> C<sub>5</sub><font FACE="Times New Roman">, лежащему на цилиндрической
+поверхности </font><img SRC="images/1-3-5/image848.gif" WIDTH="96" HEIGHT="26"><font FACE="Times New Roman"> (рис. 20).</p>
+
+<p>Имеем дифференциал </font><img SRC="images/1-3-5/image849.gif" WIDTH="330" HEIGHT="38"><font FACE="Times New Roman"> Составим интеграл и по формуле
+Грина перейдем к поверхностному интегралу.</p>
+
+<p>Имеем</font> </p>
+
+<p><img SRC="images/1-3-5/image850.gif" WIDTH="653" HEIGHT="68"></p>
+
+<p><img SRC="images/1-3-5/image851.gif" WIDTH="353" HEIGHT="68"></p>
+
+<p><img SRC="images/1-3-5/image852.gif" WIDTH="368" HEIGHT="68"></p>
+<font FACE="Times New Roman"><i><b>
+
+<p ALIGN="CENTER"><img src="images/pic25.gif" alt="pic25.gif (12486 bytes) Рис. 25. Кривая C5 и поверхность s , лежащие на цилиндрической поверхности." WIDTH="318" HEIGHT="339"></p>
+</b></i>
+
+<p ALIGN="CENTER"><i><b>Рис. 25. Кривая C<sub>5</sub> и поверхность <font FACE="Symbol">s</font> , лежащие на цилиндрической
+поверхности.</b></i></p>
+
+<p>Рассмотрим последовательно каждый из
+полученных интегралов:</p>
+</font>
+
+<p><img SRC="images/1-3-5/image853.gif" WIDTH="368" HEIGHT="68"></p>
+
+<p><img SRC="images/1-3-5/image854.gif" WIDTH="586" HEIGHT="73"></p>
+
+<p><img SRC="images/1-3-5/image855.gif" WIDTH="535" HEIGHT="73"></p>
+
+<p><img SRC="images/1-3-5/image856.gif" WIDTH="373" HEIGHT="68"></p>
+
+<p><img SRC="images/1-3-5/image857.gif" WIDTH="586" HEIGHT="73"></p>
+
+<p><img SRC="images/1-3-5/image858.gif" WIDTH="525" HEIGHT="73"></p>
+<font FACE="Times New Roman">
+
+<p>где за</font> P<sub>3</sub><font FACE="Times New Roman"> и Р</font><sub>4</sub><font FACE="Times New Roman"> обозначены:</p>
+</font>
+
+<table CELLSPACING="0" BORDER="0" CELLPADDING="9" WIDTH="710">
+  <tr>
+    <td WIDTH="76%" VALIGN="TOP"><img SRC="images/1-3-5/image859.gif" WIDTH="318" HEIGHT="68"></td>
+    <td WIDTH="24%" VALIGN="TOP"><p ALIGN="RIGHT">(1.50.)</td>
+  </tr>
+  <tr>
+    <td WIDTH="76%" VALIGN="TOP"><img SRC="images/1-3-5/image860.gif" WIDTH="353" HEIGHT="63"></td>
+    <td WIDTH="24%" VALIGN="TOP"><p ALIGN="RIGHT">(1.51.)</td>
+  </tr>
+</table>
+<font FACE="Times New Roman">
+
+<p>Эти операторы получаются из необходимых
+условий дифференцирования функций, данных в
+форме (1.27.). Поэтому интеграл равен нулю.</p>
+
+<p>С. Третий случай: контур </font>C<font FACE="Times New Roman">
+находится на поверхности</font> <img SRC="images/1-3-5/image861.gif" WIDTH="95" HEIGHT="28">.<font FACE="Times New Roman"> В этом случае дифференциал </p>
+</font>
+
+<p><img SRC="images/1-3-5/image862.gif" WIDTH="201" HEIGHT="38"></p>
+<font FACE="Times New Roman">
+
+<p>интеграл</p>
+</font>
+
+<p><img SRC="images/1-3-5/image863.gif" WIDTH="410" HEIGHT="63"></p>
+
+<p><img SRC="images/1-3-5/image864.gif" WIDTH="583" HEIGHT="73"></p>
+<font FACE="Times New Roman">
+
+<p>Подынтегральные выражения и в этом случае
+соответствуют необходимым условиям
+дифференцирования функций в форме (1.28.), Интеграл
+не зависит от формы пространственной кривой.</p>
+
+<p>Д. Четвертый случай обобщает все предыдущие.
+Возьмем интеграл по простейшей пространственной
+кривой </font>C<sub>3</sub>.</p>
+<font FACE="Times New Roman">
+
+<p>Дифференциал</p>
+</font>
+
+<p><img SRC="images/1-3-5/image865.gif" WIDTH="405" HEIGHT="38"></p>
+<font FACE="Times New Roman">
+
+<p>составим интеграл</p>
+</font>
+
+<p><img SRC="images/1-3-5/image866.gif" WIDTH="615" HEIGHT="68"></p>
+
+<p><img SRC="images/1-3-5/image867.gif" WIDTH="461" HEIGHT="63"></p>
+
+<p><img SRC="images/1-3-5/image868.gif" WIDTH="453" HEIGHT="63"></p>
+<font FACE="Times New Roman">
+
+<p>Рассмотрим поочередно полученные интегралы </font><i>l</i><sub>1</sub>
+<font FACE="Times New Roman">и</font> <i>l</i><sub>2</sub>.</p>
+
+<p><img SRC="images/1-3-5/image869.gif" WIDTH="441" HEIGHT="68"></p>
+
+<p><img SRC="images/1-3-5/image870.gif" WIDTH="311" HEIGHT="73"></p>
+
+<p><img SRC="images/1-3-5/image871.gif" WIDTH="546" HEIGHT="68"></p>
+
+<p><img SRC="images/1-3-5/image872.gif" WIDTH="556" HEIGHT="68"></p>
+
+<p><img SRC="images/1-3-5/image873.gif" WIDTH="483" HEIGHT="68"></p>
+
+<p><img SRC="images/1-3-5/image874.gif" WIDTH="293" HEIGHT="73"></p>
+
+<p><img SRC="images/1-3-5/image875.gif" WIDTH="566" HEIGHT="68"></p>
+
+<p><img SRC="images/1-3-5/image876.gif" WIDTH="538" HEIGHT="68"></p>
+<font FACE="Times New Roman">
+
+<p>Первый интеграл содержит в подынтегральных
+выражениях операторы P</font><sub>2</sub>, P<sub>1</sub><font FACE="Times New Roman">, которые вытекают из необходимых
+условий дифференцирования функций в форме (1.28) и
+само условие (1.28.). Второй содержит операторы </font>P<sub>4</sub>,
+P<sub>3</sub><font FACE="Times New Roman">, и условие (1.28.)</font> <font FACE="Times New Roman">также вытекающие из условий (1.23.). В
+связи с этим и для общего случая справедливо
+утверждение: кривую С</font><sub>3</sub><font FACE="Times New Roman">
+можно стянуть в геометрически подобную кривую </font><img SRC="images/1-3-5/image877.gif" WIDTH="21" HEIGHT="28"><font FACE="Times New Roman"> около
+изолированной точки (рис. 26).</p>
+<i><b>
+
+<p ALIGN="CENTER"><img src="images/pic26.gif" alt="pic26.gif (20553 bytes) Рис. 26. Перенос изолированного направления в особую точку" WIDTH="490" HEIGHT="430"></p>
+</b></i>
+
+<p ALIGN="CENTER"><i><b>Рис. 26. Перенос изолированного
+направления в особую точку</b></i></p>
+
+<p>Общий случай показывает, что поверхностные
+интегралы </font><i>l</i><sub>1</sub>, <i>l</i><sub>2</sub><font FACE="Times New Roman"> по формуле Остроградского при общих
+условиях ее применения могут быть переведены в
+объемные интегралы.</p>
+
+<p>В этом случае поверхность должна без точек
+самопересечения натянута на кривую</font> C<sub>3</sub>.<font FACE="Times New Roman"> Эта поверхность должна содержать
+объем и образовывать тело. В конкретном случае
+это тор, или сфера с выколотым <font FACE="Symbol">e</font>
+-туннелем.</p>
+
+<p>Имеем</p>
+</font>
+
+<p><img SRC="images/1-3-5/image878.gif" WIDTH="698" HEIGHT="75"><img SRC="images/1-3-5/image879.gif" WIDTH="393" HEIGHT="71"></p>
+
+<p><img SRC="images/1-3-5/image880.gif" WIDTH="483" HEIGHT="78"></p>
+
+<p><img SRC="images/1-3-5/image881.gif" WIDTH="468" HEIGHT="70"></p>
+
+<p><img SRC="images/1-3-5/image882.gif" WIDTH="535" HEIGHT="78"></p>
+
+<p><img SRC="images/1-3-5/image883.gif" WIDTH="176" HEIGHT="58"></p>
+
+<p><img SRC="images/1-3-5/image884.gif" WIDTH="691" HEIGHT="75"></p>
+
+<p><img SRC="images/1-3-5/image885.gif" WIDTH="455" HEIGHT="71"></p>
+
+<p><img SRC="images/1-3-5/image886.gif" WIDTH="460" HEIGHT="78"></p>
+
+<p><img SRC="images/1-3-5/image887.gif" WIDTH="461" HEIGHT="70"></p>
+
+<p><img SRC="images/1-3-5/image888.gif" WIDTH="515" HEIGHT="78"></p>
+
+<p><img SRC="images/1-3-5/image889.gif" WIDTH="140" HEIGHT="58"></p>
+<font FACE="Times New Roman">
+
+<p>На языке векторных полей последние выкладки
+утверждают, что пространственное комплексное
+поле является безвихревым и соленоидальным.</p>
+
+<p>Если в пространстве (<font FACE="Symbol">n</font> ) задана
+вектор-функция </font><img SRC="images/1-3-5/image890.gif" WIDTH="20" HEIGHT="21">,<font FACE="Times New Roman"> то имеем следующую
+последовательность реализации векторных теорем:</p>
+</font>
+
+<p><img SRC="images/1-3-5/image891.gif" WIDTH="361" HEIGHT="63"></p>
+<font FACE="Times New Roman">
+
+<p>или как в классическом анализе</p>
+</font>
+
+<p><img SRC="images/1-3-5/image892.gif" WIDTH="120" HEIGHT="25"></p>
+<font FACE="Times New Roman">
+
+<p>и комплексное пространство потенциально.</p>
+
+<p>В результате исследований криволинейного
+интеграла получены:</p>
+<u>
+
+<p>Теорема 2</u>. Пусть С</font><sub>3</sub><font FACE="Times New Roman"> -
+замкнутый (в геометрическом смысле) контур в
+пространстве</font> (<font FACE="Symbol">n</font> )<font FACE="Times New Roman"> и такой, что существ</font><img SRC="images/1-3-5/image893.gif" WIDTH="16" HEIGHT="31"><img SRC="images/1-3-5/image893.gif" WIDTH="16" HEIGHT="31"><font FACE="Times New Roman">ует гладкая поверхность, натянутая
+на него, и функция, стоящая под знаком интеграла,
+в каждой точке имеет производную. Тогда интеграл</font>
+<img SRC="images/1-3-5/image894.gif" WIDTH="91" HEIGHT="63"><font FACE="Times New Roman"> равен нулю.</p>
+<u>
+
+<p>Теорема 3.</u> Пусть функция</font> <i>f</i>(<font FACE="Symbol">n</font>
+)<font FACE="Times New Roman"> дифференцируема в односвязной
+области </font>G<font FACE="Times New Roman"> пространства (<font FACE="Symbol">n</font> ) и пусть простая замкнутая кривая С</font><sub>3</sub><font FACE="Times New Roman"> лежит в </font>G<font FACE="Times New Roman"> и
+ориентируема в положительном направлении.</p>
+
+<p>Тогда для любой точки <font FACE="Symbol">n</font> </font><sub>0</sub><font FACE="Times New Roman">, лежащей внутри области,
+охватываемой поверхностью, натянутой на кривую С</font><sub>3</sub><font FACE="Times New Roman"> справедлива формула</p>
+</font>
+
+<table CELLSPACING="0" BORDER="0" CELLPADDING="9" WIDTH="710">
+  <tr>
+    <td WIDTH="74%" VALIGN="TOP"><img SRC="images/1-3-5/image895.gif" WIDTH="280" HEIGHT="75"></td>
+    <td WIDTH="26%" VALIGN="TOP"><p ALIGN="RIGHT">(1.52.)</td>
+  </tr>
+</table>
+<font FACE="Times New Roman"><u>
+
+<p>Доказательство.</u> На замкнутую кривую С</font><sub>3</sub><font FACE="Times New Roman"> для дифференцируемых функций
+наложены условия равенства</p>
+</font>
+
+<p><img SRC="images/1-3-5/image896.gif" WIDTH="175" HEIGHT="53"><img SRC="images/1-3-5/image893.gif" WIDTH="16" HEIGHT="31"></p>
+<font FACE="Times New Roman">
+
+<p>где контур </font><img SRC="images/1-3-5/image897.gif" WIDTH="21" HEIGHT="28"><font FACE="Times New Roman"> охватывается контуром С</font><sub>3</sub><font FACE="Times New Roman"> (рис. 26)</p>
+
+<p>Функция</font> <i>f</i>(<font FACE="Symbol">x</font> )<font FACE="Times New Roman"> аналитична в пространстве (<font FACE="Symbol">n</font> ) в области </font>G<font FACE="Times New Roman"> с
+выколотым <font FACE="Symbol">e</font> - туннелем, проходящим
+через точку <font FACE="Symbol">n</font> </font><sub>0</sub><font FACE="Times New Roman">. В пространстве для этой функции
+происходит перенос <font FACE="Symbol">e</font> - туннеля из
+начала координат так, чтобы он проходил через
+точку</font> <font FACE="Symbol">n</font> <sub>0</sub><font FACE="Times New Roman">.
+Иными словами, чтобы знаменатель</p>
+</font>
+
+<p><img SRC="images/1-3-5/image898.gif" WIDTH="193" HEIGHT="40"></p>
+<font FACE="Times New Roman">
+
+<p>был равен делителям нуля. В классическом активе
+обычно знаменатель приравнивался. нулю <font FACE="Symbol">x</font> </font><i>-<font FACE="Symbol">n</font> </i><sub>0</sub>=0.</p>
+<font FACE="Times New Roman">
+
+<p>Выберем контур </font><img SRC="images/1-3-5/image897.gif" WIDTH="21" HEIGHT="28"><font FACE="Times New Roman"> так, чтобы он охватывался контуром С</font><sub>3</sub><font FACE="Times New Roman">, как показано на рис. 25. В этом случае
+можно положить </font><img SRC="images/1-3-5/image899.gif" WIDTH="113" HEIGHT="35"><font FACE="Times New Roman">, а интеграл записать в следующем
+виде:</p>
+</font>
+
+<p><img SRC="images/1-3-5/image900.gif" WIDTH="448" HEIGHT="66"></p>
+
+<p><img SRC="images/1-3-5/image901.gif" WIDTH="368" HEIGHT="75"></p>
+
+<p><img SRC="images/1-3-5/image902.gif" WIDTH="621" HEIGHT="66"></p>
+<font FACE="Times New Roman">
+
+<p>Рассмотрим интегралы</font> J<sub>2</sub><font FACE="Times New Roman"> и</font> J<sub>1</sub>:</p>
+
+<p><img SRC="images/1-3-5/image903.gif" WIDTH="570" HEIGHT="70"></p>
+
+<p><img SRC="images/1-3-5/image904.gif" WIDTH="323" HEIGHT="81"></p>
+<font FACE="Times New Roman">
+
+<p>в силу непрерывности функции </font><i>f</i>(<font FACE="Symbol">y</font> )<font FACE="Times New Roman"> в точке</font> <font FACE="Symbol">n</font> <sub>0</sub><font FACE="Times New Roman"> для любого <font FACE="Symbol">e</font> </font>&gt;<font FACE="Times New Roman">0 найдется
+такое </font><img SRC="images/1-3-5/image905.gif" WIDTH="86" HEIGHT="30"><font FACE="Times New Roman">,
+что неравенство</p>
+</font>
+
+<p><img SRC="images/1-3-5/image906.gif" WIDTH="171" HEIGHT="35">.</p>
+<font FACE="Times New Roman">
+
+<p>выполняется, как только </font><img SRC="images/1-3-5/image907.gif" WIDTH="93" HEIGHT="33">.<font FACE="Times New Roman"> Следовательно, как только</font> <img SRC="images/1-3-5/image908.gif" WIDTH="51" HEIGHT="23">,<font FACE="Times New Roman"> будет
+выполняться оценка</p>
+</font>
+
+<p><img SRC="images/1-3-5/image909.gif" WIDTH="520" HEIGHT="78"></p>
+<font FACE="Times New Roman">
+
+<p>Учитывая, что </font><i>J</i><sub>1</sub><font FACE="Times New Roman"> не
+зависит от </font>R<font FACE="Times New Roman">, получаем, что </font><i>J</i><sub>1</sub>=0<font FACE="Times New Roman">, то есть </font><i>J</i>=<i>f</i>(<font FACE="Symbol">n</font>
+).<font FACE="Times New Roman"> Формула доказана. Полученный
+результат можно написать</p>
+</font>
+
+<table CELLSPACING="0" BORDER="0" CELLPADDING="9" WIDTH="710">
+  <tr>
+    <td WIDTH="84%" VALIGN="TOP"><img SRC="images/1-3-5/image910.gif" WIDTH="535" HEIGHT="71"></td>
+    <td WIDTH="16%" VALIGN="TOP"><p ALIGN="RIGHT">(1.53.)</td>
+  </tr>
+</table>
+<font FACE="Times New Roman"><u>
+
+<p>Пример.</u> Рассмотрим интеграл </font><img SRC="images/1-3-5/image911.gif" WIDTH="66" HEIGHT="75"><font FACE="Times New Roman"> в пространстве
+(</font>Y<font FACE="Times New Roman">) за вычитом изолированной
+оси. Считаем </font><img SRC="images/1-3-5/image912.gif" WIDTH="118" HEIGHT="36"><font FACE="Times New Roman">, где </font>R<font FACE="Times New Roman"> - сколь
+угодно большое число.</p>
+
+<p>Для функции </font><img SRC="images/1-3-5/image913.gif" WIDTH="18" HEIGHT="51"> <font FACE="Times New Roman">сферы радиуса нуль и радиуса корня
+из нуля</font>, <font FACE="Times New Roman">а также выколотая ось
+дискретных точек являются полюсами функции.
+Функция на поверхности вырожденного тора
+является функцией аналитической. В силу
+интегральных теорем 1, 2, 3 любой путь, замкнутый в
+пространстве</font>,<font FACE="Times New Roman"> можно
+деформировать так, что он будет идти по
+простейшей кривой С</font><sub>3</sub>,<font FACE="Times New Roman">
+так что</p>
+</font>
+
+<p><img SRC="images/1-3-5/image914.gif" WIDTH="555" HEIGHT="75"></p>
+<font FACE="Times New Roman">
+
+<p>При расчете этого интеграла принято, что кривая</font>
+C<sub>3</sub> <font FACE="Times New Roman">лежит на внутренней и
+внешней поверхностях сферы радиуса </font>R<font FACE="Times New Roman"> (рис. 20), то есть проход по внутренней
+поверхности заменяет проход по <font FACE="Symbol">e</font> -
+туннелю. Тот отрезок прямой, который идет по</font> <font FACE="Symbol">e</font> <font FACE="Times New Roman">- туннелю, соединяя
+две оболочки, можно сделать сколь угодно малым
+вместе с толщиной оболочки <font FACE="Symbol">d</font> </font>.<font FACE="Times New Roman"> Эту добавку к интегралу можно также
+сделать сколь угодно малой, поэтому она не
+учитывается.</p>
+
+<p>Величину Г=4<font FACE="Symbol">p</font> </font><i>i</i>+2<font FACE="Symbol">p</font>
+<i>j</i><font FACE="Times New Roman"> назовем главной циклической
+постоянной в пространстве (<font FACE="Symbol">n</font> </font>).<font FACE="Times New Roman"> Естественно можно указать путь (рис.
+</font>2<font FACE="Times New Roman">1), когда величина Г будет
+равна </font>2<font FACE="Symbol">p</font> <i>f</i>+2<font FACE="Symbol">p</font> <i>i</i><font FACE="Times New Roman"> и циклическая постоянная будет
+принадлежать делителям нуля.</p>
+
+<p>Если рассматривать путь от 1 до (<font FACE="Symbol">n</font>
+), который состоит из кривой С</font><sub>4</sub><font FACE="Times New Roman"> и кривой С</font><sub>3</sub><font FACE="Times New Roman">,
+то интеграл будет равен</p>
+</font>
+
+<p><img SRC="images/1-3-5/image915.gif" WIDTH="273" HEIGHT="65"></p>
+<font FACE="Times New Roman">
+
+<p>где</font> k<sub>1</sub><font FACE="Times New Roman"> и</font> k<sub>2</sub> -<font FACE="Times New Roman"> целые числа, показывающие, сколько
+раз и в каком направлении проходится поверхность
+сферы и выколотой оси (рис. 27).</font> C<sub>4</sub><font FACE="Times New Roman"> - путь от </font>1<font FACE="Times New Roman"> до
+любой точки <font FACE="Symbol">n</font> </font>; <font FACE="Times New Roman">С
+- любой путь, охватывающий сферу и путь от 1 до <font FACE="Symbol">n</font> </font>.</p>
+<i><b><font FACE="Times New Roman">
+
+<p ALIGN="CENTER"></font><img src="images/pic27.gif" alt="pic27.gif (12964 bytes) Рис. 27. Путь С4 от точки 1 до точки n , включающий простейшую кривую С3." WIDTH="387" HEIGHT="349"></p>
+</b></i>
+
+<p ALIGN="CENTER"><i><b><font FACE="Times New Roman">Рис.</font> <font FACE="Times New Roman">27. Путь С</font><sub>4</sub><font FACE="Times New Roman">
+от точки 1 до точки <font FACE="Symbol">n</font> , включающий
+простейшую кривую С</font><sub>3</sub>.</b></i></p>
+<font FACE="Times New Roman">
+
+<p>Таким образом, от интеграла пришли к
+многозначности логарифмической функции</p>
+</font>
+
+<p><img SRC="images/1-3-5/image916.gif" WIDTH="381" HEIGHT="78"></p>
+
+<table CELLSPACING="0" BORDER="0" CELLPADDING="9" WIDTH="710">
+  <tr>
+    <td WIDTH="76%" VALIGN="TOP"><img SRC="images/1-3-5/image917.gif" WIDTH="416" HEIGHT="71"></td>
+    <td WIDTH="24%" VALIGN="TOP"><p ALIGN="RIGHT">(1.54.)</td>
+  </tr>
+</table>
+<font FACE="Times New Roman">
+
+<p>где </font>k = 1, 2, 3, …, k<sub>1</sub><font FACE="Times New Roman"> может
+быть, например, равным </font>k<sub>1</sub>=k+1.</p>
+<font FACE="Times New Roman">
+
+<p>Кривые С</font><sub>0</sub><font FACE="Times New Roman"> не
+содержащие внутри себя выколотой оси в
+пространстве (<font FACE="Symbol">n</font> ), функцией</font> ln<font FACE="Symbol">n</font> <font FACE="Times New Roman">при каждом обходе их
+точкой</font> <font FACE="Symbol">n</font> <font FACE="Times New Roman">сдвигаются
+в пространстве </font>U, V, W,<font FACE="Times New Roman"> давая
+кривые</font> C<sub>0</sub>, C<sub>01</sub>, C<sub>03</sub>. <font FACE="Times New Roman">Сдвиг определяется величиной </font><img SRC="images/1-3-5/image918.gif" WIDTH="161" HEIGHT="31">.</p>
+<font FACE="Times New Roman">
+
+<p>Если кривая в пространстве разомкнута, то она и
+в координатах</font> U, V, W<font FACE="Times New Roman"> будет
+разомкнута и иметь различные ветви. Эти ветви
+будут однозначными ветвями многозначной функции
+(рис. 2</font>8<font FACE="Times New Roman">). На этих ветвях
+функция</font> ln<font FACE="Symbol">n</font> <font FACE="Times New Roman">обладает
+производной. Если кривая будет охватывать ось, то
+ветви функции не отделяются друг от друга.
+Выколотая ось является осью разветвления
+функции.</p>
+</font>
+
+<p><font face="Arial" color="#000080">[<a href="1-3-6.html">Следующий
+параграф</a>]</font></p>
+<!--webbot bot="Include" U-Include="footer.htm" TAG="BODY" startspan -->
+
+<hr color="#000080" style="border: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px">
+
+<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px"><b><font face="Arial" size="1" color="#000080">Мини
+оглавление:</font></b></p>
+
+<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px"><font face="Arial" size="2" color="#000080"><strong>[<a href="0.htm">0</a>], [<a href="1-1-1.html">1.1.1</a>, <a href="1-1-2.html">1.1.2</a>, <a href="1-1-3.html">1.1.3</a>,
+<a href="1-1-4.html">1.1.4</a>, <a href="1-1-5.html">1.1.5</a>, <a href="1-1-6.html">1.1.6</a>,
+<a href="1-1-7.html">1.1.7</a>, <a href="1-1-8.html">1.1.8</a>, <a href="1-2.html">1.2</a>,
+<a href="1-2-1.html">1.2.1</a>, <a href="1-2-2.html">1.2.2</a>, <a href="1-2-2-A.html">1.2.2.a</a>,
+<a href="1-2-2-B.html">1.2.2.b</a>, <a href="1-2-2-C.html">1.2.2.c</a>, <a href="1-2-2-D.html">1.2.2.d</a>, <a href="1-2-2-E.html">1.2.2.e</a>, <a href="1-2-2-F.html">1.2.2.f</a>, <a href="1-2-2-G.html">1.2.2.g</a>, <a href="1-2-2-H.html">1.2.2.h</a>, <a href="1-2-3.html">1.2.3</a>, <a href="1-3-1.html">1.3.1</a>,
+<a href="1-3-2.html">1.3.2</a>, <a href="1-3-3.html">1.3.3</a>, <a href="1-3-4.html">1.3.4</a>,
+<a href="1-3-5.html">1.3.5</a>, <a href="1-3-6.html">1.3.6</a>, <a href="1-4-1.html">1.4.1</a>,
+<a href="1-4-2.html">1.4.2</a>, <a href="1-5.html">1.5</a>, <a href="1-6.html">1.6</a>, <a href="1-7-1.html">1.7.1</a>, <a href="1-7-2.html">1.7.2</a>,
+<a href="1-7-3-p1.html">1.7.3.1</a>, <a href="1-7-3-p2.htm">1.7.3.2</a>, <a href="1-7-3-p3.htm">1.7.3.3</a>,
+<a href="1-7-4-p1.html">1.7.4.1</a>, <a href="1-7-4-p2.html">1.7.4.2</a>, <a href="1-8-1.html">1.8.1</a>], [<a href="2-1.html">2.1</a>, <a href="2-2.html">2.2</a>],[<a href="3-1.html">3.1</a>, <a href="3-2.html">3.2</a>, <a href="3-3.html">3.3</a>,
+<a href="3-4-1.html">3.4.1</a>, <a href="3-4-2.html">3.4.2</a>, <a href="3-4-3.html">3.4.3</a>,
+<a href="3-4-4.html">3.4.4</a>, <a href="3-4-5.html">3.4.5</a>],[<a href="4-1.html">4.1</a>, <a href="4-2.html">4.2</a>, <a href="4-3.html">4.3</a>, <a href="4-4.html">4.4</a>],[<a href="5-1.html">5.1</a>, <a href="5-1-Pic52.htm">5.1.Рис.52</a>, <a href="5-2.html">5.2</a>, <a href="5-3.html">5.3</a>,
+<a href="5-4.html">5.4</a>, <a href="5-4-t1.htm">5.4.Т1</a>, <a href="5-4-t2.htm">5.4.Т2</a>,
+<a href="5-4-t3.htm">5.4.Т3</a>, <a href="5-5-1.html">5.5.1</a>, <a href="5-5-2.html">5.5.2</a>,
+<a href="5-5-3.html">5.5.3</a>, <a href="5-5-4.html">5.5.4</a>],[<a href="6-1-1.html">6.1.1</a>,
+<a href="6-1-2.html">6.1.2</a>, <a href="6-2-1.html">6.2.1</a>, <a href="6-2-2.html">6.2.2</a>,
+<a href="6-2-3.html">6.2.3</a>, <a href="6-2-4.html">6.2.4</a>, <a href="6-2-5.html">6.2.5</a>,
+<a href="6-3.html">6.3</a>, <a href="6-4-1.html">6.4.1</a>, <a href="6-4-2.html">6.4.2</a>,
+<a href="6-5-1.html">6.5.1</a>, <a href="6-5-2.html">6.5.2</a>],[<a href="7-1.html">7.1</a>,
+<a href="7-2.html">7.2</a>, <a href="7-3.html">7.3</a>, <a href="7-4.html">7.4</a>,
+<a href="7-5.html">7.5</a>, <a href="7-6.html">7.6</a>, <a href="7-7-1.htm">7.7.1</a>,
+<a href="7-7-2.htm">7.7.2</a>, <a href="7-8-1.htm">7.8.1</a>, <a href="7-8-2.htm">7.8.2</a>,
+<a href="7-8-3.htm">7.8.3</a>, </strong></font><font face="Arial" size="2" color="#000080"><strong><a href="7-9.htm">7.9</a></strong></font><font face="Arial" size="2" color="#000080"><strong>],[<a href="8-1.html">8.1</a>,
+<a href="8-2-1.html">8.2.1</a>, <a href="8-2-2.html">8.2.2</a>, <a href="8-3.html">8.3</a>,
+<a href="8-4.html">8.4</a>, <a href="8-5.html">8.5</a>, <a href="8-6.html">8.6</a>,
+<a href="8-6-t1.html">8.6.T1</a>, <a href="8-7.html">8.7</a>, <a href="8-8-1.html">8.8.1</a>,
+<a href="8-8-2.html">8.8.2</a>, <a href="8-8-3.html">8.8.3</a>, <a href="8-9-1.html">8.9.1</a>,
+<a href="8-9-2.html">8.9.2</a>, <a href="8-9-3.html">8.9.3</a>, <a href="8-10.htm">8.10</a>,
+<a href="8-10-t2.html">8.10.T2</a>, <a href="8-10-t3.html">8.10.T3</a>],[<a href="9-1.html">9.1</a>,
+<a href="9-2.html">9.2</a>, <a href="9-3.html">9.3</a>, <a href="9-3-Pic88.html">Рис.88</a>,
+<a href="9-3-Pic89.html">89</a>, <a href="9-3-Pic90.html">90</a>, <a href="9-3-Pic91.html">91</a>,
+<a href="9-3-Pic92.html">92</a>, <a href="9-3-Pic93.html">93</a>, <a href="9-3-Pic94.html">94</a>,
+<a href="9-3-Pic95.html">95</a>, <a href="9-3-Pic96.html">96</a>, <a href="9-3-Pic97.html">97</a>,
+<a href="9-3-Pic98.html">98</a>, <a href="9-3-Pic99.html">99</a>, <a href="9-3-Pic99.html">100</a>],[<a href="10-1.html">10.1</a>,
+<a href="10-2.html">10.2</a>, <a href="10-3.html">10.3</a>, <a href="10-4.html">10.4</a>,
+<a href="10-5.html">10.5</a>, <a href="10-6.html">10.6</a>, <a href="10-7.html">10.7</a>,
+<a href="10-8.html">10.8</a>, <a href="10-9.html">10.9</a>, <a href="10-10.html">10.10</a>,
+<a href="10-11.html">10.11</a>, <a href="10-12.html">10.12</a>, <a href="10-13.htm">10.13</a>,
+<a href="10-14.htm">10.14</a>, <a href="10-15-1.html">10.15.1</a>, <a href="10-15-2.html">10.15.2</a>,
+<a href="10-16-1.html">10.16.1</a>, <a href="10-16-2.html">10.16.2</a>, <a href="10-17.html">10.17</a>,
+<a href="10-18.html">10.18</a>],[<a href="11.html">11</a>]&nbsp;</strong></font></p>
+
+
+<p>Размещенный материал является
+электронной версией книги: <strong>©</strong>
+В.И.Елисеев, &quot;Введение в методы теории функций
+пространственного комплексного переменного&quot;,
+изданной Центром научно-технического
+творчества молодежи Алгоритм. - М.:,
+НИАТ. - 1990. Шифр Д7-90/83308. в каталоге
+Государственной публичной научно-технической
+библиотеки.
+ Сайт действует с 10 августа 1998.</p>
+
+<p style="margin-top: 0px; margin-bottom: 0px">E-mail: <a href="mailto:mathsru@gmail.com">mathsru@gmail.com</a>
+ </p>
+
+<p style="margin-top: 0px; margin-bottom: 0px"><a href="http://counter.rambler.ru/top100/"><img src="http://counter.rambler.ru/top100.cnt?36886" alt="Rambler's Top100 Service" border="0"></a>
+</p>
+
+
+
+<!--webbot bot="Include" endspan i-checksum="55970" -->
+
+<p ALIGN="left" style="border-top: 0px; border-bottom: 0px">
+<!--begin of Top100-->
+</div></body>
+</html>

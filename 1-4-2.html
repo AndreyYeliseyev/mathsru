@@ -1,0 +1,262 @@
+<HTML>
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NJ9243B');</script>
+<!-- End Google Tag Manager -->
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<TITLE>1.4.2. Ряд Лорана.</TITLE>
+<style type="text/css"> 
+body 
+{ 
+ margin: 0; 
+ padding: 0; 
+ padding-top: 10px;
+ text-align: center; 
+} 
+#centered
+{ 
+ width: 980px; 
+ text-align: left;
+ border: 0px; 
+ padding: 0;  
+ margin: 0 auto; 
+} 
+</style>
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJ9243B"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><div id="centered">
+
+<FONT FACE="Arial">
+
+<table border="0" width="100%" style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px" height="80">
+  <tr>
+    <td width="14%" rowspan="2" valign="top" height="76"><img src="images/SmallTitle.gif" border="0" width="126" height="113"></td>
+    <td width="86%" height="93"><font face="Arial" color="#000080"><b>В. И. ЕЛИСЕЕВ</b></font><p><b><font face="Arial" color="#000080">ВВЕДЕНИЕ В МЕТОДЫ ТЕОРИИ
+    ФУНКЦИЙ ПРОСТРАНСТВЕННОГО КОМПЛЕКСНОГО ПЕРЕМЕННОГО<br></font></b><font color="#000080" face="Arial">[</font><a href="index.htm"><font face="Arial">Оглавление</font></a><font color="#000080">]</font> </td>
+  </tr>
+<tr>
+    <td width="86%" height="1"><p ALIGN="left" style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px">
+      <p ALIGN="left" style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px; border-width: 0;"><a href="http://www.amazon.com/Numeric-field-Introduction-functions-variable/dp/146991428X/ref=sr_1_7?ie=UTF8&qid=1328153023&sr=8-7"><img src="images/amazon.PNG" alt="Amazon.com" width="102" height="34" border="0"></a>      
+      <ul>
+        <li><a href="http://www.amazon.com/Numeric-field-Introduction-functions-variable/dp/146991428X/ref=sr_1_7?ie=UTF8&qid=1328153023&sr=8-7">Елисеев В.И. Числовое поле. Введение в ТФКПП.</a></li>
+	<li><a href="http://www.amazon.com/coordinate-axes-physical-reality-Russian/dp/1470005026/ref=sr_1_1?ie=UTF8&qid=1328328469&sr=8-1?ie=UTF8&qid=1328328469&sr=8-1">Елисеев В.И. Оси координат физической реальности.</a></li>
+      </ul>
+      <p ALIGN="left" style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px; border-width: 0;"><img src="images/pdf.PNG" alt="PDF" width="48" height="48" border="0"></p>
+      <ul>
+        <li><a href="pdf/book5.pdf">Елисеев В.И. Введение в ТФКПП. 2003</a></li>
+        <li><a href="pdf/TFKPP-2007.pdf">Елисеев В.И. Числовое поле. Введение в ТФКПП. 2006</a></li>
+        <li><a href="pdf/book6-29JAN2012.pdf">Елисеев В.И. Оси координат физической реальности. 2012</a></li>
+      </ul>
+   </td>
+</tr>
+</table>
+
+<hr color="#000080" style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px">
+<!--webbot bot="Include" endspan i-checksum="17295"
+-->
+
+</font>
+<P ALIGN="JUSTIFY"><font color="#000080" face="Arial">1.4.2. Ряд Лорана.</font> </P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">Ряд</FONT><B> </B><FONT FACE="Times New Roman">вида </FONT><IMG SRC="images/1-4-2/Image2060.gif" WIDTH=110 HEIGHT=49>, <IMG SRC="images/1-4-2/Image2061.gif" WIDTH=13 HEIGHT=14><FONT FACE="Times New Roman">- фиксированная точка пространства, включая точки изолированного направления, </FONT><IMG SRC="images/1-4-2/Image2062.gif" WIDTH=20 HEIGHT=24><FONT FACE="Times New Roman">- коэффициенты – пространственные комплексные числа в том числе и из пространства делителей нуля, </P>
+<P ALIGN="JUSTIFY">Называется рядом Лорана. </P>
+<P ALIGN="JUSTIFY"> Ряд Лорана есть обобщение ряда Тейлора на отрицательные степени разложения функции в ряд. Ряд Тейлора входит в ряд Лорана как составная часть, к разложению функции по положительным степеням </FONT><IMG SRC="images/1-4-2/Image2063.gif" WIDTH=110 HEIGHT=49><FONT FACE="Times New Roman">, добавляется разложение по отрицательным степеням</P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2064.gif" WIDTH=105 HEIGHT=49><FONT FACE="Times New Roman">.Если ряды сходятся, то сходится и ряд Лорана. Область сходимости ряда по положительным степеням разложения функции в ряд есть сфера радиуса сходимости </FONT><IMG SRC="images/1-4-2/Image2065.gif" WIDTH=97 HEIGHT=28><FONT FACE="Times New Roman">. В области этой сферы лежит и область сходимости ряда по изолированному направлению делителей нуля. Если </FONT>R=0<FONT FACE="Times New Roman">, то ряд сходится только в точке </FONT><I>a</I><FONT FACE="Times New Roman">, если </FONT><IMG SRC="images/1-4-2/Image2066.gif" WIDTH=58 HEIGHT=20><FONT FACE="Times New Roman">, то ряд сходится во всем пространстве </FONT>Y.</P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY"> Ряд по отрицательным степеням разложения функции сходится в сфере сходимости </FONT><IMG SRC="images/1-4-2/Image2067.gif" WIDTH=90 HEIGHT=28><FONT FACE="Times New Roman">. Если </FONT><I>r&lt;R</I><FONT FACE="Times New Roman">, то ряд сходится в области заключенной между двумя концентрическими сферами </FONT><IMG SRC="images/1-4-2/Image2068.gif" WIDTH=121 HEIGHT=28><FONT FACE="Times New Roman">. На эту область накладывается область сходимости рядов по изолированному направлению. Сферы в пространстве это прежде всего поверхности </FONT><IMG SRC="images/1-4-2/Image2069.gif" WIDTH=48 HEIGHT=25><IMG SRC="images/1-4-2/Image2070.gif" WIDTH=12 HEIGHT=22><FONT FACE="Times New Roman">, натянутые без точек самопересечения на пространственные кривые </FONT><IMG SRC="images/1-4-2/Image2071.gif" WIDTH=45 HEIGHT=25><FONT FACE="Times New Roman">, эквивалентные кривым типа </FONT><IMG SRC="images/1-4-2/Image2072.gif" WIDTH=22 HEIGHT=25>.<FONT FACE="Times New Roman"> В области </FONT>G<FONT FACE="Times New Roman">, заключенной между двумя этими сферами, необходимо рассматривать область сходимости ряда по изолированному направлению, для точек </FONT><IMG SRC="images/1-4-2/Image2073.gif" WIDTH=105 HEIGHT=25>. </P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">Для точек, лежащих вне этих областей будет расходиться один из рядов, а следовательно будет расходиться и общая сумма. Критические точки в пространстве </FONT>Y <FONT FACE="Times New Roman">в конечном счете определяются из общего условия разложения функции на линейные или квадратные многочлены. Согласно этим условиям в пространстве имеются два вида критических точек, таких что подстановка одного из вида критических точек в другой переводит произведение линейных множителей в произведение делителей нуля. В связи с этим два вида критических точек в полном пространстве </FONT>Y<FONT FACE="Times New Roman">, однозначно определяют область сходимости ряда Лорана и нет необходимости дополнительного исследования областей делителей нуля. Стремление к критической точки по изолированному направлению по определенному закону, приводит к критической точки другого вида. Пространственная точка включает в себя все варианты разложения функции на линейные и квадратные множители. Поэтому в пространстве справедлива теорема Абеля и Вейерштрасса. </P>
+<P ALIGN="JUSTIFY"> Если имеется область </FONT><IMG SRC="images/1-4-2/Image2074.gif" WIDTH=194 HEIGHT=28><FONT FACE="Times New Roman">, учитывающая все виды критических точек, то в ней ряд сходится равномерно и сумма его </FONT><IMG SRC="images/1-4-2/Image2075.gif" WIDTH=37 HEIGHT=21><FONT FACE="Times New Roman">регулярна в области сходимости. Справедливо и обратное утверждение. Таким образом, подошли к утверждению теоремы. </P>
+<P ALIGN="JUSTIFY"> Функция </FONT><IMG SRC="images/1-4-2/Image2075.gif" WIDTH=37 HEIGHT=21><FONT FACE="Times New Roman">, регулярная в области </FONT>G : <IMG SRC="images/1-4-2/Image2076.gif" WIDTH=121 HEIGHT=28><FONT FACE="Times New Roman">, представляется в этой области сходящимся рядом Лорана</P></FONT>
+<TABLE CELLSPACING=0 BORDER=0 CELLPADDING=7 WIDTH=568>
+<TR><TD WIDTH="50%" VALIGN="TOP">
+<P><IMG SRC="images/1-4-2/Image2077.gif" WIDTH=166 HEIGHT=49>,</TD>
+<TD WIDTH="50%" VALIGN="TOP">
+
+<P ALIGN="RIGHT">(1.60.)</TD>
+</TR>
+</TABLE>
+
+<FONT FACE="Times New Roman"><P>где </FONT><IMG SRC="images/1-4-2/Image2078.gif" WIDTH=265 HEIGHT=57>,</P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">где </FONT><IMG SRC="images/1-4-2/Image2079.gif" WIDTH=194 HEIGHT=25><IMG SRC="images/1-4-2/Image2080.gif" WIDTH=28 HEIGHT=20><FONT FACE="Times New Roman">-элемент пространственной поверхности</P>
+<P ALIGN="JUSTIFY">Для определения коэффициентов ряда умножим правую и левую часть ряда на </P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2081.gif" WIDTH=82 HEIGHT=26><FONT FACE="Times New Roman">получим соотношение </FONT><IMG SRC="images/1-4-2/Image2082.gif" WIDTH=221 HEIGHT=50><FONT FACE="Times New Roman">, которое проинтегрируем по поверхности </FONT><IMG SRC="images/1-4-2/Image2083.gif" WIDTH=29 HEIGHT=28><FONT FACE="Times New Roman">. Для любого целого </FONT>n <FONT FACE="Times New Roman">выполняется соотношение</P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2084.gif" WIDTH=112 HEIGHT=41>=<IMG SRC="images/1-4-2/Image2085.gif" WIDTH=122 HEIGHT=26>,<IMG SRC="images/1-4-2/Image2086.gif" WIDTH=46 HEIGHT=18><FONT FACE="Times New Roman">. Откуда получаем выражение для коэффициентов ряда Лорана в виде.</P>
+<P ALIGN="JUSTIFY">Пример.</P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2087.gif" WIDTH=146 HEIGHT=46><FONT FACE="Times New Roman">, знаменатель имеет четыре критические точки </FONT>: <IMG SRC="images/1-4-2/Image2088.gif" WIDTH=112 HEIGHT=25></P>
+<P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2089.gif" WIDTH=181 HEIGHT=25><FONT FACE="Times New Roman">, поэтому функция может быть разложена по двум равноценным вариантам</FONT>:</P>
+<P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2090.gif" WIDTH=421 HEIGHT=50></P>
+<P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2091.gif" WIDTH=358 HEIGHT=105></P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">Каждую из полученных дробей обозначим по порядку </FONT><IMG SRC="images/1-4-2/Image2092.gif" WIDTH=164 HEIGHT=24>, <FONT FACE="Times New Roman">разложим в ряд Тейлора.</P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2093.gif" WIDTH=250 HEIGHT=94><IMG SRC="images/1-4-2/Image2094.gif" WIDTH=308 HEIGHT=57><FONT FACE="Times New Roman"> ряд сходится в границах сферы </FONT><IMG SRC="images/1-4-2/Image2095.gif" WIDTH=38 HEIGHT=18>.</P>
+<P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2096.gif" WIDTH=417 HEIGHT=50><FONT FACE="Times New Roman"> , ряд сходится в границах сферы </FONT><IMG SRC="images/1-4-2/Image2097.gif" WIDTH=37 HEIGHT=17><FONT FACE="Times New Roman">.Суммируя коэффициенты  при одинаковых степенях получим ряд для исходной функции </FONT><IMG SRC="images/1-4-2/Image2098.gif" WIDTH=442 HEIGHT=46></P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">Ряд сходится в границах сферы </FONT><IMG SRC="images/1-4-2/Image2099.gif" WIDTH=37 HEIGHT=17>. </P>
+<P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2100.gif" WIDTH=522 HEIGHT=74></P>
+<P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2101.gif" WIDTH=410 HEIGHT=55> </P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">ряд сходится для точек сферы  </FONT><IMG SRC="images/1-4-2/Image2102.gif" WIDTH=149 HEIGHT=30>.</P>
+<P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2103.gif" WIDTH=377 HEIGHT=50></P>
+<P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2104.gif" WIDTH=261 HEIGHT=102></P>
+<P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2105.gif" WIDTH=472 HEIGHT=54></P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">ряд сходится для точек сферы </FONT><IMG SRC="images/1-4-2/Image2106.gif" WIDTH=137 HEIGHT=28>.</P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">Суммируем коэффициенты при одинаковых степенях </FONT><IMG SRC="images/1-4-2/Image2107.gif" WIDTH=13 HEIGHT=14></P>
+<P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2108.gif" WIDTH=494 HEIGHT=54></P>
+<P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2109.gif" WIDTH=378 HEIGHT=50></P>
+<P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2110.gif" WIDTH=218 HEIGHT=53></P>
+<P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2111.gif" WIDTH=246 HEIGHT=50></P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">и так далее</P>
+<P ALIGN="JUSTIFY">Суммируя ряды </FONT><IMG SRC="images/1-4-2/Image2112.gif" WIDTH=82 HEIGHT=24><FONT FACE="Times New Roman"> получаем тейлоровское разложение функции </FONT><IMG SRC="images/1-4-2/Image2113.gif" WIDTH=37 HEIGHT=21><FONT FACE="Times New Roman">по второму варианту разложения функции в пространстве на  дроби. В силу совпадения коэффициентов при одинаковых степенях </FONT><IMG SRC="images/1-4-2/Image2107.gif" WIDTH=13 HEIGHT=14><FONT FACE="Times New Roman">разложение совпадает с разложением по первому варианту. Разложение в пространстве функции в ряд Тейлора является единственным разложением.</P>
+<P ALIGN="JUSTIFY">Произведем разложение исходной функции по отрицательным степеням.</P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2114.gif" WIDTH=438 HEIGHT=73></P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">ряд сходится для всех </FONT><IMG SRC="images/1-4-2/Image2115.gif" WIDTH=38 HEIGHT=18>.</P>
+<P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2116.gif" WIDTH=469 HEIGHT=94></P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">ряд сходится для всех </FONT><IMG SRC="images/1-4-2/Image2117.gif" WIDTH=37 HEIGHT=17>.</P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">Складывая коэффициенты при одинаковых степенях </FONT><IMG SRC="images/1-4-2/Image2107.gif" WIDTH=13 HEIGHT=14><FONT FACE="Times New Roman">, получим</P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2118.gif" WIDTH=114 HEIGHT=46></P>
+<P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2119.gif" WIDTH=110 HEIGHT=46></P>
+<P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2120.gif" WIDTH=154 HEIGHT=48></P>
+<P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2121.gif" WIDTH=121 HEIGHT=48></P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">Таким образом , функция разложена в ряд по отрицательным степеням</P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2122.gif" WIDTH=194 HEIGHT=46><FONT FACE="Times New Roman">ряд сходится для всех </FONT><IMG SRC="images/1-4-2/Image2123.gif" WIDTH=45 HEIGHT=26><FONT FACE="Times New Roman">.Далее произведем разложение функции по второму варианту</P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2124.gif" WIDTH=349 HEIGHT=74></P>
+<P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2125.gif" WIDTH=352 HEIGHT=57></P>
+<P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2126.gif" WIDTH=225 HEIGHT=70></P>
+<P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2127.gif" WIDTH=414 HEIGHT=57></P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">ряды сходятся для всех точек сферы </FONT><IMG SRC="images/1-4-2/Image2128.gif" WIDTH=65 HEIGHT=30><FONT FACE="Times New Roman">. Суммируя коэффициенты при одинаковых степенях </FONT><IMG SRC="images/1-4-2/Image2107.gif" WIDTH=13 HEIGHT=14>,</P>
+<P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2129.gif" WIDTH=144 HEIGHT=50></P>
+<P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2130.gif" WIDTH=224 HEIGHT=50></P>
+<P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2131.gif" WIDTH=512 HEIGHT=50></P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">Таблица коэффициентов совпадает с предыдущей.  Разложение функции по отрицательным степеням в пространстве также является единственным. В этом варианте корни определенные из условия существования делителей нуля не входят в область сходимости функции при разложении , поэтому разложение должно ограничиваться первым вариантом разложения.</P>
+<P ALIGN="JUSTIFY">Рассмотрим разложение исходной функции по положительным и отрицательным степеням.</P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2132.gif" WIDTH=470 HEIGHT=65></P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">Полученный ряд Лорана сходится в сферическом кольце </FONT><IMG SRC="images/1-4-2/Image2133.gif" WIDTH=74 HEIGHT=28><FONT FACE="Times New Roman">. Рассмотрим разложение по второму варианту.</P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2134.gif" WIDTH=450 HEIGHT=57></P>
+<P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2135.gif" WIDTH=400 HEIGHT=54></P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">Ряд сходится на сфере радиуса </FONT><IMG SRC="images/1-4-2/Image2136.gif" WIDTH=62 HEIGHT=29>.  <FONT FACE="Times New Roman">Сферическое кольцо в котором сходится ряд Лорана для этого разложения сжалось до поверхности сферы. В этом случае корни многочлена </FONT><IMG SRC="images/1-4-2/Image2137.gif" WIDTH=96 HEIGHT=22><FONT FACE="Times New Roman"> перестают быть изолированными точками для функции.</P>
+<P ALIGN="JUSTIFY">Проведем обобщение результатов примера. Знаменатель функции </FONT><IMG SRC="images/1-4-2/Image2138.gif" WIDTH=34 HEIGHT=22><FONT FACE="Times New Roman"> представляет квадратный трехчлен, имеющий четыре корня, которые для функции являются критическими</P>
+<P ALIGN="JUSTIFY">Точками. Для определения областей регулярности функции целесообразно дробь разложить на простейшие дроби .</P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2139.gif" WIDTH=561 HEIGHT=50><FONT FACE="Times New Roman">Введем обозначения, обозначив последовательно каждую из дробей по порядку </P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2140.gif" WIDTH=160 HEIGHT=24></P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">Разложение по положительным степеням дробей </FONT><IMG SRC="images/1-4-2/Image2141.gif" WIDTH=94 HEIGHT=25><FONT FACE="Times New Roman">в ряд Тейлора возможно для областей с радиусом сходимости соответственно </FONT><IMG SRC="images/1-4-2/Image2142.gif" WIDTH=73 HEIGHT=20><FONT FACE="Times New Roman">Ряд Тейлора для суммы функций</P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2143.gif" WIDTH=86 HEIGHT=22><FONT FACE="Times New Roman"> имеет радиус сходимости </FONT><IMG SRC="images/1-4-2/Image2144.gif" WIDTH=44 HEIGHT=20></P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">Сумма функций </FONT><IMG SRC="images/1-4-2/Image2145.gif" WIDTH=88 HEIGHT=24><FONT FACE="Times New Roman"> дает тот же ряд Тейлора с радиусом сходимости </FONT><IMG SRC="images/1-4-2/Image2146.gif" WIDTH=50 HEIGHT=24><FONT FACE="Times New Roman">а так как </FONT><IMG SRC="images/1-4-2/Image2147.gif" WIDTH=56 HEIGHT=28><FONT FACE="Times New Roman">то ряд Тейлора функции </FONT><IMG SRC="images/1-4-2/Image2148.gif" WIDTH=34 HEIGHT=22><FONT FACE="Times New Roman">сходится в области сферы радиуса </FONT><IMG SRC="images/1-4-2/Image2149.gif" WIDTH=37 HEIGHT=18></P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">Разложение суммы функций </FONT><IMG SRC="images/1-4-2/Image2150.gif" WIDTH=86 HEIGHT=22><FONT FACE="Times New Roman">по отрицательным степеням </FONT><IMG SRC="images/1-4-2/Image2151.gif" WIDTH=13 HEIGHT=14><FONT FACE="Times New Roman">дает ряд с радиусом сходимости </FONT><IMG SRC="images/1-4-2/Image2152.gif" WIDTH=38 HEIGHT=18></P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">Разложение суммы функций </FONT><IMG SRC="images/1-4-2/Image2153.gif" WIDTH=88 HEIGHT=24><FONT FACE="Times New Roman">по отрицательным степеням </FONT><IMG SRC="images/1-4-2/Image2154.gif" WIDTH=13 HEIGHT=14><FONT FACE="Times New Roman">дает радиус сходимости </FONT><IMG SRC="images/1-4-2/Image2155.gif" WIDTH=49 HEIGHT=24></P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">Если раскладывать функцию по положительным и отрицательным степеням </FONT><IMG SRC="images/1-4-2/Image2156.gif" WIDTH=13 HEIGHT=14><FONT FACE="Times New Roman">, используя различные варианты разложения дробей, то область сходимости ряда будет изменяться.</P>
+<P ALIGN="JUSTIFY">Например, разложение функции по  схеме</P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2157.gif" WIDTH=296 HEIGHT=29><FONT FACE="Times New Roman">, где знак</FONT><IMG SRC="images/1-4-2/Image2158.gif" WIDTH=16 HEIGHT=17><FONT FACE="Times New Roman">определяет разложение по положительным или отрицательным степеням, дает ряд, имеющий область сходимости поверхность сферы </FONT><IMG SRC="images/1-4-2/Image2159.gif" WIDTH=57 HEIGHT=26></P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">Для ряда </FONT><IMG SRC="images/1-4-2/Image2160.gif" WIDTH=289 HEIGHT=29><FONT FACE="Times New Roman">область сходимости определяется соотношением </FONT><IMG SRC="images/1-4-2/Image2161.gif" WIDTH=96 HEIGHT=30></P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">Однако нельзя использовать разложение из одного эквивалентного варианта с разложением из другого эквивалентного разложения.</P>
+<P ALIGN="JUSTIFY">Разложение дроби на простейшие ,в знаменателе которой стоит квадратный многочлен, существенным образом зависит от области определения  дроби как функции в пространстве и способа разложения этой дроби в ряды. Возможны варианты, при которых разложение по одному варианту не допускает разложение по другому. Если область определения ограничена только верхним или только нижним полупространством , то разложение на условии существования делителей нуля недопустимо , так как исключаются условия для определения критических точек.</P>
+<P ALIGN="JUSTIFY">Способ и варианты разложения тесно связаны с областями сходимости ряда и критическими точками функции. </P>
+<P ALIGN="JUSTIFY">Иными словами, если критические точки эквивалентных разложений в пространстве не входят в область сходимости ряда то это разложение не действительно.</P>
+<P ALIGN="JUSTIFY">Пример. Рассмотрим различные варианты разложения функции</FONT><IMG SRC="images/1-4-2/Image2162.gif" WIDTH=156 HEIGHT=50><FONT FACE="Times New Roman"> в областях пространства </FONT><IMG SRC="images/1-4-2/Image2163.gif" WIDTH=22 HEIGHT=20><FONT FACE="Times New Roman"> Функция регулярна в области </FONT><IMG SRC="images/1-4-2/Image2164.gif" WIDTH=252 HEIGHT=28></P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">Найдем разложение функции в ряд Лорана в этих областях. Знаменатель дроби, которая представляет функцию имеет четыре корня в пространстве, которые и диктуют распределение в пространстве областей регулярности функции .Этими корнями являются:</P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2165.gif" WIDTH=361 HEIGHT=46><FONT FACE="Times New Roman">Представим функцию в виде суммы простых дробей:</FONT>
+<P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2166.gif" WIDTH=532 HEIGHT=102></P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">Обозначим дроби по порядку через </FONT><IMG SRC="images/1-4-2/Image2167.gif" WIDTH=180 HEIGHT=25><FONT FACE="Times New Roman">. Если </FONT><IMG SRC="images/1-4-2/Image2168.gif" WIDTH=53 HEIGHT=28><FONT FACE="Times New Roman">то </P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2169.gif" WIDTH=172 HEIGHT=54><IMG SRC="images/1-4-2/Image2170.gif" WIDTH=302 HEIGHT=78></P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">Знак </FONT><IMG SRC="images/1-4-2/Image2171.gif" WIDTH=14 HEIGHT=16><FONT FACE="Times New Roman">в символе функции отвечает за разложение дроби по положительным или отрицательным степеням. Сумма функций </FONT><IMG SRC="images/1-4-2/Image2172.gif" WIDTH=273 HEIGHT=62><FONT FACE="Times New Roman">сходится для </P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2173.gif" WIDTH=54 HEIGHT=28><FONT FACE="Times New Roman">В области </FONT><IMG SRC="images/1-4-2/Image2174.gif" WIDTH=65 HEIGHT=30><FONT FACE="Times New Roman">разность функций </P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2175.gif" WIDTH=124 HEIGHT=29></P>
+<P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2176.gif" WIDTH=448 HEIGHT=84></P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">Ряд имеет больше радиус сходимости, чем ряд предыдущей суммы:</FONT><IMG SRC="images/1-4-2/Image2177.gif" WIDTH=96 HEIGHT=30><FONT FACE="Times New Roman">Функция разлагается в ряд по положительным степеням в пространстве и имеет радиус сходимости</FONT><IMG SRC="images/1-4-2/Image2178.gif" WIDTH=54 HEIGHT=28><FONT FACE="Times New Roman">В связи с этим необходимо выбирать как способ разложения ,так и область сходимости этого разложения.</P>
+<P ALIGN="JUSTIFY">В силу равенства </FONT><IMG SRC="images/1-4-2/Image2179.gif" WIDTH=340 HEIGHT=52><FONT FACE="Times New Roman">ряды  от сумм функций равны</P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2180.gif" WIDTH=237 HEIGHT=29><FONT FACE="Times New Roman">. Для доказательства достаточно вычислить коэффициенты </FONT><IMG SRC="images/1-4-2/Image2181.gif" WIDTH=20 HEIGHT=24><FONT FACE="Times New Roman">при равных степенях n переменной </FONT><IMG SRC="images/1-4-2/Image2182.gif" WIDTH=17 HEIGHT=14></P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">При </FONT><IMG SRC="images/1-4-2/Image2183.gif" WIDTH=37 HEIGHT=18><FONT FACE="Times New Roman">имеем: </FONT><IMG SRC="images/1-4-2/Image2184.gif" WIDTH=129 HEIGHT=46>. <IMG SRC="images/1-4-2/Image2185.gif" WIDTH=148 HEIGHT=46><FONT FACE="Times New Roman">Знак минус переходит в плюс, вследствии минуса перед квадратной скобкой в исходном разложении функции на дроби.</P>
+<P ALIGN="JUSTIFY">Рассмотрим область </FONT><IMG SRC="images/1-4-2/Image2186.gif" WIDTH=109 HEIGHT=28><FONT FACE="Times New Roman"> Функцию </FONT><IMG SRC="images/1-4-2/Image2187.gif" WIDTH=37 HEIGHT=22><FONT FACE="Times New Roman">разложим по отрицательным степеням </FONT><IMG SRC="images/1-4-2/Image2188.gif" WIDTH=17 HEIGHT=14></P>
+<P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2189.gif" WIDTH=285 HEIGHT=77><FONT FACE="Times New Roman">В этом случае сумма функций </FONT><IMG SRC="images/1-4-2/Image2190.gif" WIDTH=298 HEIGHT=56><FONT FACE="Times New Roman"> представляет ряд с отрицательными и положительными степенями переменной </FONT><IMG SRC="images/1-4-2/Image2191.gif" WIDTH=13 HEIGHT=14><FONT FACE="Times New Roman"> Следующую сумму функций также представим в виде ряда с положительными и отрицательными степенями </FONT><IMG SRC="images/1-4-2/Image2192.gif" WIDTH=17 HEIGHT=14></P>
+<P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2193.gif" WIDTH=417 HEIGHT=56></P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">Ряд сходится на сфере </FONT><IMG SRC="images/1-4-2/Image2194.gif" WIDTH=61 HEIGHT=28></P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">Таким образом, если функция </FONT><IMG SRC="images/1-4-2/Image2195.gif" WIDTH=34 HEIGHT=22><FONT FACE="Times New Roman">в области </FONT><IMG SRC="images/1-4-2/Image2196.gif" WIDTH=88 HEIGHT=26><FONT FACE="Times New Roman">разложить в ряд Лорана по схеме входящих в нее дробей</P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2197.gif" WIDTH=242 HEIGHT=25><FONT FACE="Times New Roman">то полученный ряд Лорана будет иметь область сходимости  в виде сферы </FONT><IMG SRC="images/1-4-2/Image2198.gif" WIDTH=61 HEIGHT=28><FONT FACE="Times New Roman">В этом случае допускается разложение только по второму эквивалентному варианту.</P>
+<P ALIGN="JUSTIFY">Если функцию разложить только по отрицательным степеням </FONT><IMG SRC="images/1-4-2/Image2199.gif" WIDTH=13 HEIGHT=14><FONT FACE="Times New Roman">по схеме</P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2200.gif" WIDTH=313 HEIGHT=57></P>
+<P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2201.gif" WIDTH=333 HEIGHT=62></P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">то ряд будет сходиться для </FONT><IMG SRC="images/1-4-2/Image2202.gif" WIDTH=56 HEIGHT=28><FONT FACE="Times New Roman">Коэффициенты </FONT><IMG SRC="images/1-4-2/Image2203.gif" WIDTH=20 HEIGHT=24><FONT FACE="Times New Roman">при одинаковых степенях </FONT><IMG SRC="images/1-4-2/Image2204.gif" WIDTH=13 HEIGHT=14><FONT FACE="Times New Roman">первой суммы ряда совпадают с коэффициентами ряда стоящего в квадратных скобках. Например, при </FONT><IMG SRC="images/1-4-2/Image2205.gif" WIDTH=37 HEIGHT=18><FONT FACE="Times New Roman">имеем:</P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2206.gif" WIDTH=346 HEIGHT=50></P>
+<FONT FACE="Times New Roman"><P ALIGN="JUSTIFY">Примеры показывают, что наличие изолированной оси в пространстве </FONT><IMG SRC="images/1-4-2/Image2207.gif" WIDTH=17 HEIGHT=16><FONT FACE="Times New Roman">влияет на область сходимости рядов Лорана.</P>
+<P ALIGN="JUSTIFY">В соответствии с алгебраическими операциями над степенными рядами заключаем. Если даны функции </FONT><IMG SRC="images/1-4-2/Image2208.gif" WIDTH=96 HEIGHT=25><FONT FACE="Times New Roman">регулярные в окрестности точки </FONT><IMG SRC="images/1-4-2/Image2209.gif" WIDTH=48 HEIGHT=18><FONT FACE="Times New Roman"> представленные рядами</P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2210.gif" WIDTH=344 HEIGHT=54><FONT FACE="Times New Roman">где первый ряд сходится в сфере </FONT><IMG SRC="images/1-4-2/Image2211.gif" WIDTH=88 HEIGHT=28><FONT FACE="Times New Roman">а ряд второй в сфере </FONT><IMG SRC="images/1-4-2/Image2212.gif" WIDTH=76 HEIGHT=26><FONT FACE="Times New Roman">причем </FONT><IMG SRC="images/1-4-2/Image2213.gif" WIDTH=56 HEIGHT=25><FONT FACE="Times New Roman">тогда имеют место разложения:</P>
+</FONT><P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2214.gif" WIDTH=334 HEIGHT=54></P>
+<P ALIGN="JUSTIFY"><IMG SRC="images/1-4-2/Image2215.gif" WIDTH=361 HEIGHT=57><FONT FACE="Times New Roman">Ряды сходятся в сфере </FONT><IMG SRC="images/1-4-2/Image2216.gif" WIDTH=89 HEIGHT=28></P>
+<P ALIGN="JUSTIFY"><font FACE="Arial" color="#000080">[<a href="1-5.html">Следующий
+параграф</a>]</font></P><!--webbot
+bot="Include" U-Include="footer.htm" TAG="BODY" startspan -->
+
+<hr color="#000080" style="border: 0px; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px">
+
+<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px"><b><font face="Arial" size="1" color="#000080">Мини
+оглавление:</font></b></p>
+
+<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px"><font face="Arial" size="2" color="#000080"><strong>[<a href="0.htm">0</a>], [<a href="1-1-1.html">1.1.1</a>, <a href="1-1-2.html">1.1.2</a>, <a href="1-1-3.html">1.1.3</a>,
+<a href="1-1-4.html">1.1.4</a>, <a href="1-1-5.html">1.1.5</a>, <a href="1-1-6.html">1.1.6</a>,
+<a href="1-1-7.html">1.1.7</a>, <a href="1-1-8.html">1.1.8</a>, <a href="1-2.html">1.2</a>,
+<a href="1-2-1.html">1.2.1</a>, <a href="1-2-2.html">1.2.2</a>, <a href="1-2-2-A.html">1.2.2.a</a>,
+<a href="1-2-2-B.html">1.2.2.b</a>, <a href="1-2-2-C.html">1.2.2.c</a>, <a href="1-2-2-D.html">1.2.2.d</a>, <a href="1-2-2-E.html">1.2.2.e</a>, <a href="1-2-2-F.html">1.2.2.f</a>, <a href="1-2-2-G.html">1.2.2.g</a>, <a href="1-2-2-H.html">1.2.2.h</a>, <a href="1-2-3.html">1.2.3</a>, <a href="1-3-1.html">1.3.1</a>,
+<a href="1-3-2.html">1.3.2</a>, <a href="1-3-3.html">1.3.3</a>, <a href="1-3-4.html">1.3.4</a>,
+<a href="1-3-5.html">1.3.5</a>, <a href="1-3-6.html">1.3.6</a>, <a href="1-4-1.html">1.4.1</a>,
+<a href="1-4-2.html">1.4.2</a>, <a href="1-5.html">1.5</a>, <a href="1-6.html">1.6</a>, <a href="1-7-1.html">1.7.1</a>, <a href="1-7-2.html">1.7.2</a>,
+<a href="1-7-3-p1.html">1.7.3.1</a>, <a href="1-7-3-p2.htm">1.7.3.2</a>, <a href="1-7-3-p3.htm">1.7.3.3</a>,
+<a href="1-7-4-p1.html">1.7.4.1</a>, <a href="1-7-4-p2.html">1.7.4.2</a>, <a href="1-8-1.html">1.8.1</a>], [<a href="2-1.html">2.1</a>, <a href="2-2.html">2.2</a>],[<a href="3-1.html">3.1</a>, <a href="3-2.html">3.2</a>, <a href="3-3.html">3.3</a>,
+<a href="3-4-1.html">3.4.1</a>, <a href="3-4-2.html">3.4.2</a>, <a href="3-4-3.html">3.4.3</a>,
+<a href="3-4-4.html">3.4.4</a>, <a href="3-4-5.html">3.4.5</a>],[<a href="4-1.html">4.1</a>, <a href="4-2.html">4.2</a>, <a href="4-3.html">4.3</a>, <a href="4-4.html">4.4</a>],[<a href="5-1.html">5.1</a>, <a href="5-1-Pic52.htm">5.1.Рис.52</a>, <a href="5-2.html">5.2</a>, <a href="5-3.html">5.3</a>,
+<a href="5-4.html">5.4</a>, <a href="5-4-t1.htm">5.4.Т1</a>, <a href="5-4-t2.htm">5.4.Т2</a>,
+<a href="5-4-t3.htm">5.4.Т3</a>, <a href="5-5-1.html">5.5.1</a>, <a href="5-5-2.html">5.5.2</a>,
+<a href="5-5-3.html">5.5.3</a>, <a href="5-5-4.html">5.5.4</a>],[<a href="6-1-1.html">6.1.1</a>,
+<a href="6-1-2.html">6.1.2</a>, <a href="6-2-1.html">6.2.1</a>, <a href="6-2-2.html">6.2.2</a>,
+<a href="6-2-3.html">6.2.3</a>, <a href="6-2-4.html">6.2.4</a>, <a href="6-2-5.html">6.2.5</a>,
+<a href="6-3.html">6.3</a>, <a href="6-4-1.html">6.4.1</a>, <a href="6-4-2.html">6.4.2</a>,
+<a href="6-5-1.html">6.5.1</a>, <a href="6-5-2.html">6.5.2</a>],[<a href="7-1.html">7.1</a>,
+<a href="7-2.html">7.2</a>, <a href="7-3.html">7.3</a>, <a href="7-4.html">7.4</a>,
+<a href="7-5.html">7.5</a>, <a href="7-6.html">7.6</a>, <a href="7-7-1.htm">7.7.1</a>,
+<a href="7-7-2.htm">7.7.2</a>, <a href="7-8-1.htm">7.8.1</a>, <a href="7-8-2.htm">7.8.2</a>,
+<a href="7-8-3.htm">7.8.3</a>, </strong></font><font face="Arial" size="2" color="#000080"><strong><a href="7-9.htm">7.9</a></strong></font><font face="Arial" size="2" color="#000080"><strong>],[<a href="8-1.html">8.1</a>,
+<a href="8-2-1.html">8.2.1</a>, <a href="8-2-2.html">8.2.2</a>, <a href="8-3.html">8.3</a>,
+<a href="8-4.html">8.4</a>, <a href="8-5.html">8.5</a>, <a href="8-6.html">8.6</a>,
+<a href="8-6-t1.html">8.6.T1</a>, <a href="8-7.html">8.7</a>, <a href="8-8-1.html">8.8.1</a>,
+<a href="8-8-2.html">8.8.2</a>, <a href="8-8-3.html">8.8.3</a>, <a href="8-9-1.html">8.9.1</a>,
+<a href="8-9-2.html">8.9.2</a>, <a href="8-9-3.html">8.9.3</a>, <a href="8-10.htm">8.10</a>,
+<a href="8-10-t2.html">8.10.T2</a>, <a href="8-10-t3.html">8.10.T3</a>],[<a href="9-1.html">9.1</a>,
+<a href="9-2.html">9.2</a>, <a href="9-3.html">9.3</a>, <a href="9-3-Pic88.html">Рис.88</a>,
+<a href="9-3-Pic89.html">89</a>, <a href="9-3-Pic90.html">90</a>, <a href="9-3-Pic91.html">91</a>,
+<a href="9-3-Pic92.html">92</a>, <a href="9-3-Pic93.html">93</a>, <a href="9-3-Pic94.html">94</a>,
+<a href="9-3-Pic95.html">95</a>, <a href="9-3-Pic96.html">96</a>, <a href="9-3-Pic97.html">97</a>,
+<a href="9-3-Pic98.html">98</a>, <a href="9-3-Pic99.html">99</a>, <a href="9-3-Pic99.html">100</a>],[<a href="10-1.html">10.1</a>,
+<a href="10-2.html">10.2</a>, <a href="10-3.html">10.3</a>, <a href="10-4.html">10.4</a>,
+<a href="10-5.html">10.5</a>, <a href="10-6.html">10.6</a>, <a href="10-7.html">10.7</a>,
+<a href="10-8.html">10.8</a>, <a href="10-9.html">10.9</a>, <a href="10-10.html">10.10</a>,
+<a href="10-11.html">10.11</a>, <a href="10-12.html">10.12</a>, <a href="10-13.htm">10.13</a>,
+<a href="10-14.htm">10.14</a>, <a href="10-15-1.html">10.15.1</a>, <a href="10-15-2.html">10.15.2</a>,
+<a href="10-16-1.html">10.16.1</a>, <a href="10-16-2.html">10.16.2</a>, <a href="10-17.html">10.17</a>,
+<a href="10-18.html">10.18</a>],[<a href="11.html">11</a>]&nbsp;</strong></font></p>
+
+
+<p>Размещенный материал является
+электронной версией книги: <strong>©</strong>
+В.И.Елисеев, &quot;Введение в методы теории функций
+пространственного комплексного переменного&quot;,
+изданной Центром научно-технического
+творчества молодежи Алгоритм. - М.:,
+НИАТ. - 1990. Шифр Д7-90/83308. в каталоге
+Государственной публичной научно-технической
+библиотеки.
+ Сайт действует с 10 августа 1998.</p>
+
+<p style="margin-top: 0px; margin-bottom: 0px">E-mail: <a href="mailto:mathsru@gmail.com">mathsru@gmail.com</a>
+ </p>
+
+<p style="margin-top: 0px; margin-bottom: 0px"><a href="http://counter.rambler.ru/top100/"><img src="http://counter.rambler.ru/top100.cnt?36886" alt="Rambler's Top100 Service" border="0"></a>
+</p>
+
+
+
+<!--webbot
+bot="Include" endspan i-checksum="55970" -->
+
+</div></body>
+</HTML>
